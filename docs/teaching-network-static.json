@@ -1,0 +1,96 @@
+{
+  "method": "Static ES-module closure, stripping version query for local resolution, plus new HTML script/CSS; not actual request count, transfer size or waterfall. Data paths are unchanged and pending loaders shared.",
+  "homepageNewTeachingResources": 0,
+  "chapters": [
+    {
+      "lesson": 1,
+      "newSameOriginResourcePaths": [
+        "teaching-viz/chapter-01.js",
+        "teaching-viz/fallback.js",
+        "teaching-viz/linked-learning.css",
+        "teaching-viz/linked-learning.js",
+        "teaching-viz/models-01.js",
+        "teaching-viz/render-demo.js",
+        "teaching-viz/utils.js"
+      ],
+      "uniqueNewResourceCount": 7,
+      "existingExternalImports": [
+        "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+      ]
+    },
+    {
+      "lesson": 2,
+      "newSameOriginResourcePaths": [
+        "teaching-viz/chapter-02.js",
+        "teaching-viz/fallback.js",
+        "teaching-viz/linked-learning.css",
+        "teaching-viz/linked-learning.js",
+        "teaching-viz/models-02.js",
+        "teaching-viz/render-demo.js",
+        "teaching-viz/utils.js"
+      ],
+      "uniqueNewResourceCount": 7,
+      "existingExternalImports": [
+        "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+      ]
+    },
+    {
+      "lesson": 3,
+      "newSameOriginResourcePaths": [
+        "teaching-viz/chapter-03-extra.js",
+        "teaching-viz/chapter-03.js",
+        "teaching-viz/fallback.js",
+        "teaching-viz/linked-learning.css",
+        "teaching-viz/linked-learning.js",
+        "teaching-viz/models-03.js",
+        "teaching-viz/render-demo.js",
+        "teaching-viz/utils.js"
+      ],
+      "uniqueNewResourceCount": 8,
+      "existingExternalImports": [
+        "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+      ]
+    },
+    {
+      "lesson": 4,
+      "newSameOriginResourcePaths": [
+        "teaching-viz/chapter-04.js",
+        "teaching-viz/fallback.js",
+        "teaching-viz/linked-learning.css",
+        "teaching-viz/linked-learning.js",
+        "teaching-viz/models-04.js",
+        "teaching-viz/render-demo.js",
+        "teaching-viz/utils.js"
+      ],
+      "uniqueNewResourceCount": 7,
+      "existingExternalImports": [
+        "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+      ]
+    },
+    {
+      "lesson": 5,
+      "newSameOriginResourcePaths": [
+        "teaching-viz/chapter-05-attributes.js",
+        "teaching-viz/chapter-05-guides.js",
+        "teaching-viz/chapter-05-names-calendar.js",
+        "teaching-viz/chapter-05-spiral-model.js",
+        "teaching-viz/chapter-05-spiral.js",
+        "teaching-viz/chapter-05-story.js",
+        "teaching-viz/chapter-05.css",
+        "teaching-viz/chapter-05.js",
+        "teaching-viz/fallback.js",
+        "teaching-viz/linked-learning.css",
+        "teaching-viz/linked-learning.js",
+        "teaching-viz/models-05-names-calendar.js",
+        "teaching-viz/models-05-story.js",
+        "teaching-viz/models-05.js",
+        "teaching-viz/render-demo.js",
+        "teaching-viz/utils.js"
+      ],
+      "uniqueNewResourceCount": 16,
+      "existingExternalImports": [
+        "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+      ]
+    }
+  ]
+}

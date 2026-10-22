@@ -1,0 +1,2305 @@
+{
+  "baselineCommit": "477706e3223ef43e66c79fd10f7abcd00d81a546",
+  "capturedAt": "2026-10-21 Asia/Singapore",
+  "source": "Git objects, never mutable working tree",
+  "files": {
+    ".nojekyll": {
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
+    },
+    "README.md": {
+      "bytes": 2575,
+      "sha256": "29c7611193348c5789455d74fd33a3c48ab02d9bd4a56ec77e7a0d3e1e32a642",
+      "gitBlob": "ddb117469ba71a0d910fa24fc34ace4e90bec9d5"
+    },
+    "assets/book-cover.jpg": {
+      "bytes": 602621,
+      "sha256": "230bc1cca9e2cc4607bf50dae186eaf005f5aa96f3ed9d9e0ba3b74d25a004d4",
+      "gitBlob": "4d4ac4927d7cc95e6d4818953102e67e0f99822e"
+    },
+    "chapter-explorer.css": {
+      "bytes": 7953,
+      "sha256": "916410314f0b1f38f0468ad275b5c4ef05e649797a3fd11e27d54e0c7094d43c",
+      "gitBlob": "c9f375559491e04f94316a767da755587bce9424"
+    },
+    "chapter-explorer.js": {
+      "bytes": 8878,
+      "sha256": "2960ab1d961ec246a8e311d7dd10599af59acbcf74e4e607e8d87057c6f4ff85",
+      "gitBlob": "6e561b694280e5450761cbe8264ba3adef1bc557"
+    },
+    "home-theme.css": {
+      "bytes": 14950,
+      "sha256": "97dfa383374f5ed9244c6a808902e7760da4e4a3b29889781e6ddc6f445fae4b",
+      "gitBlob": "d6780e3687c03643ab20ed4d168c6c2395877de9"
+    },
+    "home-theme.js": {
+      "bytes": 6400,
+      "sha256": "94f1f655fb2aabdccf714820926928eefa449e42796d701730f2d58d8933fad1",
+      "gitBlob": "086c5654c383a25ed32ba2304435c91fb506e80b"
+    },
+    "i18n.css": {
+      "bytes": 2034,
+      "sha256": "f5d8b790ee08fc9a65d6f832d01fc95196060b715ade11f8c72b678336c35944",
+      "gitBlob": "6322d946cb69680b1ee216319010c19ab9b2b5ef"
+    },
+    "i18n.js": {
+      "bytes": 34111,
+      "sha256": "2f7b8c87c16eab2ce407ea2c8ad210a0f5cf6059a446413ca663bc31aeca5714",
+      "gitBlob": "242d680627cc2907fd6aeb958aedb2fddfd94331"
+    },
+    "index.html": {
+      "bytes": 21316,
+      "sha256": "e735576a715b973e056d52f289466bbf98cccf2ad4891ea71a1b2ccbb64662a1",
+      "gitBlob": "eb54f045d7115ad6e254e6c3dc23b0b894306555"
+    },
+    "learning-home.css": {
+      "bytes": 6428,
+      "sha256": "0bb6f38769b829bb3e301c3e3b09856c702673fc25a44d228afce6926efc7a44",
+      "gitBlob": "f8aa6ce9f47db0e1f73c50d4c2071861497ca506"
+    },
+    "learning-home.js": {
+      "bytes": 4411,
+      "sha256": "486d816fa7779ca9c89912a3eb6b76f461ccd70c6e05b7a74e5eed25573f23c1",
+      "gitBlob": "e0a2f542bce65e037db1432d7931f66177c78bb9"
+    },
+    "learning-progress.js": {
+      "bytes": 4622,
+      "sha256": "303e01ed5fb6a6b6a405759e10c413b1cf7ada1ae0b20d1870c83a39878b11e8",
+      "gitBlob": "24c7ddfe3a30464e9f485bfe100b3a74c170c161"
+    },
+    "lesson-01/01-数据.md": {
+      "bytes": 16574,
+      "sha256": "1f05f234952865c093a4e37c07762bd98b002b53c4edb92a2c7810753259bbf6",
+      "gitBlob": "48593cd654e711ac58ffc2311707f90435bae482"
+    },
+    "lesson-01/build_en.py": {
+      "bytes": 18446,
+      "sha256": "ca6b3161884fad81cc5a56ddd511be95cf627311993dbadb5a6d6172fc12f8a5",
+      "gitBlob": "82b862f4c107724c519c744597ca0a39cd28090f"
+    },
+    "lesson-01/data/join.png": {
+      "bytes": 6989,
+      "sha256": "4e44d9e7639b8b0add3cd2c5a0184ee455118d8573bcc2ec015f1310ba872571",
+      "gitBlob": "6d2df6bd058646cb404db3d62012f1e98283cd69"
+    },
+    "lesson-01/data/newstudent.csv": {
+      "bytes": 5048,
+      "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b",
+      "gitBlob": "838077a224ebcdca02884b55671f5d47556eb9b9"
+    },
+    "lesson-01/demo/01-data-loader/index.html": {
+      "bytes": 3678,
+      "sha256": "43cec4571c956abcf8bb94c44d181a853fece58b1b6bccdf12507b43eccc205b",
+      "gitBlob": "67ad7f31144a1f707f5e5bf51c8ad7c5b567e6fd"
+    },
+    "lesson-01/demo/01-data-loader/main.js": {
+      "bytes": 3915,
+      "sha256": "dc44e59db276a4356093e5d65570b2c2f41e978fe600ef5127fc22f3778edcaa",
+      "gitBlob": "e61d01ff3463e763377c90b30b5ed15c09d207e6"
+    },
+    "lesson-01/demo/02-dikw-pyramid/index.html": {
+      "bytes": 2526,
+      "sha256": "5136218a5fa1dfd5e9414e17b831d9d7dbdff64a485a78f7aefc765e4678bf3c",
+      "gitBlob": "594c9b33e3207cdaead8e684bf179a334f9c7097"
+    },
+    "lesson-01/demo/02-dikw-pyramid/main.js": {
+      "bytes": 4011,
+      "sha256": "1a75aa8e61d76e4f1ecb9df91b5d7ddd7a2e1a9affe09334eb8c1a7e99971aab",
+      "gitBlob": "2e5f78bfa56ccd21d82bd966c6cdccb095059a5b"
+    },
+    "lesson-01/demo/03-attribute-types/index.html": {
+      "bytes": 5452,
+      "sha256": "265f0cb13c573e1d28f4de4d056627caca491b5a66730fed4011768d02af41f9",
+      "gitBlob": "c6c5c80080e7ec72eee569f8dcb2efe2ed28260f"
+    },
+    "lesson-01/demo/03-attribute-types/main.js": {
+      "bytes": 5790,
+      "sha256": "05281a49a095a0031e0069b731a422a1d8efb95c3b9220c67ac304b1690c3e93",
+      "gitBlob": "bd34cecbebfb2fc433de2778a7f4c091aeaf121d"
+    },
+    "lesson-01/demo/04-d3-array-ops/index.html": {
+      "bytes": 3983,
+      "sha256": "463774c5f8dc76f0ee7808054a691d13eaad667937e69c028cd00deb3f137514",
+      "gitBlob": "a7dd295584bc85021ad40a22cddcb29f225834ca"
+    },
+    "lesson-01/demo/04-d3-array-ops/main.js": {
+      "bytes": 4414,
+      "sha256": "73b46af0fc085cdcf3b6d35500c7caad89572aaca51c19eaa2db0b4157f81761",
+      "gitBlob": "9e6d296999c3a4798edc27591879ab726d1ca675"
+    },
+    "lesson-01/demo/05-selectors/index.html": {
+      "bytes": 5908,
+      "sha256": "0e97ad780bb34667c9f2ea554be893cc25401b57dbe60456af7ef711bdfa0d03",
+      "gitBlob": "d6bc2d9492f027fe58e268a5f59b470177dc1830"
+    },
+    "lesson-01/demo/05-selectors/main.js": {
+      "bytes": 1969,
+      "sha256": "1c942ade51ef99b906ea546d3e7ebad44fbb37b6edd507d7fcc61452a6f8a7ec",
+      "gitBlob": "09477896d116d08cea95d4b52968be6ee3842192"
+    },
+    "lesson-01/demo/README.md": {
+      "bytes": 1653,
+      "sha256": "2b59ebd52116175149afd5dcdcf0ccf2ecea5481cf1557d500752f6f81a27f9f",
+      "gitBlob": "2d26d97ebdd544fbbbe4b2065d7c3fed062bf6b8"
+    },
+    "lesson-01/demo/data/newstudent.csv": {
+      "bytes": 5048,
+      "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b",
+      "gitBlob": "838077a224ebcdca02884b55671f5d47556eb9b9"
+    },
+    "lesson-01/demo/index.html": {
+      "bytes": 6632,
+      "sha256": "e2b1bdc7764f96d4d742d9c924b94581fe3a09ca02aebca1f5138f06648e1c7b",
+      "gitBlob": "d551289573b76cdc70ceca225d3d6ce4b4f2c219"
+    },
+    "lesson-01/demo/styles.css": {
+      "bytes": 3307,
+      "sha256": "dcd7d035bb1bf28e2a1321f361f26f03bba1b7281c180d2245c6f66360408e89",
+      "gitBlob": "a1073e29c9b6e2fc32550b8395264d3f3c66524b"
+    },
+    "lesson-01/en_blocks.json": {
+      "bytes": 74581,
+      "sha256": "ae40f99d637475ba109860620f7db7e2d2e87bb20b38ac01134d40380aced798",
+      "gitBlob": "214a57df57078db128174d8e53ea949736bd2e78"
+    },
+    "lesson-01/index.html": {
+      "bytes": 84586,
+      "sha256": "266d27769350b98a4f67e18dc282d221db7e0b9d3152a81d786e10b5f0c514ca",
+      "gitBlob": "7d0c898ebdcc1a3677322b898eebb453aff86ee7"
+    },
+    "lesson-01/lecture-en.md": {
+      "bytes": 19240,
+      "sha256": "ca374c9908be29de232b515f2f6d2e8671653b93b38f5516d76e4540aee3873f",
+      "gitBlob": "6ad0917fa3216a3f0aded995a22cbc736aff07b2"
+    },
+    "lesson-01/lecture.md": {
+      "bytes": 16957,
+      "sha256": "1e407387b7fca297508b76d70509f70acaf7d65afd7099c7b96cd22cdb3f6ec4",
+      "gitBlob": "4767ca4a1d16bc878e0c996d0f1b852a976970f4"
+    },
+    "lesson-01/lesson.js": {
+      "bytes": 17383,
+      "sha256": "52e4ea39dbeb807a734c498e943dadf5eee36ebc1327fe19526ec3ed3b7ea3ef",
+      "gitBlob": "e8ce03b7df6f33ddfb1bfdfa714660cbe92003a8"
+    },
+    "lesson-01/styles.css": {
+      "bytes": 11150,
+      "sha256": "359032a5f643da32744da3cd4d533864248d35fb4329ac4b26721860784ffb3e",
+      "gitBlob": "fbf7f22e5aaf755e85a59e52fc161ea9c0e1fec7"
+    },
+    "lesson-01/zh_blocks.json": {
+      "bytes": 57533,
+      "sha256": "617b9ca36a7926b749d87758ff0225bf174d60fcf6124cf6539e408c04709e13",
+      "gitBlob": "15bccc833cd27f15fd63ed34df626dbefe323c23"
+    },
+    "lesson-02/02-数据可视化流程.md": {
+      "bytes": 11223,
+      "sha256": "590fe7fc7b8eea6497c49eab30173c9b88c8829826b72054db084d0c694330ff",
+      "gitBlob": "74eeaebd9cb30650da1eb95addd16f70b0d5fb4f"
+    },
+    "lesson-02/data/newstudent.csv": {
+      "bytes": 5048,
+      "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b",
+      "gitBlob": "838077a224ebcdca02884b55671f5d47556eb9b9"
+    },
+    "lesson-02/en_blocks.json": {
+      "bytes": 54057,
+      "sha256": "4104b708a998d28a52a60922c25d0090d380ed2777eed8572fcf9d5f307da2a6",
+      "gitBlob": "1ee9166aae5513339f8610736a35f0ddaa9f499e"
+    },
+    "lesson-02/img/01-mackinlay-ranking.png": {
+      "bytes": 444545,
+      "sha256": "b269123a8fa6d4866f85a9de7b3e3e521747b10c33330b43a1eb03e07bc486ab",
+      "gitBlob": "25bbdf7fb42d5284b511608a14093a075332491e"
+    },
+    "lesson-02/img/02-marks-points-lines-areas.png": {
+      "bytes": 21656,
+      "sha256": "c7cb3d2d381ed7b16f889b4dff6ce3736fd8ebb9635f8b8989dee6c83a1bd849",
+      "gitBlob": "e783dc248f63901a11c1578e75c342aaa2a79bd5"
+    },
+    "lesson-02/img/03-channels-position-color-shape.png": {
+      "bytes": 56713,
+      "sha256": "05ef8f1d6a94fbe7fd2a4db03fbf9768ea50beafc34496231ff43947c41a2240",
+      "gitBlob": "9764b630909f17dfdd2434f6c1b4f2bf71a40753"
+    },
+    "lesson-02/img/04-magnitude-channels.png": {
+      "bytes": 95775,
+      "sha256": "1656915a200fd5cf933b3e0e470c8852f7f4103907223ded2bb34b39d79ffc64",
+      "gitBlob": "cdaf02033cd68efeb8bfc3fb1bcebc905c2b4935"
+    },
+    "lesson-02/img/05-identity-channels.png": {
+      "bytes": 41870,
+      "sha256": "0b4cda5efeaece89fcce4af6059fe4de212decf0bbf5b5dab5186725121882db",
+      "gitBlob": "afa5153082106e6100c3ecd4d0e7a3c93d77bd12"
+    },
+    "lesson-02/index.html": {
+      "bytes": 90394,
+      "sha256": "6576284d0339076c33ae252e112d42da7c5b49ba03c0172071c02480e6a43849",
+      "gitBlob": "2a9ad6115be3e1da6b055930226b30e6005137f3"
+    },
+    "lesson-02/lecture-en.md": {
+      "bytes": 18329,
+      "sha256": "d8e41048efd4658eac3bc70b9d3ce46c0bc58f6c6fbabcbb32ffe1afa28566b5",
+      "gitBlob": "ce92a96fbd01becac5b715a4bd23818d3948eb97"
+    },
+    "lesson-02/lecture.md": {
+      "bytes": 16953,
+      "sha256": "be23a9620d1c7455db515129f9aa53f010e271f84e1b1d4c42d5a0d3aec51f00",
+      "gitBlob": "7c63b04869f9a4f25f2c41f1c50a8dfcaceb30d9"
+    },
+    "lesson-02/lesson.js": {
+      "bytes": 21411,
+      "sha256": "d9f34ea13c64b2539c49537b261ba5d7bdac79fbaced18c0caba7fd517ceb6f8",
+      "gitBlob": "f97d725976ef040bc0ec5e2eda37895de6d1a729"
+    },
+    "lesson-02/styles.css": {
+      "bytes": 15844,
+      "sha256": "475d11578463c992053a17a745f45963a760cbc41cc72ad49873f9a767430bfd",
+      "gitBlob": "d6ef2b54976235493c78b209b691cf2554e09213"
+    },
+    "lesson-02/zh_blocks.json": {
+      "bytes": 54057,
+      "sha256": "4104b708a998d28a52a60922c25d0090d380ed2777eed8572fcf9d5f307da2a6",
+      "gitBlob": "1ee9166aae5513339f8610736a35f0ddaa9f499e"
+    },
+    "lesson-03/data/crime.csv": {
+      "bytes": 3610,
+      "sha256": "306bb6eac87f6519ba8319e5826e144e1639249c8f9205cf8a81e290d835c646",
+      "gitBlob": "f5121d0b3777b87853429453beb9d8c13d2de3bd"
+    },
+    "lesson-03/en_blocks.json": {
+      "bytes": 52077,
+      "sha256": "1bb4aba28ef17bf5567e435f138f738a8665270b280ac3acbbb962379573268f",
+      "gitBlob": "c5236b367312b1c71fe721af6a570ef60343e435"
+    },
+    "lesson-03/index.html": {
+      "bytes": 59327,
+      "sha256": "e6f3ff0d119f4f5fe9c825a686010cab38caeeed3bc4523c54a0614ad7428dad",
+      "gitBlob": "3364394c80624233288fef2591b2dbf55227a6de"
+    },
+    "lesson-03/lecture-en.md": {
+      "bytes": 8522,
+      "sha256": "eeab66818b5a49f18666205d9615f41eabcba1046e1e0e5be1257f9d2229995e",
+      "gitBlob": "ed7cf14cbad0e9eb86aae0ddbec57444e2e486ba"
+    },
+    "lesson-03/lecture.md": {
+      "bytes": 7007,
+      "sha256": "7e108a9d28377a4016700c8ea62daf63753fde81ad7e28efeb2c44a14bf18a94",
+      "gitBlob": "6eda26b644e404c8fa260a3c799982c4677502e6"
+    },
+    "lesson-03/lesson.js": {
+      "bytes": 36995,
+      "sha256": "10101837fcad3d60e7866e49e8a224faaff437aa36b4794ba48e31924a32e0b5",
+      "gitBlob": "c646c8640b2258d45886844010b8217e7512f6bd"
+    },
+    "lesson-03/styles.css": {
+      "bytes": 24609,
+      "sha256": "ef9d4e1c380bfaeaf00743da9b2a6af506e83e1a92a0d1fe22fb17e28325079b",
+      "gitBlob": "767b2d92b265716385d7caf418b026065c15d021"
+    },
+    "lesson-03/zh_blocks.json": {
+      "bytes": 52077,
+      "sha256": "1bb4aba28ef17bf5567e435f138f738a8665270b280ac3acbbb962379573268f",
+      "gitBlob": "c5236b367312b1c71fe721af6a570ef60343e435"
+    },
+    "lesson-04/data/crime.csv": {
+      "bytes": 3610,
+      "sha256": "306bb6eac87f6519ba8319e5826e144e1639249c8f9205cf8a81e290d835c646",
+      "gitBlob": "f5121d0b3777b87853429453beb9d8c13d2de3bd"
+    },
+    "lesson-04/en_blocks.json": {
+      "bytes": 36927,
+      "sha256": "f0b750b310747e1018e8199b064d61f0dbf9df03976ef42bc8a29f198e317276",
+      "gitBlob": "01565eee0178ef9a641ef96185e7512716227767"
+    },
+    "lesson-04/index.html": {
+      "bytes": 42549,
+      "sha256": "8c22197404bd9a3adb9f3581ca8519d6a021d1d62fd607010581405963e12057",
+      "gitBlob": "d776678932d5f45f6923fa6c83239ca812a3ceb1"
+    },
+    "lesson-04/lecture-en.md": {
+      "bytes": 5485,
+      "sha256": "0df09e06f0a4c55cc0792cee6c80be759a73796b553c1e1f240063bb8d510228",
+      "gitBlob": "6f3eef3f723f0a3451280bdaeccbb4e855e2bb75"
+    },
+    "lesson-04/lecture.md": {
+      "bytes": 4706,
+      "sha256": "24ad3e7a3a39fc0ef31f10c528fbf12e00a9fc17388c528289172c69daa27b1b",
+      "gitBlob": "a541dce6364bace63fa174d9cdef1f5e6d9dffcc"
+    },
+    "lesson-04/lesson.js": {
+      "bytes": 22068,
+      "sha256": "f7a4da21907250e2e38a99b33309a526e911c0b32fac79d96cfbba0a9a89608c",
+      "gitBlob": "6af168e53a3a759c5607be7fd6a083af5ac71ed7"
+    },
+    "lesson-04/styles.css": {
+      "bytes": 24611,
+      "sha256": "a16c9de1d4b4aeb7936f31707693e63e494b805a68e8e8cb98f39f8ad7aa33cd",
+      "gitBlob": "62c1b70842bd21ef91bd43ab02ca01265d99c312"
+    },
+    "lesson-04/zh_blocks.json": {
+      "bytes": 34503,
+      "sha256": "8f09ebe22420d0a948694e2f32cca6ffc86ff7ff4d85d23f8c66ade08d29c8f0",
+      "gitBlob": "9f9200b95e02ed6f63ef5a5e635164ae74153d7d"
+    },
+    "lesson-05/data/french_names.json": {
+      "bytes": 9524,
+      "sha256": "c5ff08d2863049d163b455c0eb77e708fdcb7d73fba5e4d6477ee79db85fde53",
+      "gitBlob": "c3f04a448d1f3d1e89a97eb15edd5e199a607cb0"
+    },
+    "lesson-05/data/storyline.js": {
+      "bytes": 2266,
+      "sha256": "d0ed638f4b563c27ce533b901dd9ed030b6f6b1eff0748e3112d4019e61f8ecd",
+      "gitBlob": "9fed94310acaf493509a3f9f09a2ecc8da9cfe7a"
+    },
+    "lesson-05/data/time-attributes.js": {
+      "bytes": 1447,
+      "sha256": "0d1b0e46f76c97e30f57ed9831ea03aefd67fa6a847d6e73f125ef6fda965e0b",
+      "gitBlob": "26df5ca53f22def788f38856e2d097f468b0809d"
+    },
+    "lesson-05/data/weather_2024.csv": {
+      "bytes": 6978,
+      "sha256": "f01719172185fc4eca0b30db73897c8d4ea4df0d3c327668afebfef62dcc7772",
+      "gitBlob": "2e8b452a483e7581ea7703fcd33b968b35010e50"
+    },
+    "lesson-05/en_blocks.json": {
+      "bytes": 48450,
+      "sha256": "918dc560a18116509a259a679e033154e5b2edcd1ceef38c06a4a1c2c912c801",
+      "gitBlob": "8ad875f3be3ffb166782a89e85146ec0347b0cf8"
+    },
+    "lesson-05/index.html": {
+      "bytes": 55496,
+      "sha256": "4804efdd95228561129ad3449785de4ae709181ecf3aeff110c47e47002067ae",
+      "gitBlob": "caaea20df83440ccfbe9dc1a99d76f4862fba2bc"
+    },
+    "lesson-05/lecture-en.md": {
+      "bytes": 6780,
+      "sha256": "0c0cd5024464273602dff83a561dbbb4e0673c922fa3c3ae31ab0d5e2a27ca01",
+      "gitBlob": "f9fe6b10b270a04a4d9dbbdb95f22a4131610d49"
+    },
+    "lesson-05/lecture.md": {
+      "bytes": 5692,
+      "sha256": "6ccdadc2ced088a2e3827baaed8d4cdab8a6a6f440eaee8877560c5897d171ec",
+      "gitBlob": "28d9c127dfe28922f018766981557d151487ca82"
+    },
+    "lesson-05/lesson.js": {
+      "bytes": 29553,
+      "sha256": "793a522e9a0f170277f213224cb1d79a54440beaa8481181c998d1367b8b6194",
+      "gitBlob": "6829ef49b04a5becfd9ce3cda83a961517478e63"
+    },
+    "lesson-05/styles.css": {
+      "bytes": 27060,
+      "sha256": "9454a1b5dfb35a167f2b3cddfaf41c1710546743aa13f085b677b66dec7b2a96",
+      "gitBlob": "9af20674bdff2a4702c3ba681c33bc6d16fc85b6"
+    },
+    "lesson-05/zh_blocks.json": {
+      "bytes": 47419,
+      "sha256": "a7d5daf16754e008f6d6f2410b26b59e7de68a1254883ddb698254992ebe8a8e",
+      "gitBlob": "a1747d54de7517485f308cceba8e941bccdd5a27"
+    },
+    "lesson-theme.css": {
+      "bytes": 8616,
+      "sha256": "f623eda1f48740732d6acd6dd4ef9b0dfd50f232dd831cef6dfa48c419358619",
+      "gitBlob": "8d63f6b0fe4ae6c7858185891a94f4025059ddc2"
+    },
+    "soft-book.js": {
+      "bytes": 10999,
+      "sha256": "24de07e4a40fdd79599b0e7e22870fa03c0fa38c4b7c603104b4f7b99aa36e8e",
+      "gitBlob": "64f4355bbcc78fcfc635c2c1a24e4c02e7036009"
+    },
+    "styles.css": {
+      "bytes": 5609,
+      "sha256": "9eb187cbdbadcb243bbe8c8f7096119f4e1229409c9f40314afeb4349b75aca9",
+      "gitBlob": "92071628c76d7d5f816267f81ff6e11cdc869ed0"
+    },
+    "supplementary/5. 低维数据可视化.pdf": {
+      "bytes": 909976,
+      "sha256": "eb0927571f03e3c901dc5850951a1f3a0956392623305ea3592eaaa26a54ebce",
+      "gitBlob": "f042ad298b5da3227ff172ddb2fb7afcc5fc5217"
+    },
+    "supplementary/calendar.html": {
+      "bytes": 19519,
+      "sha256": "df962cbcc323b242d4780d8005883f95d04d8d2128c67204a7ed64e3c31ab78c",
+      "gitBlob": "7a5ec86d2fb04029691bbbd78d63835d6d9e8144"
+    },
+    "supplementary/calendar1.html": {
+      "bytes": 19490,
+      "sha256": "e771343f21e0f0b68e83f6b2d65078313c920441345918e60dfe06da2d81721c",
+      "gitBlob": "2bc69892e94a48bab8b82a69366758c9812615ed"
+    },
+    "supplementary/calendar3.html": {
+      "bytes": 24145,
+      "sha256": "d7a8daf9b947f4305a6b19f818c4178af2562560db6b3f1827fa43faad4933b6",
+      "gitBlob": "50e15d73160516eb8a045380ad2c36ce448206be"
+    },
+    "supplementary/colormap.html": {
+      "bytes": 3847,
+      "sha256": "28e8022b5c55aa325eca8bc420d42c280b8f4e1385b5e589f461a719c96d3b6a",
+      "gitBlob": "c920202c6ef1191159165014a0084231cfbb602b"
+    },
+    "supplementary/contour.html": {
+      "bytes": 13155,
+      "sha256": "d4a87939ca056da1d9f276421f8e89c6001f12f7a29a1b38d2018f666bd667f6",
+      "gitBlob": "321597b3a9ba37b03e1ba9682ae5284677303586"
+    },
+    "supplementary/contourd3.html": {
+      "bytes": 9698,
+      "sha256": "e756977aa9af8ad1c9de80c97603dbe0ef8255ef32a781c775512ee6998aeae0",
+      "gitBlob": "2dd385f785145bb8bc0c05a1404daf334ff2b1e3"
+    },
+    "supplementary/crime1985.html": {
+      "bytes": 1550,
+      "sha256": "f38f59ab192e75b796b338179fbbd0d9127191f5d511c58e77c98fc1d481e6fd",
+      "gitBlob": "52f537984f372949db79d590a414ad29ace5df3b"
+    },
+    "supplementary/data/1985CrimeGender - Copy.csv": {
+      "bytes": 1135,
+      "sha256": "0900777057e9e5bffba05f718e3598f2c98380ef56f80962a0581a7a5a354b26",
+      "gitBlob": "da2975e2d4701fdad25b0baf8e57509a802dd246"
+    },
+    "supplementary/data/1985CrimeGender.csv": {
+      "bytes": 511,
+      "sha256": "c77ca28489b75066c6770bcf84499141f3c35382e769485af795105648951da7",
+      "gitBlob": "2178bb31ffa83727629ea447a723345bd63ae5e7"
+    },
+    "supplementary/data/calendar_data.csv": {
+      "bytes": 21921,
+      "sha256": "eba349499dbd11607dd28fef2947d1d80a540ada110c224fac599141d194fa7c",
+      "gitBlob": "611aa9199ec7cce82ead381f766e007e4f4d2d07"
+    },
+    "supplementary/data/calendar_data_modified.csv": {
+      "bytes": 21840,
+      "sha256": "b0984d1a06434ffdd2facc518a432d2a2076fbcbb7d55c1402e06bca057f2940",
+      "gitBlob": "5dcad0e623a6f475a79d9c8b4d84263a9e763cde"
+    },
+    "supplementary/data/terrain10.csv": {
+      "bytes": 1894,
+      "sha256": "4d9a3276c6116ea4916b04f6e5b3be7d2ca87abf2d1b676b29d6b89e879181aa",
+      "gitBlob": "7d32fa54b844f47f0a576aeab376f9b18780624a"
+    },
+    "supplementary/i18n.css": {
+      "bytes": 2274,
+      "sha256": "ca68cd85b07e14289affc3542d3271ae4032c718b2c97ed85d5ae7fe387a9fe7",
+      "gitBlob": "14b47eb554654d320da6829a68d78ee60f5eb6bc"
+    },
+    "supplementary/i18n.js": {
+      "bytes": 24268,
+      "sha256": "32fcc6d63a4ddf5646c8a31e6e0bcd605c477953be68a1f93084dab641f04817",
+      "gitBlob": "1edc9be1f74d8da3aab7942bc9974ff7040748a8"
+    },
+    "supplementary/index.html": {
+      "bytes": 10326,
+      "sha256": "b2e829c237974b8b6008df897420eef03d0431378648ae48210af0fcc34d1c7b",
+      "gitBlob": "bf8009f256be628326f2fc5ddda395b746837354"
+    },
+    "supplementary/mark.html": {
+      "bytes": 4431,
+      "sha256": "f72c6ebae1ea5d49008bb8f52d4e14d49e1a1fee3f321fb44e0869362dcee069",
+      "gitBlob": "5102345b17c5083d10ece04f58987bd9296a10d0"
+    },
+    "supplementary/newstudent - 5人年龄错误.csv": {
+      "bytes": 35069,
+      "sha256": "aebd1120e05de7b42879a720b689465437c968c36626a8d3d02b36fc2551ac00",
+      "gitBlob": "3e0031a94ed1ef28a585c40f812e40d02a39802d"
+    },
+    "supplementary/newstudent - 班级信息错误.csv": {
+      "bytes": 35054,
+      "sha256": "1136b91404dd34e192a576e2719beecd57ca2463d369878b405ba04454ab1205",
+      "gitBlob": "bd8a21b5951dec9a91537fd1044387fd3dd2ee66"
+    },
+    "supplementary/newstudent.csv": {
+      "bytes": 35021,
+      "sha256": "3e0ddb9ce8ebf75c0d8306f6b7816543ebc05b468680fd84f1ee7c8d031e3846",
+      "gitBlob": "db592df3fcc62801253d06f9c91545b453fed368"
+    },
+    "supplementary/newstudent.html": {
+      "bytes": 5241,
+      "sha256": "0d6cc3a4dafb5a6316d88deaf9c5f6e3c78942680bcca6cd5c45826bc00bfa4c",
+      "gitBlob": "fb2dfd2184aa3a52e1947a77e51a7ca4bb164093"
+    },
+    "supplementary/nssystem.html": {
+      "bytes": 4327,
+      "sha256": "bc7c141e73b191e81eac8a5679c5ce224558361d8c9443bdf4a27b1c31b34607",
+      "gitBlob": "083519800ce5d7fa8f2d76bf36fc47366611ad27"
+    },
+    "supplementary/regression.html": {
+      "bytes": 404,
+      "sha256": "91346da28e863478d9bb1dfaadc1a143b1343eeeb0aec5c7713aa01375405679",
+      "gitBlob": "ce09d8d75a9077b1b9d6db507e192e4f3b4f3aad"
+    },
+    "supplementary/sex_compare.html": {
+      "bytes": 4526,
+      "sha256": "6f0148f7dd04e908b9ffa62019393b69eb9ca0d28912bdccb62c33e56fb015b6",
+      "gitBlob": "ed57dca28281cf32092e41bf1d85adc1bcde61d5"
+    },
+    "supplementary/style/calendar.css": {
+      "bytes": 5016,
+      "sha256": "808110371f434c3a14ab7d08e845de7cca242fdb9d6e20f7a2b6a51662ec8877",
+      "gitBlob": "11f767857c0aed7a13d1f64f4d1c33fed8439f6d"
+    },
+    "supplementary/style/scatter.css": {
+      "bytes": 615,
+      "sha256": "44de29051cab2809ad1ab08e02a8409e5998d36f3b7e9f841890f653c6be8feb",
+      "gitBlob": "e03820d3b750d5f3dd6c08fa434596c7c9e61be6"
+    },
+    "supplementary/style/system.css": {
+      "bytes": 1672,
+      "sha256": "5bcecba65e99057db9a6e0103e44349de2115d87601ebcc562b390da86c28fd6",
+      "gitBlob": "aa94a7df3965d9c321e456dfda5a8b6c726367b4"
+    },
+    "supplementary/style/table.css": {
+      "bytes": 4221,
+      "sha256": "0c969e9faaf37bf8a7870eeb1a88465fcbb99a7af0089a6dce2d688bb719d1b7",
+      "gitBlob": "8946b6212d2a20407edc2bb139c68eb04124a9a0"
+    },
+    "supplementary/style/treelist.css": {
+      "bytes": 3834,
+      "sha256": "d1c78c6702572694bce3ad942d667908ff3837859704a2addd6bbf7954a5acda",
+      "gitBlob": "adc77bc31e60233ecc0826e1406c6f43a3cffaa4"
+    },
+    "supplementary/tableshow.html": {
+      "bytes": 1134,
+      "sha256": "902edc8de8d4df8aa52ab921aff9172a1087ed95be731f04e52ac236548317fe",
+      "gitBlob": "ca5dfcbb5aa63bb94a6a4ee6189ac83d42e4c761"
+    },
+    "supplementary/treelist.html": {
+      "bytes": 1306,
+      "sha256": "31e57f478117d97cd6b6c88cf1d0e94838b63092d0c8eb452cdfa8f7dce41562",
+      "gitBlob": "40559e8d41013b4e470e5003b302abf53e1ad7a6"
+    },
+    "supplementary/utils/data.js": {
+      "bytes": 3397,
+      "sha256": "f5a646f5ed92ab83a6f1bc9b6f5e4decf2e27ffb8611577faf15707a35938cd1",
+      "gitBlob": "0a63fe96091ed3120a03868215cacbf89adb6ee3"
+    },
+    "supplementary/utils/scatter.js": {
+      "bytes": 4897,
+      "sha256": "ec1db0befdbf7382bd9b25d44181daf8e101c0b0139ea9a7f3bddfc2aebb5f82",
+      "gitBlob": "c41a4269c73c524c862a14aed3ebd2b81ef5d901"
+    },
+    "supplementary/utils/scatterConfig.json": {
+      "bytes": 310,
+      "sha256": "44f57a75fa5392ab532295abf86e19f590dac433010a6899a457c7cc72069805",
+      "gitBlob": "b5c9c7aef93d4ab6a8132ee4ba36b719a53d1469"
+    },
+    "supplementary/utils/table.js": {
+      "bytes": 2608,
+      "sha256": "b528e91cb47d41490a2d8704bcf2561bf65a3c7ffbcdf0d472d427301175bcea",
+      "gitBlob": "de5f0e97104be2c66fcca0046ef134cbf2033739"
+    },
+    "supplementary/utils/treelist.js": {
+      "bytes": 3029,
+      "sha256": "7513a593f93d2aef4a105b1789771c0e13943c015a478a093ab02efc699ae7bf",
+      "gitBlob": "75dc998670152717a1a4a0b1804af132b0da6b73"
+    },
+    "supplementary/utils/volumeRendering.js": {
+      "bytes": 5823,
+      "sha256": "7d2a6f24fc4d8377984c078b65584d935d8b7341fcec997971ca67258f89838a",
+      "gitBlob": "ae0f48e5eebdfd2fe112dc97257efef4d5bf4642"
+    },
+    "tests/learning.test.mjs": {
+      "bytes": 1716,
+      "sha256": "bceef465730eec5d26a3efa9d4bdad429d387f5665912790f327286c80f962f4",
+      "gitBlob": "1a65252b7831e7e6b5ba0f90d3c1892db8eabcb0"
+    }
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "scripts": [
+        "../learning-progress.js",
+        "./lesson.js?v=202609080945",
+        "../i18n.js"
+      ],
+      "styles": [
+        "./styles.css",
+        "../i18n.css",
+        "../lesson-theme.css"
+      ],
+      "allDemosQueuedAtStartup": true,
+      "asyncMountCatch": false,
+      "dataFileReferences": [
+        "./data/newstudent.csv",
+        "./data/newstudent.csv..."
+      ]
+    },
+    {
+      "chapter": 2,
+      "scripts": [
+        "../learning-progress.js",
+        "./lesson.js?v=202609080945",
+        "../i18n.js"
+      ],
+      "styles": [
+        "./styles.css",
+        "../i18n.css",
+        "../lesson-theme.css"
+      ],
+      "allDemosQueuedAtStartup": true,
+      "asyncMountCatch": false,
+      "dataFileReferences": [
+        "./data/newstudent.csv"
+      ]
+    },
+    {
+      "chapter": 3,
+      "scripts": [
+        "../learning-progress.js",
+        "./lesson.js?v=202609080945",
+        "../i18n.js"
+      ],
+      "styles": [
+        "./styles.css",
+        "../i18n.css",
+        "../lesson-theme.css"
+      ],
+      "allDemosQueuedAtStartup": true,
+      "asyncMountCatch": false,
+      "dataFileReferences": []
+    },
+    {
+      "chapter": 4,
+      "scripts": [
+        "../learning-progress.js",
+        "./lesson.js?v=202609080945",
+        "../i18n.js"
+      ],
+      "styles": [
+        "./styles.css",
+        "../i18n.css",
+        "../lesson-theme.css"
+      ],
+      "allDemosQueuedAtStartup": true,
+      "asyncMountCatch": true,
+      "dataFileReferences": [
+        "./data/crime.csv"
+      ]
+    },
+    {
+      "chapter": 5,
+      "scripts": [
+        "../learning-progress.js",
+        "./lesson.js?v=202609080945",
+        "../i18n.js"
+      ],
+      "styles": [
+        "./styles.css",
+        "../i18n.css",
+        "../lesson-theme.css"
+      ],
+      "allDemosQueuedAtStartup": true,
+      "asyncMountCatch": false,
+      "dataFileReferences": [
+        "./data/french_names.json",
+        "./data/weather_2024.csv"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "sectionId": "1.1",
+      "articleId": "ch-1-1",
+      "page": "lesson-01/index.html",
+      "originalTitle": "1.1 数据生成",
+      "runtimeTitleZh": "1.1 数据生成",
+      "runtimeTitleEn": "1.1 Data Generation",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入理论：AI 合成数据的可信度边界"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① 字段名映射",
+        "关键代码 ② 类型转换函数",
+        "关键代码 ③ d3.csv 第二参直接传 row 回调"
+      ],
+      "codeAPIs": [
+        ".log",
+        ".trim",
+        "d3.csv"
+      ],
+      "originalDemoId": "d-3-1",
+      "registryScope": "lesson-01",
+      "dataSources": [
+        "./data/newstudent.csv",
+        "./data/newstudent.csv..."
+      ],
+      "controlsMarkup": [
+        "<button id=\"d-3-1-reload\" class=\"demo-btn\">重新加载</button>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "e52d5c45cc21a0e231fcea6520a6e63bfa6cbdf4cfb80df15680a393d69a3e5e",
+          "characters": 150
+        },
+        {
+          "sha256": "2f53d6598f17caf397c0339c1a2f08fe6a35d74fcdd7eeb760e1efce94bd3477",
+          "characters": 291
+        },
+        {
+          "sha256": "13a127ad9428411cbc4b9a8a9c54acc20c7ba9535fbbd5c1423ed9df6005c87e",
+          "characters": 222
+        }
+      ],
+      "panelHashes": {
+        "explain": "649cd94f009fa44acd5f43336ba3a57e1a86d84f08ab42e2fb449e8f5f5af77e",
+        "code": "0223ce00eed309c737c474f09aa5c0ed596d040bfafb6c090d6e409c60199ab8",
+        "demo": "2d3ff7c5cda374fd92681356f2ea9a53fd1a46c080e5bda3a37baf83b307bf01"
+      },
+      "demoDefinitionSha256": "376ec2e995c2eb04a66eee40ec6f2ce250ccf592ecda38b4a870ce38411cd403"
+    },
+    {
+      "sectionId": "1.2",
+      "articleId": "ch-1-2",
+      "page": "lesson-01/index.html",
+      "originalTitle": "1.2 数据定义",
+      "runtimeTitleZh": "1.2 数据定义",
+      "runtimeTitleEn": "1.2 Data Definition",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入理论：可视化在 DIKW 中的位置"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① SVG 金字塔路径",
+        "关键代码 ② 交互高亮（hover/click）"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".brighter",
+        ".duration",
+        ".on",
+        ".select",
+        ".style",
+        ".transition",
+        "d3.color",
+        "d3.select"
+      ],
+      "originalDemoId": "d-3-2",
+      "registryScope": "lesson-01",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "dee8b934731d0851f4e01bc6283c5812727d26b9aba3bb94e7ec521e9c2ba34c",
+          "characters": 227
+        },
+        {
+          "sha256": "f391ea37567ba44f4bc303ea74785d988fea44509410925a2873fbee9b3eb5d0",
+          "characters": 321
+        }
+      ],
+      "panelHashes": {
+        "explain": "bbe69653aef9db2fcaf7efd9efa63f3c353c4ee678b990f4968837965b05c12d",
+        "code": "80fbba96e59ffe18f73d2c1c3e3daf85a673e7e99d72442e2ab77ddbfc5f0e9c",
+        "demo": "bf0fe41ef216f8128cc03334e63ee64eea211dbce3accf83ba3a958a83c3da01"
+      },
+      "demoDefinitionSha256": "d5afcb86ed735f489e5af0b7e9d09984b271602ce20be3c24314008d8d7ba389"
+    },
+    {
+      "sectionId": "1.3",
+      "articleId": "ch-1-3",
+      "page": "lesson-01/index.html",
+      "originalTitle": "1.3 数据属性",
+      "runtimeTitleZh": "1.3 数据属性",
+      "runtimeTitleEn": "1.3 Data Attributes",
+      "coreConcepts": [
+        "你的原案例（3 大类）",
+        "嵌入理论：Stevens 测量尺度（1946）—— 4 类",
+        "嵌入理论：Mackinlay 视觉通道排序（1986）"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① 比例尺选型",
+        "关键代码 ② colormap 选型"
+      ],
+      "codeAPIs": [
+        ".domain",
+        ".range",
+        "d3.interpolateRdBu",
+        "d3.interpolateViridis",
+        "d3.scaleBand",
+        "d3.scaleDiverging",
+        "d3.scaleLinear",
+        "d3.scaleOrdinal",
+        "d3.scaleSequential",
+        "d3.schemeTableau10"
+      ],
+      "originalDemoId": "d-3-3",
+      "registryScope": "lesson-01",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "809e9a8bcaa64eddc55039c4d2ae1465737affdf3a64b6aa15d4e6f54820fbec",
+          "characters": 221
+        },
+        {
+          "sha256": "70a9ce575b5eb0920ce5cb6dcfc344ad599d470f8d4bd4ac93e3f83e470f992f",
+          "characters": 318
+        }
+      ],
+      "panelHashes": {
+        "explain": "8ed6e79a43cd37bfd5b4ca583681ec8842073f508c353ebd9a98a9eb975f4c5a",
+        "code": "194011b7df77b8145471ea4df0daebff442c4ccf606039f8f3e4de2625b3c6ed",
+        "demo": "5b0536851a2344dac93adb96b22aa505a17d1ce137df5116b1b9dcdaee3e42a5"
+      },
+      "demoDefinitionSha256": "5136b19a10f3307616511958536e32c9bc91336f38ff0ea72004c673e8646faf"
+    },
+    {
+      "sectionId": "1.4",
+      "articleId": "ch-1-4",
+      "page": "lesson-01/index.html",
+      "originalTitle": "1.4 数据变换",
+      "runtimeTitleZh": "1.4 数据变换",
+      "runtimeTitleEn": "1.4 Data Transformation",
+      "coreConcepts": [
+        "你的原案例（8 个函数）",
+        "嵌入理论：函数式数据流"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① map / reduce 的链式组合",
+        "关键代码 ② cross（笛卡尔积）",
+        "关键代码 ③ group / rollup（聚合）"
+      ],
+      "codeAPIs": [
+        ".filter",
+        ".map",
+        ".reduce",
+        "d3.cross",
+        "d3.group",
+        "d3.rollup"
+      ],
+      "originalDemoId": "d-3-4",
+      "registryScope": "lesson-01",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<select id=\"d-3-4-sel\">\r\n          <option value=\"map\">map</option>\r\n          <option value=\"reduce\">reduce</option>\r\n          <option value=\"cross\">cross</option>\r\n          <option value=\"merge\">merge</option>\r\n          <option value=\"pairs\">pairs</option>\r\n          <option value=\"transpose\">transpose</option>\r\n          <option value=\"zip\">zip</option>\r\n          <option value=\"filter\">filter</option>\r\n          <option value=\"group\">group ★</option>\r\n          <option value=\"rollup\">rollup ★</option>\r\n        </select>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "648cfb3d5ffdf52eab095610eba2c5d8f1b4bff2075da72c831228d52458b476",
+          "characters": 271
+        },
+        {
+          "sha256": "655e94c03f5a7ff091ad6453ef8d217a5a49244a5221e0c875efa2d58a20669f",
+          "characters": 198
+        },
+        {
+          "sha256": "3de7c2ec38a64c8a155fb114bf385dbf0b56a2e2b9ada9953677d34843d02c35",
+          "characters": 218
+        }
+      ],
+      "panelHashes": {
+        "explain": "41cf7d2bde9e2666764e661b9f364c84c1c42d7ec7661f4144c9098c3b2d0774",
+        "code": "e167f7f923070b2d1e5375c80f7c4edbf6ea43af9d03af61b38b79d803f5d5e3",
+        "demo": "da42e82de0e29f72a4e85e390bcb5b6ca62525adcbe0d7e2687e27d2849f11b2"
+      },
+      "demoDefinitionSha256": "b6ef4e4f3a7fb70772c397f573b1db294ab9c6c183a2bbe34001f6d6c2b47fc1"
+    },
+    {
+      "sectionId": "1.5",
+      "articleId": "ch-1-5",
+      "page": "lesson-01/index.html",
+      "originalTitle": "1.5 D3 数据选择器",
+      "runtimeTitleZh": "1.5 D3 数据选择器",
+      "runtimeTitleEn": "1.5 D3 Selectors",
+      "coreConcepts": [
+        "你的原案例（6 个选择器方法）",
+        "嵌入理论：Data-Join 三态模型（Mike Bostock）",
+        "Data-Join vs 命令式 DOM"
+      ],
+      "originalCodePoints": [
+        "关键代码 ①.join(enter, update, exit) 三态",
+        "关键代码 ② key 函数保身份",
+        "关键代码 ③ d3.select vs d3.selectAll"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".data",
+        ".join",
+        ".remove",
+        ".selectAll",
+        "d3.select",
+        "d3.selectAll"
+      ],
+      "originalDemoId": "d-3-5",
+      "registryScope": "lesson-01",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<button id=\"d-3-5-add\" class=\"demo-btn\">+ 添加</button>",
+        "<button id=\"d-3-5-update\" class=\"demo-btn\">⇆ 更新</button>",
+        "<button id=\"d-3-5-remove\" class=\"demo-btn\">− 删除</button>",
+        "<button id=\"d-3-5-reset\" class=\"demo-btn\">重置</button>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "531f0b590a9df935614944fd10e06e5bcfa2b6506d4decadd9157ff8df732faa",
+          "characters": 353
+        },
+        {
+          "sha256": "598cd0a1e4e82af8fc7f212119b480a239299044e8993c7675a0626ec024c61f",
+          "characters": 228
+        },
+        {
+          "sha256": "a0a8aaa8b8ffbe63cb800f67c409f096f9f2435a23526004fa976940bdc8d326",
+          "characters": 173
+        }
+      ],
+      "panelHashes": {
+        "explain": "3a59ec1d31674b94eea4b0ee4f75ae91c42e7babfb11293cda8f4dfc409342ba",
+        "code": "499415cd17aa51f69b911e214b5e33917766a608e10704682699d79fca7cdf40",
+        "demo": "fdfb1b3d3f765c261029100454b4e05bb7dc129f130304f349ab88c4752323bd"
+      },
+      "demoDefinitionSha256": "3cfdd76fae6da07d78cda4e646bf520bcf417e5219ff16f0da96a0688057d9c1"
+    },
+    {
+      "sectionId": "2.1",
+      "articleId": "ch-2-1",
+      "page": "lesson-02/index.html",
+      "originalTitle": "2.1 数据可视化流程",
+      "runtimeTitleZh": "2.1 数据可视化流程",
+      "runtimeTitleEn": "2.1 Visualization Workflow",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入理论：可视化流程的三个经典模型"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① SVG 流程图节点 + 箭头"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".classed",
+        ".data",
+        ".getElementById",
+        ".join",
+        ".on",
+        ".selectAll",
+        "d3.data"
+      ],
+      "originalDemoId": "d-4-1",
+      "registryScope": "lesson-02",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "fb471c24d49db6cddffbfe01d685930c56963ab23916a0b8334c8653a17fbc8b",
+          "characters": 769
+        }
+      ],
+      "panelHashes": {
+        "explain": "943256f5dcbc3f55c7f537c5706a7a2fd600b7914841e725a21c9685b11f49ba",
+        "code": "058440d6f9350e9bb85d735b193156eee93bc08e3e619779d0efc36355328759",
+        "demo": "ea2b6a43ec1b39433fb3aad6147cfe57bebc5b35f018320be96517ce8d0ec419"
+      },
+      "demoDefinitionSha256": "10fd7ee263e146b63b93250d5036f99b4eb63b26ca4d483dcb5583366be093a6"
+    },
+    {
+      "sectionId": "2.2",
+      "articleId": "ch-2-2",
+      "page": "lesson-02/index.html",
+      "originalTitle": "2.2 数据分类树（d3.rollup 多层聚合）",
+      "runtimeTitleZh": "2.2 数据变换：原数据 → 数据表",
+      "runtimeTitleEn": "2.2 Data Transformation: Raw → Data Table",
+      "coreConcepts": [
+        "📌 本节在流程中的位置：数据变换（Data Transformation）",
+        "你的原案例",
+        "理论补丁：数据变换的四大操作（Card 1999 D 层）",
+        "嵌入理论：函数式聚合与 OLAP 切片",
+        "理论补丁：OLAP 切片/切块/钻取"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① 双层 rollup",
+        "关键代码 ② 用正则提取专业"
+      ],
+      "codeAPIs": [
+        ".log",
+        ".match",
+        ".trim",
+        "d3.csv",
+        "d3.rollup"
+      ],
+      "originalDemoId": "d-4-2",
+      "registryScope": "lesson-02",
+      "dataSources": [
+        "./data/newstudent.csv (via loadStudents)"
+      ],
+      "controlsMarkup": [
+        "<select id=\"d-4-2-k1\">\r\n          <option value=\"gender\" selected>gender 性别</option>\r\n          <option value=\"major\">major 专业</option>\r\n          <option value=\"class\">class 班级</option>\r\n          <option value=\"hometown\">hometown 籍贯</option>\r\n        </select>",
+        "<select id=\"d-4-2-k2\">\r\n          <option value=\"\" selected>— 无（单层）—</option>\r\n          <option value=\"gender\">gender</option>\r\n          <option value=\"major\">major</option>\r\n          <option value=\"class\">class</option>\r\n        </select>",
+        "<select id=\"d-4-2-val\">\r\n          <option value=\"count\" selected>count 计数</option>\r\n          <option value=\"ages\">ages 年龄列表</option>\r\n          <option value=\"avgAge\">avgAge 平均年龄</option>\r\n        </select>"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "190b52c53bd1070dc3226753b3028d27d01e4d43fd64b74ea76abfd9c828a130",
+          "characters": 355
+        },
+        {
+          "sha256": "01b1d06bf522e8a1ea5deb4e7dc6a0ea96ab308fd72befdafb7539dbbac162e9",
+          "characters": 317
+        }
+      ],
+      "panelHashes": {
+        "explain": "0e3d595792a23498d8720e382c98333ff0c3e0d22fa1b24ee4acf09424046aa3",
+        "code": "78da8d842b91a5af80e9b6122644814b65579d07bf59029cb2500a34c956f157",
+        "demo": "ba1caebaa5f272039476409bd377eea55ad2d9f43570d1bb08393c901e5c6065"
+      },
+      "demoDefinitionSha256": "6f876e5b062fb902ba04c1a6670d74a4aeffa0cb2ee745a21a3dd784d8f0ff4a"
+    },
+    {
+      "sectionId": "2.3",
+      "articleId": "ch-2-3",
+      "page": "lesson-02/index.html",
+      "originalTitle": "2.3 树布局（Reingold-Tilford 算法）",
+      "runtimeTitleZh": "2.3 视觉映射：数据表 → 视觉结构",
+      "runtimeTitleEn": "2.3 Visual Mapping: Data → Visual Structure",
+      "coreConcepts": [
+        "📌 本节在流程中的位置：视觉映射（Visual Mapping）",
+        "你的原案例",
+        "理论核心：什么是视觉通道？Mackinlay 的排名",
+        "理论核心：图元（marks）与视觉通道的构成",
+        "理论核心：两类通道 —— 幅度 vs 标识",
+        "嵌入理论：Reingold-Tilford 算法（d3.tree 的核心）",
+        "理论补丁：d3-hierarchy 模块全家桶"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① hierarchy + tree 三步走",
+        "关键代码 ② separation 控制父子间距"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".data",
+        ".descendants",
+        ".join",
+        ".links",
+        ".selectAll",
+        ".separation",
+        ".size",
+        ".text",
+        ".x",
+        ".y",
+        "d3.hierarchy",
+        "d3.linkHorizontal",
+        "d3.tree"
+      ],
+      "originalDemoId": "d-4-3",
+      "registryScope": "lesson-02",
+      "dataSources": [
+        "./data/newstudent.csv (via loadStudents)"
+      ],
+      "controlsMarkup": [
+        "<select id=\"d-4-3-keys\">\r\n          <option value=\"major:class\" selected>专业 → 班级</option>\r\n          <option value=\"major:class:gender\">专业 → 班级 → 性别</option>\r\n          <option value=\"gender:major:class\">性别 → 专业 → 班级</option>\r\n          <option value=\"hometown:major\">籍贯 → 专业</option>\r\n        </select>",
+        "<input id=\"d-4-3-sep\" type=\"range\" min=\"0.1\" max=\"2\" step=\"0.05\" value=\"0.6\" />"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "470c33574ad1f58f9c1f84fa02f3c7ccd3348042bbc954ba69e161fa4e0aa26c",
+          "characters": 706
+        },
+        {
+          "sha256": "6e29d615ccc7600502c61383e823a7a1073653dc5a7aa6a1afa7b8ef89db8d1b",
+          "characters": 170
+        }
+      ],
+      "panelHashes": {
+        "explain": "abb043844809524ce2cc330537a972d1977851a3b81fabb6c84018baa3114268",
+        "code": "a963d0d463c7644629e2ee8052ba4a293f1ce8d4b89e4641070f263b8f5bda3d",
+        "demo": "e6e3a9aebff1f0754dc5978b3433bca8b0d9736a3345eb28daac4f6b5737a25b"
+      },
+      "demoDefinitionSha256": "24d94d71617b0487b620ea9e9a5e23ec6b02c741362e35d9f2124c9b42f192e4"
+    },
+    {
+      "sectionId": "2.4",
+      "articleId": "ch-2-4",
+      "page": "lesson-02/index.html",
+      "originalTitle": "2.4 树形列表渲染（classed + 事件委托）",
+      "runtimeTitleZh": "2.4 视图渲染与用户交互",
+      "runtimeTitleEn": "2.4 View Rendering & User Interaction",
+      "coreConcepts": [
+        "📌 本节在流程中的位置：视图渲染 + 用户交互",
+        "你的原案例",
+        "嵌入理论：DOM 事件三阶段 + 事件委托",
+        "理论补丁：动画 —— 视图渲染的\"时间维\"（van Wijk 反馈的直观体现）",
+        "理论补丁：事件委托 (Event Delegation)",
+        "关键 API：D3 classed()"
+      ],
+      "originalCodePoints": [
+        "关键代码 ① 事件委托（一对多监听）",
+        "关键代码 ② 嵌套递归 buildList",
+        "关键代码 ③ D3 过渡动画（transition + duration）",
+        "关键代码 ④ 动画时长滑块（直接在 HTML/CSS 里控制）"
+      ],
+      "codeAPIs": [
+        ".addEventListener",
+        ".append",
+        ".appendChild",
+        ".attr",
+        ".classed",
+        ".data",
+        ".duration",
+        ".each",
+        ".forEach",
+        ".getElementById",
+        ".join",
+        ".node",
+        ".on",
+        ".querySelectorAll",
+        ".remove",
+        ".selectAll",
+        ".stopPropagation",
+        ".transition",
+        "d3.create",
+        "d3.select"
+      ],
+      "originalDemoId": "d-4-4",
+      "registryScope": "lesson-02",
+      "dataSources": [
+        "./data/newstudent.csv (via loadStudents)"
+      ],
+      "controlsMarkup": [
+        "<button id=\"d-4-4-expand-all\"  class=\"demo-btn\">全部展开</button>",
+        "<button id=\"d-4-4-collapse-all\" class=\"demo-btn secondary\">全部折叠</button>",
+        "<input id=\"d-4-4-dur\" type=\"range\" min=\"0\" max=\"1500\" step=\"50\" value=\"500\" style=\"vertical-align:middle;\">"
+      ],
+      "codeBlockCount": 4,
+      "codeBlocks": [
+        {
+          "sha256": "6b785407cd748367f523e0b37506e4170f34b6fd8a6a9391af9b0492f3598021",
+          "characters": 528
+        },
+        {
+          "sha256": "59917f4ba173a85322da5b57ff09b8b3050c2b48ffa6d49ff6e9a43ca9efc7dc",
+          "characters": 211
+        },
+        {
+          "sha256": "6aadc36df15ce1d68c06bcd3100b2d3f002268b68389ed829b8cffc78ce93d41",
+          "characters": 379
+        },
+        {
+          "sha256": "0a2de502f27ad2c82d368963f014ed2458b64f3980d8ea96d5852325d0a6fba3",
+          "characters": 263
+        }
+      ],
+      "panelHashes": {
+        "explain": "bd280147e8fd2d0cfd7034195fe845d84405f31b904995bd0638dee6b0931bba",
+        "code": "784384205b4833da19091445de8c1a0a85c3d9b77e9c7071cb0b1cd2a6270e15",
+        "demo": "e3fc4efb984a10cfd668b80df6bf5591e32e1f82a908ae1576f4ef2c49b74a29"
+      },
+      "demoDefinitionSha256": "409292a2ab346e9f2c74bc0067a15223ffe61e3eb6df2b0979fd7e5da4b60594"
+    },
+    {
+      "sectionId": "3.1",
+      "articleId": "ch-3-1",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.1 颜色模型基础",
+      "runtimeTitleZh": "3.1 颜色模型基础",
+      "runtimeTitleEn": "3.1 Color Model Basics",
+      "coreConcepts": [
+        "为什么要学颜色模型？",
+        "4 大颜色空间",
+        "CVD（色觉缺陷）"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".hcl",
+        ".hsl",
+        ".lab",
+        ".map",
+        ".max",
+        ".min",
+        ".rgb",
+        ".round",
+        "d3.color"
+      ],
+      "originalDemoId": "d-3-1",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"cr\" min=\"0\" max=\"255\" value=\"100\">",
+        "<input type=\"range\" id=\"cg\" min=\"0\" max=\"255\" value=\"50\">",
+        "<input type=\"range\" id=\"cb\" min=\"0\" max=\"255\" value=\"200\">"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "a5b14e6a6bc6d3037728b6a16c5241636eeb1ab9e8bf863541cd6921878e93ec",
+          "characters": 497
+        },
+        {
+          "sha256": "866b8befc21b26f45206f3ad25b0b007a217f3eb7ab0a6d00760ecbe6d83fd58",
+          "characters": 578
+        },
+        {
+          "sha256": "d1f295549673c19f23c72a0ad86b664e4f09b067b377b488d96452aa91de2c1b",
+          "characters": 156
+        }
+      ],
+      "panelHashes": {
+        "explain": "fb3f6e05d04f0b86a855a34cbd8f761a8ef6b997d60802a01a3ac5993f581cef",
+        "code": "b2dc812d64cf4f5c5b306d603c8c66c6a7e1999631d1a57db532a6ee01198b55",
+        "demo": "2bc254d58945dbdb38530aaa1fe04e8ea933a51aed1a92740070878aa8305dac"
+      },
+      "demoDefinitionSha256": "bd23045addac6fd66cf7c6e0a0ce1eed3b4abb661705de36ffa3ffdf5d600b15"
+    },
+    {
+      "sectionId": "3.2",
+      "articleId": "ch-3-2",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.2 colormap 三类选择",
+      "runtimeTitleZh": "3.2 colormap 三类选择",
+      "runtimeTitleEn": "3.2 Colormap: 3 Types",
+      "coreConcepts": [
+        "三类 colormap 对应不同数据语义",
+        "典型错误",
+        "CVD 友好检查清单"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        "d3.interpolateBrBG",
+        "d3.interpolateRdBu",
+        "d3.interpolateViridis",
+        "d3.scaleOrdinal",
+        "d3.scaleSequential",
+        "d3.schemeTableau10"
+      ],
+      "originalDemoId": "d-3-2",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "0af71cb2e22fb6841678d297484aab89fddf1fe105648634061d56e54f9c319b",
+          "characters": 215
+        },
+        {
+          "sha256": "82114bb046764e18666206f994df974c3104d1ac8fbf0172d771c9f8babab1cc",
+          "characters": 165
+        }
+      ],
+      "panelHashes": {
+        "explain": "fbbffdfba626ea0f5764bc16cf4895978ab6922e6abcbe57cb60884bc5fa3e2f",
+        "code": "578c3fb5ab985703d5929f3510e9ef718e0f442a8280cf65e2e88777079ffc7f",
+        "demo": "698a561bad3205d66ce0d99ab954c4648b4647305d035eeb0a0b2ef0ae3665e9"
+      },
+      "demoDefinitionSha256": "0ef7b75705b9c931ce4564fe14da9b2cd557ad57c3f74f972ba6a27ed7595ae1"
+    },
+    {
+      "sectionId": "3.3",
+      "articleId": "ch-3-3",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.3 CIE Lab 色域图",
+      "runtimeTitleZh": "3.3 CIE Lab 色域图",
+      "runtimeTitleEn": "3.3 CIE Lab Gamut",
+      "coreConcepts": [
+        "为什么需要 Lab 色域图？",
+        "三个色域（嵌套关系）",
+        "实战用法"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".formatHex",
+        ".lab",
+        ".log",
+        ".rgb",
+        "d3.color",
+        "d3.interpolateLab",
+        "d3.interpolateRgb",
+        "d3.lab"
+      ],
+      "originalDemoId": "d-3-3",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"labL\" min=\"20\" max=\"90\" value=\"60\">"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "9843eb867b221ccd606fc22077ec8fd41c94d68d5ee14a2c31fd7a0d2f52ed27",
+          "characters": 286
+        },
+        {
+          "sha256": "b36a84fbff2f1e9a97783b267d49779a6a3ffd665f7a0cfafd55407ba41305c7",
+          "characters": 252
+        }
+      ],
+      "panelHashes": {
+        "explain": "3e20db6b4b7a1fd7ffd56a81462032f5e145fd66d391709dc61428f8b96fa43e",
+        "code": "3dba626d736050374551d2c131166fd92b72bf68c3fca5e9a2ee42001f34d437",
+        "demo": "d3458c6ed4459d340a7cad33a29571396ee7d6103c5f3059aa76bee5bd35a0f6"
+      },
+      "demoDefinitionSha256": "18aa71a4fbe5406cea8b44a052aafaac62f6fe99150e1185d28c0928295fa053"
+    },
+    {
+      "sectionId": "3.4",
+      "articleId": "ch-3-4",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.4 色系搭配规则（5 大类）",
+      "runtimeTitleZh": "3.4 色系搭配规则（5 大类）",
+      "runtimeTitleEn": "3.4 Color Harmony Rules (5 Types)",
+      "coreConcepts": [
+        "5 大色系规则",
+        "选择原则"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".formatHex",
+        ".map",
+        "d3.hsl"
+      ],
+      "originalDemoId": "d-3-4",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"baseH\" min=\"0\" max=\"360\" value=\"210\">"
+      ],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "d48ebf9690358a8b395c5696491c1074098b50829486bedb5b5992349155784e",
+          "characters": 397
+        }
+      ],
+      "panelHashes": {
+        "explain": "624e62df785b557b5dcc0b8fa3c17482975edd0563c3b4afb6b8698dcf26bde0",
+        "code": "0ea0abdddf40b7e0fe4b5ed494d32bf7928591e39745455034746ad2f5e0fabb",
+        "demo": "4d4b8f642602412837a679ecc100243542363a3c172488ab013fd0a99c603074"
+      },
+      "demoDefinitionSha256": "2ac5831d4f54b2aa607701f88779323e2bba2ae42e10f5f175dd387e75b3cd7f"
+    },
+    {
+      "sectionId": "3.5",
+      "articleId": "ch-3-5",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.5 科研经典配色",
+      "runtimeTitleZh": "3.5 科研经典配色",
+      "runtimeTitleEn": "3.5 Classic Research Palettes",
+      "coreConcepts": [
+        "3 大黄金标准",
+        "商业 / 通用",
+        "顺序型 / 发散型",
+        "实战原则"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".map",
+        "d3.interpolateRdBu",
+        "d3.interpolateViridis",
+        "d3.range"
+      ],
+      "originalDemoId": "d-3-5",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "ef5286c754e7fe1f621acca62c4e0789769b4a8e0850a5f126da2f22a414da2c",
+          "characters": 636
+        }
+      ],
+      "panelHashes": {
+        "explain": "bdd43942655e80c7c30e5da595abb0daa8a2ffa64ca292a2e7db99302764fb01",
+        "code": "e67490d7915127871a7cd2096c5264e6d923bf04923fe5200694dcaa75ebd986",
+        "demo": "4addf85eb523b87df1a9a64e92b05867c161f80db7790c50c957a3502c92b97a"
+      },
+      "demoDefinitionSha256": "c9e0bdf568e36de916e4b3c51e88aa59b4b56e63a81b0b1dfc67618a2cf0d005"
+    },
+    {
+      "sectionId": "3.6",
+      "articleId": "ch-3-6",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.6 对错案例对比",
+      "runtimeTitleZh": "3.6 对错案例对比",
+      "runtimeTitleEn": "3.6 Right vs Wrong Comparison",
+      "coreConcepts": [
+        "4 个典型错误",
+        "教学要点"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".add",
+        ".addEventListener",
+        ".appendChild",
+        ".createElement",
+        ".forEach",
+        ".remove"
+      ],
+      "originalDemoId": "d-3-6",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "c9374c9c96dbfccb205deac8872ab3eee82fc898c9e5a5a6ef92f819a03f7600",
+          "characters": 456
+        }
+      ],
+      "panelHashes": {
+        "explain": "63576f341de6374c900fd64571fa7a66ac8ca61d37a87647e82eec64a3af603c",
+        "code": "e213ace99599d7cbee3684b3e8718e9ff1673120d8f66b20aa03017c41c078e4",
+        "demo": "38b85a1431ccb4a9ca624ec4aee22ba5eaeff1a491fa29ad4894636a92ab79da"
+      },
+      "demoDefinitionSha256": "69a6d3d53d04020da96d21846a6c9e12e7064e9eb5888839b93f3dd3af043257"
+    },
+    {
+      "sectionId": "3.7",
+      "articleId": "ch-3-7",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.7 鲜艳 + 低饱和 哲学生成器",
+      "runtimeTitleZh": "3.7 鲜艳 + 低饱和 哲学生成器",
+      "runtimeTitleEn": "3.7 Vivid + Low-Sat Palette Generator",
+      "coreConcepts": [
+        "你的配色哲学（落地到 3 条规则）",
+        "经验公式",
+        "7 色生成规则"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [],
+      "originalDemoId": "d-3-7",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"phH\" min=\"0\" max=\"360\" value=\"220\">",
+        "<input type=\"range\" id=\"phS\" min=\"20\" max=\"100\" value=\"70\">",
+        "<input type=\"range\" id=\"phL\" min=\"30\" max=\"80\" value=\"55\">"
+      ],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "bb2e8b18cfb5e9e3e492cad8e6c75c63dbe95f0f1830774d6e3508920fd5fc32",
+          "characters": 483
+        }
+      ],
+      "panelHashes": {
+        "explain": "a026b03ae9d810eefceeb7ea0c8e74c75fc58b16357914f9f548cc117c5f9d30",
+        "code": "f56b13a562f455767f84769206a7f8160658970c96d8636c283adda92d6cdbe0",
+        "demo": "3c1facd5ebdd7bc658d8f66de6babb45f2aa30a9eb9e51d7f96bf29855c45446"
+      },
+      "demoDefinitionSha256": "d73a56c96c5271f67589575ae1e4d622b1c460b4e5d4ac209ed90caa1f48a3cf"
+    },
+    {
+      "sectionId": "3.8",
+      "articleId": "ch-3-8",
+      "page": "lesson-03/index.html",
+      "originalTitle": "3.8 CVD 论文图测",
+      "runtimeTitleZh": "3.8 CVD 论文图测",
+      "runtimeTitleEn": "3.8 CVD Paper Figure Test",
+      "coreConcepts": [
+        "3 个\"经典论文图\"案例",
+        "CVD 测试流程",
+        "实测结论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".forEach",
+        ".getAttribute",
+        ".join",
+        ".parseFromString",
+        ".querySelectorAll",
+        ".rgb",
+        ".round",
+        ".serializeToString",
+        ".setAttribute",
+        "d3.color"
+      ],
+      "originalDemoId": "d-3-8",
+      "registryScope": "lesson-03",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 1,
+      "codeBlocks": [
+        {
+          "sha256": "bd398c25043c9ea7d1a0e2a6dade7e1edb15c0ddbae92c60d9a875a90131bf0a",
+          "characters": 478
+        }
+      ],
+      "panelHashes": {
+        "explain": "5fc9ae0c9453e16d7a826b62d9de3bf21f358f748a89a10f3a94e225e4bbf9f1",
+        "code": "1b8c63d3e2f33a81d8502314aeb523db6cb340847c0dae0ab511cee671279f00",
+        "demo": "c7c9e5bf505c6f40ae32c29aeed2219ab7b793037aed6232fab7de361fba1228"
+      },
+      "demoDefinitionSha256": "0caa4498706303924963553a70288cb25e99ff44f0065ac5f695ea7707fa9af6"
+    },
+    {
+      "sectionId": "4.1",
+      "articleId": "ch-4-1",
+      "page": "lesson-04/index.html",
+      "originalTitle": "4.1 数据转换",
+      "runtimeTitleZh": "4.1 数据转换",
+      "runtimeTitleEn": "4.1 Data Transformation",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".flatMap",
+        ".log",
+        ".map",
+        "d3.autoType",
+        "d3.csv",
+        "d3.group"
+      ],
+      "originalDemoId": "d-4-1",
+      "registryScope": "lesson-04",
+      "dataSources": [
+        "./data/crime.csv"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "5dba11ffadfa3bd310f846a24cfc854dc344396a067e536af789727e8f040319",
+          "characters": 163
+        },
+        {
+          "sha256": "7ae62473677c6bb15821170d494732394a92740144ba1f80361ac4bcccff08f0",
+          "characters": 207
+        }
+      ],
+      "panelHashes": {
+        "explain": "27e4531ce4f59466ae67be695e511ea51ecda11a32d18946502e483dc3eba0ab",
+        "code": "7ecf9f05ff7ba3cf996c5f19baded81d0f9b7f86987ae5623a587d5c15483c50",
+        "demo": "cb22c2b26f62b742eee2da23c509ae7cfe1c060e7417218bc91dd4bb1e9aa3d5"
+      },
+      "demoDefinitionSha256": "91a3642dc96babd4299ee2a7e481ea29d57257443f4e3819be7115e6676bdd04"
+    },
+    {
+      "sectionId": "4.2",
+      "articleId": "ch-4-2",
+      "page": "lesson-04/index.html",
+      "originalTitle": "4.2 坐标轴变换",
+      "runtimeTitleZh": "4.2 坐标轴变换",
+      "runtimeTitleEn": "4.2 Axis Transformation",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".attr",
+        ".domain",
+        ".range",
+        "d3.max",
+        "d3.scaleLinear",
+        "d3.scaleLog"
+      ],
+      "originalDemoId": "d-4-2",
+      "registryScope": "lesson-04",
+      "dataSources": [
+        "./data/crime.csv"
+      ],
+      "controlsMarkup": [
+        "<input type=\"radio\" name=\"xscale\" value=\"linear\" checked>",
+        "<input type=\"radio\" name=\"xscale\" value=\"log\">",
+        "<input type=\"radio\" name=\"xscale\" value=\"sqrt\">"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "9c09d58b9f2796b659f5115179fde56f1451d8347a7f19f1706dc4d442088802",
+          "characters": 282
+        },
+        {
+          "sha256": "31f423940089e3763d12cea2eb49092764badc3b842067a2e0b7cee25a6fb4a3",
+          "characters": 155
+        }
+      ],
+      "panelHashes": {
+        "explain": "b6fc904e81ae11bcc6b2f104fbf619c255c64c9a2a84c2db4942b97f4bcba52f",
+        "code": "4ededb3e7f91bc6d074dbb7101f97e62f14ae6965841677f2b9d0c5cbed81f0e",
+        "demo": "b2ddd668485a760ebcd3529b7c9839a908e9fc2a195d3a3f1ece695d72116d98"
+      },
+      "demoDefinitionSha256": "c953e960765192d3ac3d09859e7ba57bb3c9414f7cb4931b93680493cb011860"
+    },
+    {
+      "sectionId": "4.3",
+      "articleId": "ch-4-3",
+      "page": "lesson-04/index.html",
+      "originalTitle": "4.3 曲线拟合",
+      "runtimeTitleZh": "4.3 曲线拟合",
+      "runtimeTitleEn": "4.3 Curve Fitting",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".curve",
+        ".datum",
+        ".domain",
+        ".x",
+        ".y",
+        "d3.curveCatmullRom",
+        "d3.line",
+        "d3.max",
+        "d3.regressionLinear",
+        "d3.regressionLoess"
+      ],
+      "originalDemoId": "d-4-3",
+      "registryScope": "lesson-04",
+      "dataSources": [
+        "./data/crime.csv"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "e156cf7dbe42e5beaa479a4754569b143ee0eede4f17ae7a504658b5fc9fdc6c",
+          "characters": 171
+        },
+        {
+          "sha256": "6ddeac783bcba704ccf9b418c7bf810f2943ed87020a830f25456a0c1e651fb7",
+          "characters": 305
+        }
+      ],
+      "panelHashes": {
+        "explain": "7254c31955d74937db300359aa84504eb10f30204246386b85a028e6b1926f08",
+        "code": "b68a1d177908becbc79aa27224173174c4bd8cb21b92347b6c4fe31c112948fd",
+        "demo": "0d9c64141db122ac0ceab7c08e63826cbe2b882064815149cad64f93c9f17c6f"
+      },
+      "demoDefinitionSha256": "8d86dea603bf82ae0eb10259364d6fc8486b56f7281c377cbc9ea8dd11c7e0b8"
+    },
+    {
+      "sectionId": "4.4",
+      "articleId": "ch-4-4",
+      "page": "lesson-04/index.html",
+      "originalTitle": "4.4 倾角感知（45° 黄金角）",
+      "runtimeTitleZh": "4.4 倾角感知（45° 黄金角）",
+      "runtimeTitleEn": "4.4 Slope Perception (45° Sweet Spot)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".addEventListener",
+        ".cos",
+        ".getElementById",
+        ".sin"
+      ],
+      "originalDemoId": "d-4-4",
+      "registryScope": "lesson-04",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"angle\" min=\"5\" max=\"85\" value=\"45\">"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "3620c6e76c93e50736d45d997e395ea9642629c31aa7f4b8a55aeec50b8bc255",
+          "characters": 282
+        },
+        {
+          "sha256": "47e3257da370c0405d77434d53b22908d71338f058c4f1c972e37698bf36341d",
+          "characters": 202
+        }
+      ],
+      "panelHashes": {
+        "explain": "50c1af5ae7d0fbeb8dcc6726a7fa40398ccf1339f5785686e26999e3616bbf9e",
+        "code": "5b3002c7d7801fdca7b66313f35f88abacd366e0951815d7574f37e3cd129eb7",
+        "demo": "6cc5cfdd26e5a3b0cc0cbbb24ddea8e51b167d14032dd1d5ef07c93a29a06d19"
+      },
+      "demoDefinitionSha256": "803b9a54545b94f6fc7333e34b169bd3a360f8c2fd81a89e8bf5453ce87dd2d9"
+    },
+    {
+      "sectionId": "4.5",
+      "articleId": "ch-4-5",
+      "page": "lesson-04/index.html",
+      "originalTitle": "4.5 等值线（Marching Squares）",
+      "runtimeTitleZh": "4.5 等值线（Marching Squares）",
+      "runtimeTitleEn": "4.5 Marching Squares (Contour Lines)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [],
+      "originalDemoId": "d-4-5",
+      "registryScope": "lesson-04",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"th\" min=\"0.05\" max=\"0.95\" step=\"0.05\" value=\"0.5\">"
+      ],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "eae921268da66c519072862ae39ba932a42ef9078fc254428da91371f7ee42b7",
+          "characters": 585
+        },
+        {
+          "sha256": "cd13d50f9b544c285d4cb3c13d14d7f1a80a976122de1b085e212c3be2c53844",
+          "characters": 256
+        }
+      ],
+      "panelHashes": {
+        "explain": "fd2c602737f602dc3864d0ca9ed83502afe41a570801c19de816d48d748d13d7",
+        "code": "af1cf3f5c23b8475bcea58e750d91d9b45431fc49781d7a415a8a074512abc43",
+        "demo": "37d4ac9f928ccc2f3c134d30346ae6008b8ccb9b60724cf3710d5c34cb08785c"
+      },
+      "demoDefinitionSha256": "6d16b10572771f501df432ae34bb9e197beb17de848fe96c8d8735fb619f8442"
+    },
+    {
+      "sectionId": "5.1",
+      "articleId": "ch-5-1",
+      "page": "lesson-05/index.html",
+      "originalTitle": "5.1 时间属性",
+      "runtimeTitleZh": "5.1 时间属性",
+      "runtimeTitleEn": "5.1 Time Attributes",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论",
+        "为什么 5 个属性都重要？"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".log",
+        "d3.timeDay.range"
+      ],
+      "originalDemoId": "d-5-1",
+      "registryScope": "lesson-05",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [],
+      "codeBlockCount": 2,
+      "codeBlocks": [
+        {
+          "sha256": "c4529ac1f06b00c4f107009418aab434a397f32a7aa0b5cd9e2da653fb9a4d1b",
+          "characters": 856
+        },
+        {
+          "sha256": "616254a225f81f208885551ccd54fabe56bb2e85a5c0b418343285e5a004eec6",
+          "characters": 222
+        }
+      ],
+      "panelHashes": {
+        "explain": "2f58638b9b245851c86ecd56aa07f583128757f202824c96dc9a289161952837",
+        "code": "2a78ca6f736eb790f938134daa7af91bb6d85459eda863d49f0a93d2cb0a7f81",
+        "demo": "60f2fe1373f66a25969ab2a884ddec721a16f69ea7c813149721d6fd75edc855"
+      },
+      "demoDefinitionSha256": "914cc385a64ce705fe091f39df802b1ef170694a1d039cad1210d10980ad8300"
+    },
+    {
+      "sectionId": "5.2",
+      "articleId": "ch-5-2",
+      "page": "lesson-05/index.html",
+      "originalTitle": "5.2 标准时间可视化（折线图）",
+      "runtimeTitleZh": "5.2 标准时间可视化（折线图）",
+      "runtimeTitleEn": "5.2 Standard Time Viz (Line Chart)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".call",
+        ".domain",
+        ".invert",
+        ".left",
+        ".on",
+        ".range",
+        ".style",
+        ".ticks",
+        "d3.axisBottom",
+        "d3.bisector",
+        "d3.pointer",
+        "d3.scaleTime",
+        "d3.timeFormat",
+        "d3.timeParse"
+      ],
+      "originalDemoId": "d-5-2",
+      "registryScope": "lesson-05",
+      "dataSources": [
+        "./data/french_names.json"
+      ],
+      "controlsMarkup": [
+        "<input type=\"checkbox\" checked>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "4aa8ba8d61a467df3f7db7033953d7cf920eba5317773fe7362f682914c8d935",
+          "characters": 320
+        },
+        {
+          "sha256": "8ba860e984ff62107df9dd7a41e7cbbf7955dd991ccde805f57537fffb6f3386",
+          "characters": 294
+        },
+        {
+          "sha256": "a75d993c0ca34440eb462ffa904b9cd70315855d837f712bca492105a37fac62",
+          "characters": 866
+        }
+      ],
+      "panelHashes": {
+        "explain": "c092b6acf6dd6e2bcd88093ae4ce700e36e075167becc91b3d77e5fb56576c4f",
+        "code": "764d18a31fd5df6dbcc40ce83a92a2439bf241bd7461046c0e5c2bd1afe318b3",
+        "demo": "2a679a42dc47f471826da11b729954a5803fe975e9153ea17234fb38fa70d1c0"
+      },
+      "demoDefinitionSha256": "f848e6332b5e8a933fbd3827cf71190f99253bca7ad260d1173901cc41e8d6f6"
+    },
+    {
+      "sectionId": "5.3",
+      "articleId": "ch-5-3",
+      "page": "lesson-05/index.html",
+      "originalTitle": "5.3 日历热图（van Wijk）",
+      "runtimeTitleZh": "5.3 日历热图（van Wijk）",
+      "runtimeTitleEn": "5.3 Calendar Heatmap (van Wijk)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论",
+        "isMonthDivider 的巧妙之处"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".attr",
+        ".data",
+        ".floor",
+        ".get",
+        ".getDate",
+        ".getDay",
+        ".getFullYear",
+        ".getMonth",
+        ".join",
+        ".map",
+        ".selectAll",
+        "d3.timeDay.count",
+        "d3.timeDay.offset",
+        "d3.timeDay.range",
+        "d3.timeFormat",
+        "d3.timeYear.floor"
+      ],
+      "originalDemoId": "d-5-3",
+      "registryScope": "lesson-05",
+      "dataSources": [
+        "./data/weather_2024.csv"
+      ],
+      "controlsMarkup": [
+        "<select id=\"cmap\">\r\n        <option value=\"RdYlBu\" selected>RdYlBu（红黄蓝）</option>\r\n        <option value=\"Viridis\">Viridis（顺序型）</option>\r\n        <option value=\"Cividis\">Cividis（顺序型 CVD）</option>\r\n      </select>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "d283e4ee3278c2e7f3eebc77ff6fd92ac8c59be393febb0840f733d5b6e51591",
+          "characters": 259
+        },
+        {
+          "sha256": "3d4f90a4444452a9e5ebdf94e70dfbd35bd8bef031e5a89c755a8312592fe79a",
+          "characters": 543
+        },
+        {
+          "sha256": "37b6e1c8fbd4d7acfa7139efb86084b6801ba74aece60ac19c89603faa1a7c95",
+          "characters": 422
+        }
+      ],
+      "panelHashes": {
+        "explain": "f5adb9cceaff79ac531ef95d62f2e70117a7cf0f2d03d14e0d60346af6039c20",
+        "code": "acb27b32d14cd2af905e171f00d133a88fc501e2208c22396a52e8f4cda63fe0",
+        "demo": "ce7ad0ce7ef0054b6649704ba3630d7ecb21d34581fd5b2892057be6b083e679"
+      },
+      "demoDefinitionSha256": "a52fd8a341ec9398c26a17aea49ca656f08ceba72d7bb02650c6e71fe5978299"
+    },
+    {
+      "sectionId": "5.4",
+      "articleId": "ch-5-4",
+      "page": "lesson-05/index.html",
+      "originalTitle": "5.4 周期时间可视化（阿基米德螺旋）",
+      "runtimeTitleZh": "5.4 周期时间可视化（阿基米德螺旋）",
+      "runtimeTitleEn": "5.4 Cyclic Time Viz (Archimedean Spiral)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论",
+        "关键路径生成"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".cos",
+        ".sin",
+        ".sqrt"
+      ],
+      "originalDemoId": "d-5-4",
+      "registryScope": "lesson-05",
+      "dataSources": [
+        "./data/weather_2024.csv"
+      ],
+      "controlsMarkup": [
+        "<select id=\"weekstart\">\r\n        <option value=\"0\" selected>周日</option>\r\n        <option value=\"1\">周一</option>\r\n      </select>"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "d5d792a553f79bd1f432e908274ed691f12c6494145620f3201ac6c8edd21433",
+          "characters": 401
+        },
+        {
+          "sha256": "af12ce66acf30879a74a5386fcc27a13c57e7ae0a5a092c1ebd5ab6a3d6799ab",
+          "characters": 294
+        },
+        {
+          "sha256": "ded1e7f7db1f64a400663544ca86d72c02ccaa232635e055f4bc1a760ad03c32",
+          "characters": 497
+        }
+      ],
+      "panelHashes": {
+        "explain": "d681b8c11b6906c0670ef53de7467fa4aa3f3b8f6f2c2362a5b8d884e0fd04ff",
+        "code": "3cbd11d3bf6369bcb4f9251d6e01ad39c476df9acd8a73e3bca00971938a44bc",
+        "demo": "410c8414c663444c46a3cfa0bd38c30e9576386bc0d1f3c3a6f22554022bcb5d"
+      },
+      "demoDefinitionSha256": "2185c052405bff91646eb019346497305791230fb0123bc1375dfe5032a421b3"
+    },
+    {
+      "sectionId": "5.5",
+      "articleId": "ch-5-5",
+      "page": "lesson-05/index.html",
+      "originalTitle": "5.5 Storyline 时间线（侏罗纪公园）",
+      "runtimeTitleZh": "5.5 Storyline 时间线（侏罗纪公园）",
+      "runtimeTitleEn": "5.5 Storyline (Jurassic Park)",
+      "coreConcepts": [
+        "你的原案例",
+        "嵌入教材理论",
+        "为什么 Catmull-Rom 不用 monotoneX？"
+      ],
+      "originalCodePoints": [
+        "⭐ 关键代码"
+      ],
+      "codeAPIs": [
+        ".append",
+        ".attr",
+        ".curve",
+        ".data",
+        ".datum",
+        ".domain",
+        ".each",
+        ".enter",
+        ".forEach",
+        ".on",
+        ".range",
+        ".selectAll",
+        ".style",
+        ".text",
+        ".x",
+        ".y",
+        "d3.curveCatmullRom.alpha",
+        "d3.line",
+        "d3.scaleLinear",
+        "d3.select"
+      ],
+      "originalDemoId": "d-5-5",
+      "registryScope": "lesson-05",
+      "dataSources": [
+        "inline constants / generated data; inspect demo body"
+      ],
+      "controlsMarkup": [
+        "<input type=\"range\" id=\"alpha\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\">"
+      ],
+      "codeBlockCount": 3,
+      "codeBlocks": [
+        {
+          "sha256": "b35e2fd45a2865921ccb745367ecf361fd2cf427a54fa4ddd3db79f406022871",
+          "characters": 758
+        },
+        {
+          "sha256": "97e4097b1463fe92838b49699be273831983c8d87b2cc381ececa663dd85e87f",
+          "characters": 890
+        },
+        {
+          "sha256": "b2fa7d79cf0cf2200517c6544e2eb7b54e8b2c2a87450c8fca2080881258d3b6",
+          "characters": 173
+        }
+      ],
+      "panelHashes": {
+        "explain": "674bbcae3c3c5a6139c1ca3c02ffc12c76111d1477641c662dd7c1b0e4b50fdf",
+        "code": "74732d9aa5399990f404f34401ec0d771970c960e5caf0ea2e27a1c1dcdf5891",
+        "demo": "bc3dbb01440124b9fa32fa97c715cabd4c0c79c6e22d41b5b2cf256cfa524a82"
+      },
+      "demoDefinitionSha256": "986ef3df814e27ee8d68b94967ef20cea64f60f91048fad4386fdd921e5a0cd1"
+    }
+  ],
+  "dataSummary": {
+    "lesson-01/data/newstudent.csv": {
+      "rows": 80,
+      "columns": [
+        "序号",
+        "姓名",
+        "性别",
+        "生日",
+        "年龄",
+        "班级",
+        "籍贯",
+        "民族"
+      ]
+    },
+    "lesson-01/demo/data/newstudent.csv": {
+      "rows": 80,
+      "columns": [
+        "序号",
+        "姓名",
+        "性别",
+        "生日",
+        "年龄",
+        "班级",
+        "籍贯",
+        "民族"
+      ]
+    },
+    "lesson-02/data/newstudent.csv": {
+      "rows": 80,
+      "columns": [
+        "序号",
+        "姓名",
+        "性别",
+        "生日",
+        "年龄",
+        "班级",
+        "籍贯",
+        "民族"
+      ]
+    },
+    "lesson-03/data/crime.csv": {
+      "rows": 50,
+      "columns": [
+        "state",
+        "population",
+        "population_growth",
+        "robbery",
+        "aggravated_assault",
+        "burglary",
+        "larceny_theft",
+        "motor_vehicle_theft",
+        "murder",
+        "arson",
+        "rape1",
+        "rape2"
+      ]
+    },
+    "lesson-04/data/crime.csv": {
+      "rows": 50,
+      "columns": [
+        "state",
+        "population",
+        "population_growth",
+        "robbery",
+        "aggravated_assault",
+        "burglary",
+        "larceny_theft",
+        "motor_vehicle_theft",
+        "murder",
+        "arson",
+        "rape1",
+        "rape2"
+      ]
+    },
+    "lesson-05/data/french_names.json": {
+      "type": "dict",
+      "keys": [
+        "year_range",
+        "names"
+      ],
+      "length": 2
+    },
+    "lesson-05/data/weather_2024.csv": {
+      "rows": 366,
+      "columns": [
+        "date",
+        "temp_max",
+        "rain_mm"
+      ]
+    },
+    "supplementary/data/1985CrimeGender - Copy.csv": {
+      "rows": 15,
+      "columns": [
+        "犯罪类型",
+        "男性",
+        "女性",
+        "男性比例",
+        "女性比例",
+        "汇总",
+        "性别差",
+        "性别差比例"
+      ]
+    },
+    "supplementary/data/1985CrimeGender.csv": {
+      "rows": 15,
+      "columns": [
+        "犯罪类型",
+        "男性",
+        "女性"
+      ]
+    },
+    "supplementary/data/calendar_data.csv": {
+      "rows": 1461,
+      "columns": [
+        "date",
+        "value"
+      ]
+    },
+    "supplementary/data/calendar_data_modified.csv": {
+      "rows": 1461,
+      "columns": [
+        "date",
+        "value"
+      ]
+    },
+    "supplementary/data/terrain10.csv": {
+      "rows": 9,
+      "columns": [
+        "7.0710678118654755",
+        "25.084609277773726",
+        "15.09234663792395",
+        "22.540909557226335",
+        "33.17855051634024",
+        "11.529231773185433",
+        "2.5556904947857797",
+        "8.27557381029081",
+        "-12.184131177963918",
+        "-20.657350583585853"
+      ]
+    }
+  },
+  "resources": {
+    "trackedFiles": 120,
+    "totalBytes": 3984719,
+    "byExtensionCount": {
+      "[none]": 1,
+      ".md": 14,
+      ".jpg": 1,
+      ".css": 18,
+      ".js": 24,
+      ".html": 27,
+      ".py": 1,
+      ".png": 6,
+      ".csv": 14,
+      ".json": 12,
+      ".pdf": 1,
+      ".mjs": 1
+    },
+    "byExtensionBytes": {
+      "[none]": 0,
+      ".md": 141696,
+      ".jpg": 602621,
+      ".css": 169803,
+      ".js": 264665,
+      ".html": 504946,
+      ".py": 18446,
+      ".png": 667548,
+      ".csv": 181787,
+      ".json": 521515,
+      ".pdf": 909976,
+      ".mjs": 1716
+    },
+    "jsCssBytes": 436184,
+    "htmlJsCssBytes": 941130,
+    "over250KiB": [
+      {
+        "path": "assets/book-cover.jpg",
+        "bytes": 602621,
+        "sha256": "230bc1cca9e2cc4607bf50dae186eaf005f5aa96f3ed9d9e0ba3b74d25a004d4",
+        "gitBlob": "4d4ac4927d7cc95e6d4818953102e67e0f99822e"
+      },
+      {
+        "path": "lesson-02/img/01-mackinlay-ranking.png",
+        "bytes": 444545,
+        "sha256": "b269123a8fa6d4866f85a9de7b3e3e521747b10c33330b43a1eb03e07bc486ab",
+        "gitBlob": "25bbdf7fb42d5284b511608a14093a075332491e"
+      },
+      {
+        "path": "supplementary/5. 低维数据可视化.pdf",
+        "bytes": 909976,
+        "sha256": "eb0927571f03e3c901dc5850951a1f3a0956392623305ea3592eaaa26a54ebce",
+        "gitBlob": "f042ad298b5da3227ff172ddb2fb7afcc5fc5217"
+      }
+    ]
+  },
+  "externalUrlLiterals": [
+    "http://localhost:8080",
+    "https://cdn.jsdelivr.net/npm/d3@7",
+    "https://cdn.jsdelivr.net/npm/d3@7/+esm",
+    "https://cinger007.github.io",
+    "https://colororacle.org/",
+    "https://d3js.org/d3.v7.min.js",
+    "https://unpkg.com/d3-regression@1.3.10/dist/d3-regression.min.js",
+    "https://unpkg.com/d3-regression@latest/dist/d3-regression.min.js",
+    "https://www.color-blindness.com/coblis-color-blindness-simulator/"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21",
+  "branch": "codex/linked-teaching-27",
+  "baseline": "477706e3223ef43e66c79fd10f7abcd00d81a546",
+  "nodeTests": {
+    "pass": 65,
+    "fail": 0,
+    "skip": 0
+  },
+  "javascriptSyntax": {
+    "files": 24,
+    "status": "PASS"
+  },
+  "knowledgeProtection": {
+    "sections": 27,
+    "protectedFiles": 43,
+    "status": "PASS"
+  },
+  "diffWhitespace": "PASS source/docs excluding verbatim supplied spec, with core.whitespace=cr-at-eol; spec has five intentional Markdown hard-break lines",
+  "browserEvidenceDirectory": "C:/Users/zhaoy/Documents/ChatGPT/可视化导论/preview/teaching-viz",
+  "browserP0ActualViewportCases": 45,
+  "browserOther320Cases": 18,
+  "unresolved": [
+    "4.5 NEEDS_TEACHER_REVIEW",
+    "runtime JS/CSS budget OVER_TARGET"
+  ],
+  "notRun": "See teaching-viz-acceptance.md for platform, parameter, clipboard, performance and learning-study limits",
+  "mappingTabRegression": {
+    "sections": 27,
+    "representativeViewportCases": 15,
+    "report": "mapping-tab-release.md"
+  },
+  "chapter05Refinement": {
+    "baseline": "bb06feef99ce25cb8cee8c82826beb3f02cd4c80",
+    "desktopStepCases": 75,
+    "distinctVisualStages": 25,
+    "guideRoutes": 15,
+    "report": "chapter05-refinement-report.md"
+  }
+}

@@ -1,0 +1,1885 @@
+[
+  {
+    "sectionId": "1.1",
+    "title": "一行 CSV 如何变成可计算对象",
+    "steps": [
+      {
+        "id": "map",
+        "label": "字段映射",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 9,
+            "valid": true,
+            "text": "const COLUMN_MAP = {\n  \"序号\": \"id\",\n  \"姓名\": \"name\",\n  \"性别\": \"gender\",\n  \"生日\": \"birthday\",\n  \"年龄\": \"age\",\n  \"班级\": \"class\",\n};"
+          }
+        ]
+      },
+      {
+        "id": "number",
+        "label": "数字转换",
+        "targets": [
+          {
+            "block": 1,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "    id:       +d[\"序号\"],              // 一元 + 把字符串转 Number"
+          },
+          {
+            "block": 1,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "    age:      +d[\"年龄\"],"
+          }
+        ]
+      },
+      {
+        "id": "trim",
+        "label": "去首尾空白",
+        "targets": [
+          {
+            "block": 1,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "    name:     d[\"姓名\"].trim(),       // trim() 去掉首尾空白"
+          },
+          {
+            "block": 1,
+            "from": 8,
+            "to": 8,
+            "valid": true,
+            "text": "    class:    d[\"班级\"].trim(),"
+          }
+        ]
+      },
+      {
+        "id": "date",
+        "label": "日期对象",
+        "targets": [
+          {
+            "block": 1,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "    birthday: new Date(d[\"生日\"]), // 字符串 → Date 对象"
+          }
+        ]
+      },
+      {
+        "id": "load",
+        "label": "异步加载与类型",
+        "targets": [
+          {
+            "block": 2,
+            "from": 2,
+            "to": 6,
+            "valid": true,
+            "text": "const data = await d3.csv(\"data/newstudent.csv\", transformRow);\n\n// 验证类型确实转换了：\nconsole.log(typeof data[0].age);        // \"number\"\nconsole.log(data[0].birthday instanceof Date); // true"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "1.2",
+    "title": "同一新生案例的 DIKW 四层",
+    "steps": [
+      {
+        "id": "M",
+        "label": "M 起点",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "  M ${cx - topW/2} ${yTop}"
+          }
+        ]
+      },
+      {
+        "id": "L",
+        "label": "L 三条边",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 8,
+            "valid": true,
+            "text": "  L ${cx + topW/2} ${yTop}\n  L ${cx + botW/2} ${yBot}\n  L ${cx - botW/2} ${yBot}"
+          }
+        ]
+      },
+      {
+        "id": "Z",
+        "label": "Z 闭合",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 9,
+            "valid": true,
+            "text": "  Z"
+          }
+        ]
+      },
+      {
+        "id": "event",
+        "label": "事件选层",
+        "targets": [
+          {
+            "block": 1,
+            "from": 4,
+            "to": 9,
+            "valid": true,
+            "text": "  .on(\"mouseover\", function() {       // 注意 function 而非箭头函数\n    d3.select(this).select(\"path\")\n       .transition().duration(150)\n       .attr(\"fill\", d3.color(layer.color).brighter(0.5));\n  })\n  .on(\"click\", () => showDetail(layer));"
+          }
+        ]
+      },
+      {
+        "id": "fill",
+        "label": "fill 填色",
+        "targets": [
+          {
+            "block": 1,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "       .attr(\"fill\", d3.color(layer.color).brighter(0.5));"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "1.3",
+    "title": "先辨尺度，再选视觉通道",
+    "steps": [
+      {
+        "id": "field",
+        "label": "字段与尺度",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 6,
+            "valid": true,
+            "text": "// 比率型数据 → scaleLinear（连续定量）\nconst x = d3.scaleLinear().domain([0, 100]).range([0, 800]);\n\n// 名义/序数型数据 → scaleBand（离散分类）\nconst x = d3.scaleBand().domain([\"软件1班\", \"软件2班\"]).range([0, 800]);"
+          }
+        ]
+      },
+      {
+        "id": "domain",
+        "label": "输入 domain",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "const x = d3.scaleLinear().domain([0, 100]).range([0, 800]);\n\n// 名义/序数型数据 → scaleBand（离散分类）\nconst x = d3.scaleBand().domain([\"软件1班\", \"软件2班\"]).range([0, 800]);"
+          }
+        ]
+      },
+      {
+        "id": "range",
+        "label": "输出 range",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "const x = d3.scaleLinear().domain([0, 100]).range([0, 800]);\n\n// 名义/序数型数据 → scaleBand（离散分类）\nconst x = d3.scaleBand().domain([\"软件1班\", \"软件2班\"]).range([0, 800]);"
+          }
+        ]
+      },
+      {
+        "id": "channel",
+        "label": "通道对照",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 9,
+            "valid": true,
+            "text": "const color = d3.scaleSequential(d3.interpolateViridis);\n\n// 定性型（无顺序）→ schemeTableau10\nconst color = d3.scaleOrdinal().range(d3.schemeTableau10);\n\n// 发散型（有中点）→ interpolateRdBu\nconst color = d3.scaleDiverging(d3.interpolateRdBu);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "1.4",
+    "title": "逐项追踪：输入—操作—输出",
+    "steps": [
+      {
+        "id": "map",
+        "label": "map",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "    .map(s => s.age)                    // ② 提取年龄"
+          }
+        ]
+      },
+      {
+        "id": "reduce",
+        "label": "reduce",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 7,
+            "valid": true,
+            "text": "    .reduce((sum, a) => sum + a, 0) // ③ 合计\n  / students.filter(s => s.gender === \"男\").length; // ④ 求平均"
+          }
+        ]
+      },
+      {
+        "id": "cross",
+        "label": "cross",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 5,
+            "valid": true,
+            "text": "const genders = [\"男\", \"女\"];\nconst majors  = [\"软件工程\", \"数据科学\"];\nconst combos  = d3.cross(genders, majors);\n// → [[\"男\",\"软件工程\"], [\"男\",\"数据科学\"], [\"女\",\"软件工程\"], [\"女\",\"数据科学\"]]"
+          }
+        ]
+      },
+      {
+        "id": "merge",
+        "label": "merge",
+        "targets": []
+      },
+      {
+        "id": "pairs",
+        "label": "pairs",
+        "targets": []
+      },
+      {
+        "id": "transpose",
+        "label": "transpose",
+        "targets": []
+      },
+      {
+        "id": "zip",
+        "label": "zip",
+        "targets": []
+      },
+      {
+        "id": "filter",
+        "label": "filter",
+        "targets": [
+          {
+            "block": 0,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "    .filter(s => s.gender === \"男\")    // ① 过滤男生"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "1.5",
+    "title": "看清选择集与 Data-Join 三态",
+    "steps": [
+      {
+        "id": "select",
+        "label": "d3.select",
+        "targets": [
+          {
+            "block": 2,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "const title = d3.select(\"#title\");"
+          }
+        ]
+      },
+      {
+        "id": "selectAll",
+        "label": "d3.selectAll",
+        "targets": [
+          {
+            "block": 2,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "const bars = d3.selectAll(\".bar\").data(values);"
+          }
+        ]
+      },
+      {
+        "id": "nestedSelect",
+        "label": "selection.select",
+        "targets": [
+          {
+            "block": 2,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "const bars = d3.selectAll(\".bar\").data(values);"
+          }
+        ]
+      },
+      {
+        "id": "nestedAll",
+        "label": "selection.selectAll",
+        "targets": [
+          {
+            "block": 2,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "const bars = d3.selectAll(\".bar\").data(values);"
+          }
+        ]
+      },
+      {
+        "id": "child",
+        "label": "selectChild",
+        "targets": [
+          {
+            "block": 2,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "const bars = d3.selectAll(\".bar\").data(values);"
+          }
+        ]
+      },
+      {
+        "id": "children",
+        "label": "selectChildren",
+        "targets": [
+          {
+            "block": 2,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "const bars = d3.selectAll(\".bar\").data(values);"
+          }
+        ]
+      },
+      {
+        "id": "key",
+        "label": "身份绑定",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "svg.selectAll(\"circle\").data(newData);\n\n// ✅ 带 key：用唯一字段绑定身份，元素\"知道自己是哪个\"\nsvg.selectAll(\"circle\").data(newData, d => d.id);"
+          }
+        ]
+      },
+      {
+        "id": "enter",
+        "label": "enter 新增",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "    enter  => enter.append(\"circle\").attr(\"fill\", \"green\"),  // enter"
+          }
+        ]
+      },
+      {
+        "id": "update",
+        "label": "update 复用",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "    update => update.attr(\"fill\", \"cyan\"),                              // update"
+          }
+        ]
+      },
+      {
+        "id": "exit",
+        "label": "exit 移除",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "    exit   => exit.remove()                                                   // exit"
+          }
+        ]
+      },
+      {
+        "id": "join",
+        "label": "join 最终状态",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 8,
+            "valid": true,
+            "text": "const circles = svg.selectAll(\"circle\")\n  .data(currentData)\n  .join(\n    enter  => enter.append(\"circle\").attr(\"fill\", \"green\"),  // enter\n    update => update.attr(\"fill\", \"cyan\"),                              // update\n    exit   => exit.remove()                                                   // exit\n  );"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "2.1",
+    "title": "同一案例，三个观察角度",
+    "steps": [
+      {
+        "id": "marker",
+        "label": "① 定义箭头",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 8,
+            "valid": true,
+            "text": "svg.append(\"defs\").append(\"marker\")\n   .attr(\"id\", \"arrowhead\")\n   .attr(\"viewBox\", \"0 -5 10 10\")\n   .attr(\"refX\", 8)            // 箭头位置校准\n   .attr(\"markerWidth\", 6)\n   .attr(\"orient\", \"auto\")       // 跟随线方向旋转\n   .append(\"path\").attr(\"d\", \"M0,-5L10,0L0,5\").attr(\"fill\", \"#94a3b8\");"
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "label": "② 连接阶段",
+        "targets": [
+          {
+            "block": 0,
+            "from": 11,
+            "to": 13,
+            "valid": true,
+            "text": "svg.append(\"line\")\n   .attr(\"marker-end\", \"url(#arrowhead)\")\n   .attr(\"x1\", x1).attr(\"y1\", y).attr(\"x2\", x2).attr(\"y2\", y);"
+          }
+        ]
+      },
+      {
+        "id": "bind",
+        "label": "③ 绑定节点",
+        "targets": [
+          {
+            "block": 0,
+            "from": 16,
+            "to": 17,
+            "valid": true,
+            "text": "svg.selectAll(\".node\").data(nodes)\n   .join(\"g\")"
+          }
+        ]
+      },
+      {
+        "id": "select",
+        "label": "④ 点击反馈",
+        "targets": [
+          {
+            "block": 0,
+            "from": 18,
+            "to": 22,
+            "valid": true,
+            "text": "   .on(\"click\", (event, d) => {\n     // ⭐ 关键：classed 是 D3 状态管理核心 API\n     svg.selectAll(\".node\").classed(\"selected\", n => n.id === d.id);\n     document.getElementById(\"d-4-1-detail\").innerHTML = d.detail;\n   });"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "2.2",
+    "title": "从新生表到嵌套 Map",
+    "steps": [
+      {
+        "id": "rows",
+        "label": "① 输入行",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "  students,"
+          }
+        ]
+      },
+      {
+        "id": "major",
+        "label": "② 专业键",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "  d => d.major,            // 外层 key"
+          }
+        ]
+      },
+      {
+        "id": "class",
+        "label": "③ 班级键",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "  d => d.class             // 内层 key（rest 参数，可继续加）"
+          }
+        ]
+      },
+      {
+        "id": "count",
+        "label": "④ 归约计数",
+        "targets": [
+          {
+            "block": 0,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "  v => v.length,           // 每组聚合为单一值（这里是 count）"
+          }
+        ]
+      },
+      {
+        "id": "map",
+        "label": "⑤ 遍历 Map",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 14,
+            "valid": true,
+            "text": "// 遍历嵌套 Map：\nfor (const [major, inner] of nested) {\n  for (const [cls, count] of inner) {\n    console.log(major, cls, count);\n  }\n}"
+          }
+        ]
+      },
+      {
+        "id": "regex",
+        "label": "⑥ 解析对照",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 4,
+            "valid": true,
+            "text": "  const cls = d[\"班级\"].trim();\n  const m = cls.match(/^(.+?)(\\d+班)$/);  // 中间非贪婪 + 末尾\"数字+班\""
+          },
+          {
+            "block": 1,
+            "from": 9,
+            "to": 9,
+            "valid": true,
+            "text": "    major: m ? m[1] : cls,  // \"软件工程1班\" → \"软件工程\""
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "2.3",
+    "title": "关系不变，位置如何算出？",
+    "steps": [
+      {
+        "id": "hierarchy",
+        "label": "① 层级",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "const root = d3.hierarchy(rootData);"
+          }
+        ]
+      },
+      {
+        "id": "layout",
+        "label": "② 布局大小",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 6,
+            "valid": true,
+            "text": "const treeLayout = d3.tree().size([360, 720]);\nconst treeData = treeLayout(root);"
+          }
+        ]
+      },
+      {
+        "id": "separation",
+        "label": "③ 节点间距",
+        "targets": [
+          {
+            "block": 1,
+            "from": 1,
+            "to": 3,
+            "valid": true,
+            "text": "const treeLayout = d3.tree()\n  .size([360, 720])\n  .separation((a, b) => (a.parent === b.parent ? 1 : 2));"
+          }
+        ]
+      },
+      {
+        "id": "links",
+        "label": "④ 父子连线",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 10,
+            "valid": true,
+            "text": "g.selectAll(\".link\").data(treeData.links()).join(\"path\")\n  .attr(\"d\", d3.linkHorizontal().x(d => d.y).y(d => d.x));"
+          }
+        ]
+      },
+      {
+        "id": "coordinates",
+        "label": "⑤ 节点坐标",
+        "targets": [
+          {
+            "block": 0,
+            "from": 13,
+            "to": 14,
+            "valid": true,
+            "text": "const ng = g.selectAll(\".node\").data(treeData.descendants()).join(\"g\")\n  .attr(\"transform\", d => `translate(${d.y}, ${d.x})`);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "2.4",
+    "title": "一次点击，哪些监听器收到了？",
+    "steps": [
+      {
+        "id": "build",
+        "label": "① 递归列表",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "  const ul = d3.create(\"ul\");\n  ul.selectAll(\"li\").data([root]).join(\"li\")\n    .each(function(d) { buildList(d3.select(this), d); });\n  $tree.appendChild(ul.node());"
+          }
+        ]
+      },
+      {
+        "id": "stop",
+        "label": "② 阻止冒泡",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 9,
+            "valid": true,
+            "text": "  label.on(\"click.toggle\", (event) => {\n    // ⭐ 关键 ①：阻止冒泡 —— toggle 按钮不该触发\"选中\"\n    event.stopPropagation();\n    d.data._collapsed = !d.data._collapsed;\n    render();"
+          }
+        ]
+      },
+      {
+        "id": "selected",
+        "label": "③ 选中 class",
+        "targets": [
+          {
+            "block": 0,
+            "from": 12,
+            "to": 15,
+            "valid": true,
+            "text": "  liSel.on(\"click.select\", (event) => {\n    // ⭐ 关键 ②：如果 click 来自 toggle，已经被 stopPropagation 阻断，不会到这里\n    document.querySelectorAll(\"li\").forEach(li => li.classList.remove(\"selected\"));\n    liSel.classed(\"selected\", true);"
+          }
+        ]
+      },
+      {
+        "id": "duration",
+        "label": "④ 展开时长",
+        "targets": [
+          {
+            "block": 2,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "  .transition()                                  // 进入过渡状态\n  .duration(DURATION)                          // 时长（ms），滑块控制\n  .attr(\"transform\", d => `translate(${d.y}, ${d.x})`)\n  .attr(\"opacity\", 1);"
+          },
+          {
+            "block": 2,
+            "from": 9,
+            "to": 10,
+            "valid": true,
+            "text": "ng.attr(\"opacity\", 0)\n  .transition().duration(DURATION).attr(\"opacity\", 1);"
+          },
+          {
+            "block": 3,
+            "from": 5,
+            "to": 7,
+            "valid": true,
+            "text": "document.getElementById(\"dur\").addEventListener(\"input\", e => {\n  DURATION = +e.target.value;\n  render();   // 用新时长重新做一次过渡"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.1",
+    "title": "同一个颜色，三组坐标",
+    "steps": [
+      {
+        "id": "normalize",
+        "label": "通道归一化",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "  r /= 255; g /= 255; b /= 255;"
+          }
+        ]
+      },
+      {
+        "id": "minmax",
+        "label": "最大与最小",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 4,
+            "valid": true,
+            "text": "  const max = Math.max(r, g, b), min = Math.min(r, g, b);\n  let h, s, l = (max + min) / 2;"
+          }
+        ]
+      },
+      {
+        "id": "chroma",
+        "label": "差值与饱和度",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 8,
+            "valid": true,
+            "text": "    const d = max - min;\n    s = l > 0.5 ? d / (2 - max - min) : d / (max + min);"
+          }
+        ]
+      },
+      {
+        "id": "hue",
+        "label": "色相分支",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 16,
+            "valid": true,
+            "text": "    switch (max) {\n      case r: h = (g - b) / d + (g < b ? 6 : 0); break;\n      case g: h = (b - r) / d + 2; break;\n      case b: h = (r - g) / d + 4; break;\n    }\n    h /= 6;\n  }\n  return [h * 360, s * 100, l * 100];"
+          }
+        ]
+      },
+      {
+        "id": "d3",
+        "label": "D3 读数",
+        "targets": [
+          {
+            "block": 2,
+            "from": 1,
+            "to": 5,
+            "valid": true,
+            "text": "const c = d3.color('rgb(100, 50, 200)');\nc.rgb();   // {r, g, b}\nc.hsl();   // {h, s, l}\nc.lab();   // {l, a, b}  ← 感知均匀\nc.hcl();   // {h, c, l}  ← Lab 极坐标版"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.2",
+    "title": "先看数据语义，再选颜色",
+    "steps": [
+      {
+        "id": "ordered",
+        "label": "有序数值",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "  if (data.isOrdered)              return 'sequential';"
+          }
+        ]
+      },
+      {
+        "id": "midpoint",
+        "label": "语义中点",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "  if (data.hasMeaningfulMidpoint) return 'diverging';"
+          }
+        ]
+      },
+      {
+        "id": "sequential",
+        "label": "连续色值",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "d3.scaleSequential(d3.interpolateViridis);"
+          }
+        ]
+      },
+      {
+        "id": "diverging",
+        "label": "发散插值",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 6,
+            "valid": true,
+            "text": "d3.interpolateRdBu;          // t=0 蓝，t=1 红，t=0.5 白\nd3.interpolateBrBG;"
+          }
+        ]
+      },
+      {
+        "id": "category",
+        "label": "无序类别",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 9,
+            "valid": true,
+            "text": "d3.scaleOrdinal(d3.schemeTableau10);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.3",
+    "title": "固定 L*，读懂 a*–b* 切片",
+    "steps": [
+      {
+        "id": "lab",
+        "label": "定位 Lab 点",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "const c = d3.lab(50, 30, -20);    // L*=50, a*=30, b*=-20"
+          }
+        ]
+      },
+      {
+        "id": "rgb",
+        "label": "转换 RGB",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "console.log(c.rgb());              // → RGB {r, g, b}（clamp 到 sRGB）"
+          }
+        ]
+      },
+      {
+        "id": "hex",
+        "label": "屏幕输出",
+        "targets": [
+          {
+            "block": 0,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "console.log(c.formatHex());       // → \"#xxxxxx\""
+          }
+        ]
+      },
+      {
+        "id": "interpolation",
+        "label": "相同端点插值",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 7,
+            "valid": true,
+            "text": "const interp = d3.interpolateLab('#000000', '#ffffff');\ninterp(0.5);   // → 中间灰（Lab 空间线性插值，结果感知均匀）\n\n// vs 在 RGB 空间插值（不均匀）\nconst interpRgb = d3.interpolateRgb('#000000', '#ffffff');\ninterpRgb(0.5);  // → 中间灰（RGB 空间插值，但在 Lab 看来\"不是中间\"）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.4",
+    "title": "色轮上的关系怎样进入图表",
+    "steps": [
+      {
+        "id": "rule",
+        "label": "五种规则",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 8,
+            "valid": true,
+            "text": "const HUE_OFFSETS = {\n  monochromatic: 0,     // 同色相\n  analogous:     30,    // ±30°\n  complementary: 180,   // 180° 对面\n  triadic:       120,   // 120° 三等分\n  split:         150    // 150° 邻补\n};"
+          }
+        ]
+      },
+      {
+        "id": "wrap",
+        "label": "色相取模",
+        "targets": [
+          {
+            "block": 0,
+            "from": 13,
+            "to": 13,
+            "valid": true,
+            "text": "    const h = (baseH + i * offset + 360) % 360;"
+          }
+        ]
+      },
+      {
+        "id": "color",
+        "label": "色相变色值",
+        "targets": [
+          {
+            "block": 0,
+            "from": 14,
+            "to": 14,
+            "valid": true,
+            "text": "    return d3.hsl(h, 0.6, 0.55).formatHex();"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.5",
+    "title": "同一数据，试用经典色板",
+    "steps": [
+      {
+        "id": "array",
+        "label": "色板索引",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 5,
+            "valid": true,
+            "text": "  'Wong 2011':       ['#000000', '#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7'],\n  'Paul Tol bright': ['#4477AA', '#EE6677', '#228833', '#CCBB44', '#66CCEE', '#AA3377', '#BBBBBB'],\n  'Okabe-Ito':       ['#000000', '#E69F00', '#56B4E9', '#009E73', '#F0E442', '#0072B2', '#D55E00', '#CC79A7'],\n  'Tableau 10':      ['#4E79A7', '#F28E2B', '#E15759', '#76B7B2', '#59A14F', '#EDC948', '#B07AA1', '#FF9DA7', '#9C755F', '#BAB0AC'],"
+          }
+        ]
+      },
+      {
+        "id": "sequential",
+        "label": "顺序采样",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "  'Viridis (seq)':   d3.range(0, 1.01, 0.1).map(d3.interpolateViridis),"
+          }
+        ]
+      },
+      {
+        "id": "diverging",
+        "label": "偏差采样",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "  'RdBu (div)':      d3.range(0, 1.01, 0.1).map(t => d3.interpolateRdBu(1 - t))"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.6",
+    "title": "同数据配色竞猜",
+    "steps": [
+      {
+        "id": "cards",
+        "label": "① 四张同数据图",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 5,
+            "valid": true,
+            "text": "cases.forEach((c, i) => {\n  const card = document.createElement('div');\n  card.className = 'quiz-card';\n  card.innerHTML = `${makeSampleBars(c.palette)}<div>${c.name}</div>`;"
+          }
+        ]
+      },
+      {
+        "id": "selection",
+        "label": "② 选择状态",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 10,
+            "valid": true,
+            "text": "  card.addEventListener('click', () => {\n    cards.forEach((cc, ii) => {\n      cc.classList.remove('correct', 'wrong');\n      if (ii === i) cc.classList.add(c.type);  // 'correct' or 'wrong'\n    });"
+          }
+        ]
+      },
+      {
+        "id": "feedback",
+        "label": "③ 判断理由",
+        "targets": [
+          {
+            "block": 0,
+            "from": 11,
+            "to": 11,
+            "valid": true,
+            "text": "    showResult(c);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.7",
+    "title": "一个公式，七个相同色样",
+    "steps": [
+      {
+        "id": "analog",
+        "label": "① 类比色",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 4,
+            "valid": true,
+            "text": "    hslHex((H - 30 + 360) % 360, S * 0.6, L * 1.1),  // 类比 1 低饱和\n    hslHex((H - 30 + 360) % 360, S, L),              // 类比 1"
+          }
+        ]
+      },
+      {
+        "id": "base",
+        "label": "② 主色",
+        "targets": [
+          {
+            "block": 0,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "    hslHex(H, S, L),                                 // 主色"
+          }
+        ]
+      },
+      {
+        "id": "complement",
+        "label": "③ 互补色",
+        "targets": [
+          {
+            "block": 0,
+            "from": 8,
+            "to": 8,
+            "valid": true,
+            "text": "    hslHex((H + 180) % 360, S * 0.8, L * 0.95),      // 互补"
+          }
+        ]
+      },
+      {
+        "id": "light",
+        "label": "④ 低饱和高亮",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 9,
+            "valid": true,
+            "text": "    hslHex(H, S * 0.2, L * 1.4)                      // 高亮（极低饱和）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "3.8",
+    "title": "同一图形，原色与近似视角",
+    "steps": [
+      {
+        "id": "parse",
+        "label": "① 解析本站SVG",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "  const doc = new DOMParser().parseFromString(svgString, 'image/svg+xml');"
+          }
+        ]
+      },
+      {
+        "id": "scan",
+        "label": "② 扫描fill",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "  doc.querySelectorAll('[fill]').forEach(el => {\n    const c = d3.color(el.getAttribute('fill'));\n    if (!c) return;\n    const rgb = [Math.round(c.rgb().r), Math.round(c.rgb().g), Math.round(c.rgb().b)];"
+          }
+        ]
+      },
+      {
+        "id": "simulate",
+        "label": "③ RGB近似变换",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 8,
+            "valid": true,
+            "text": "    const sim = simulateCVD(rgb, type);\n    el.setAttribute('fill', `rgb(${sim.join(',')})`);"
+          }
+        ]
+      },
+      {
+        "id": "serialize",
+        "label": "④ 序列化结果",
+        "targets": [
+          {
+            "block": 0,
+            "from": 10,
+            "to": 10,
+            "valid": true,
+            "text": "  return new XMLSerializer().serializeToString(doc);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "4.1",
+    "title": "一行宽表，三行长表",
+    "steps": [
+      {
+        "id": "types",
+        "label": "① 类型",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "const raw = await d3.csv('./data/crime.csv', d3.autoType);"
+          }
+        ]
+      },
+      {
+        "id": "row",
+        "label": "② 原行",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 2,
+            "valid": true,
+            "text": "const long = raw.flatMap(d =>"
+          }
+        ]
+      },
+      {
+        "id": "keys",
+        "label": "③ 三个指标",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 5,
+            "valid": true,
+            "text": "  ['murder', 'robbery', 'burglary'].map(key => ({\n    state:  d.state,\n    metric: key,"
+          }
+        ]
+      },
+      {
+        "id": "values",
+        "label": "④ 原值守恒",
+        "targets": [
+          {
+            "block": 1,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "    value:  d[key]"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "4.2",
+    "title": "同一个点的三级坐标",
+    "steps": [
+      {
+        "id": "domain",
+        "label": "① 数据范围",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 3,
+            "valid": true,
+            "text": "const xData = d3.scaleLinear()\n  .domain([0, d3.max(data, d => d.x)])"
+          }
+        ]
+      },
+      {
+        "id": "range",
+        "label": "② 内部坐标",
+        "targets": [
+          {
+            "block": 0,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "  .range([0, innerW]);"
+          }
+        ]
+      },
+      {
+        "id": "margin",
+        "label": "③ margin",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 9,
+            "valid": true,
+            "text": "const xScreen = d3.scaleLinear()\n  .domain([0, innerW])\n  .range([M.l, M.l + innerW]);"
+          }
+        ]
+      },
+      {
+        "id": "point",
+        "label": "④ 点的位置",
+        "targets": [
+          {
+            "block": 0,
+            "from": 12,
+            "to": 12,
+            "valid": true,
+            "text": ".attr('cx', d => xScreen(xData(d.x)))"
+          }
+        ]
+      },
+      {
+        "id": "log",
+        "label": "⑤ 对数比较",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 5,
+            "valid": true,
+            "text": "const xLog = d3.scaleLog()\n  .domain([1, d3.max(data, d => d.x)])\n  .range([0, innerW]);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "4.3",
+    "title": "同一组点，不同的连接方式",
+    "steps": [
+      {
+        "id": "points",
+        "label": "① 固定输入",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 3,
+            "valid": true,
+            "text": "  .x(d => xScale(d.x))\n  .y(d => yScale(d.y))"
+          }
+        ]
+      },
+      {
+        "id": "curve",
+        "label": "② 连接方式",
+        "targets": [
+          {
+            "block": 0,
+            "from": 4,
+            "to": 4,
+            "valid": true,
+            "text": "  .curve(d3.curveCatmullRom);     // <- 这一行换 curve 类型"
+          }
+        ]
+      },
+      {
+        "id": "datum",
+        "label": "③ 整体绑定",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "svg.append('path').datum(data).attr('d', line);"
+          }
+        ]
+      },
+      {
+        "id": "path",
+        "label": "④ path输出",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 6,
+            "valid": true,
+            "text": "svg.append('path').datum(data).attr('d', line);"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "4.4",
+    "title": "角度与端点，同步核对",
+    "steps": [
+      {
+        "id": "radians",
+        "label": "① 角度→弧度",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "  const r = (angleDeg * Math.PI) / 180;"
+          }
+        ]
+      },
+      {
+        "id": "cos",
+        "label": "② 横向投影",
+        "targets": [
+          {
+            "block": 0,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "    x2: origin.x + length * Math.cos(r),"
+          }
+        ]
+      },
+      {
+        "id": "sin",
+        "label": "③ 纵向投影",
+        "targets": [
+          {
+            "block": 0,
+            "from": 8,
+            "to": 8,
+            "valid": true,
+            "text": "    y2: origin.y - length * Math.sin(r)   // SVG y 向下为正，所以取负"
+          }
+        ]
+      },
+      {
+        "id": "slider",
+        "label": "④ 参数与尺寸",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 5,
+            "valid": true,
+            "text": "const slider = document.getElementById('angle');\nslider.addEventListener('input', e => {\n  const angle = +e.target.value;\n  renderLine(angle);     // 30°~60° 误差小，0°/90° 误差大"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "4.5",
+    "title": "四个角，怎样确定等值线？",
+    "steps": [
+      {
+        "id": "corners",
+        "label": "① 四角输入",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 6,
+            "valid": true,
+            "text": "if (bl > threshold) code |= 1;   // bit 0\nif (br > threshold) code |= 2;   // bit 1\nif (tr > threshold) code |= 4;   // bit 2\nif (tl > threshold) code |= 8;   // bit 3"
+          }
+        ]
+      },
+      {
+        "id": "bits",
+        "label": "② 四位编码",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 6,
+            "valid": true,
+            "text": "let code = 0;\nif (bl > threshold) code |= 1;   // bit 0\nif (br > threshold) code |= 2;   // bit 1\nif (tr > threshold) code |= 4;   // bit 2\nif (tl > threshold) code |= 8;   // bit 3"
+          }
+        ]
+      },
+      {
+        "id": "edges",
+        "label": "③ 跨阈值边",
+        "targets": [
+          {
+            "block": 0,
+            "from": 1,
+            "to": 3,
+            "valid": true,
+            "text": "// ⭐ 16 种 case 每种对应 0/1/2 条线段（用边的编号表示）\n// 边编号：0=左中, 1=下中, 2=右中, 3=上中\nconst EDGE_TABLE = ["
+          }
+        ]
+      },
+      {
+        "id": "lookup",
+        "label": "④ 查表核对",
+        "targets": [
+          {
+            "block": 1,
+            "from": 8,
+            "to": 8,
+            "valid": true,
+            "text": "const lines = EDGE_TABLE[code];   // 查表"
+          }
+        ]
+      },
+      {
+        "id": "interpolation",
+        "label": "⑤ 阈值交点",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 20,
+            "valid": true,
+            "text": "const EDGE_TABLE = [\n  [],                  // 0000 全小\n  [[3, 0]],            // 0001 仅 BL 大\n  [[0, 1]],            // 0010 仅 BR 大\n  [[3, 1]],            // 0011 BL+BR\n  [[1, 2]],            // 0100 仅 TR 大\n  [[3, 0], [1, 2]],    // 0101（saddle 鞍点，需）\n  [[0, 2]],            // 0110 BR+TR\n  [[3, 2]],            // 0111\n  [[2, 3]],            // 1000 仅 TL 大\n  [[2, 0]],            // 1001 TL+BL\n  [[0, 1], [2, 3]],    // 1010（saddle）\n  [[2, 1]],\n  [[1, 3]],\n  [[1, 0]],\n  [[0, 3]],\n  []                   // 1111 全大\n];"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "5.1",
+    "title": "时间五属性，各看一张小图",
+    "steps": [
+      {
+        "id": "ordered",
+        "label": "有序",
+        "targets": [
+          {
+            "block": 0,
+            "from": 3,
+            "to": 5,
+            "valid": true,
+            "text": "  { key: 'ordered',          name: '有序性',     icon: '↗',\n    desc: '时间是有序的。两个事件发生的时间有先后次序，与因果关系紧密相连。',\n    example: '火车时刻表、事件日志、git commit history', color: '#3b82f6' },"
+          }
+        ]
+      },
+      {
+        "id": "continuous",
+        "label": "连续",
+        "targets": [
+          {
+            "block": 0,
+            "from": 6,
+            "to": 8,
+            "valid": true,
+            "text": "  { key: 'continuous',       name: '连续性',     icon: '∞',\n    desc: '时间是连续的。两个时间点之间总存在另一个时间点。',\n    example: '实时传感器数据（温度、心率）、流式数据流', color: '#10b981' },"
+          }
+        ]
+      },
+      {
+        "id": "periodic",
+        "label": "周期",
+        "targets": [
+          {
+            "block": 0,
+            "from": 9,
+            "to": 11,
+            "valid": true,
+            "text": "  { key: 'periodic',         name: '周期性',     icon: '🔁',\n    desc: '许多自然过程有循环规律（季节、昼夜）。可采用循环时间域表示。',\n    example: '24h 体温、12 个月气温、年周期销售', color: '#f59e0b' },"
+          }
+        ]
+      },
+      {
+        "id": "space",
+        "label": "独立于空间",
+        "targets": [
+          {
+            "block": 0,
+            "from": 12,
+            "to": 14,
+            "valid": true,
+            "text": "  { key: 'spatial_independent', name: '独立于空间', icon: '✂️',\n    desc: '时间与空间紧相关，但科学过程大多将它们独立处理。',\n    example: '折线图 x 轴只用时间、y 轴只用度量', color: '#8b5cf6' },"
+          }
+        ]
+      },
+      {
+        "id": "structured",
+        "label": "结构",
+        "targets": [
+          {
+            "block": 0,
+            "from": 15,
+            "to": 17,
+            "valid": true,
+            "text": "  { key: 'structured',       name: '结构性',     icon: '📐',\n    desc: '时间尺度分年/月/日/时/分/秒，分割既有自然反映（昼夜）也有人为定义。',\n    example: '日历/周排列、闰年调整、工作日 vs 周末', color: '#ec4899' }"
+          },
+          {
+            "block": 1,
+            "from": 2,
+            "to": 4,
+            "valid": true,
+            "text": "const days = d3.timeDay.range(new Date(2024, 0, 1), new Date(2025, 0, 1));\n// 输出：[Date(2024-01-01), Date(2024-01-02), ..., Date(2024-12-31)]\nconsole.log(days.length);  // 366（闰年）"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "5.2",
+    "title": "同一年，读三条曲线",
+    "steps": [
+      {
+        "id": "parse",
+        "label": "① 年份解析",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 4,
+            "valid": true,
+            "text": "const parseYear = d3.timeParse('%Y');        // '1965' → Date\n// 时间 Date → 字符串\nconst formatYear = d3.timeFormat('%Y');     // Date → '1965'"
+          }
+        ]
+      },
+      {
+        "id": "scale",
+        "label": "② 时间映射",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 4,
+            "valid": true,
+            "text": "const xScale = d3.scaleTime()\n  .domain([new Date(1900, 0, 1), new Date(2020, 11, 31)])\n  .range([0, innerW]);"
+          }
+        ]
+      },
+      {
+        "id": "track",
+        "label": "③ 时间追踪",
+        "targets": [
+          {
+            "block": 2,
+            "from": 16,
+            "to": 22,
+            "valid": true,
+            "text": "  .on('mousemove', (event) => {\n    const xm = d3.pointer(event)[0];\n    const date = xScale.invert(xm - M.l);\n    // bisect 找最近点\n    const i = d3.bisector(d => d.year).left(series, date);\n    const d = series[i];\n    focus.attr('transform', `translate(${xScale(d.year)},0)`);"
+          }
+        ]
+      },
+      {
+        "id": "window",
+        "label": "④ 时间窗口",
+        "targets": [
+          {
+            "block": 1,
+            "from": 3,
+            "to": 3,
+            "valid": true,
+            "text": "  .domain([new Date(1900, 0, 1), new Date(2020, 11, 31)])"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "5.3",
+    "title": "日期怎样落进日历格？",
+    "steps": [
+      {
+        "id": "days",
+        "label": "① 全年日期",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 4,
+            "valid": true,
+            "text": "const days = d3.timeDay.range(\n  new Date(2024, 0, 1),         // 2024-01-01\n  new Date(2025, 0, 1)          // 2025-01-01"
+          }
+        ]
+      },
+      {
+        "id": "weekday",
+        "label": "② 星期行",
+        "targets": [
+          {
+            "block": 1,
+            "from": 6,
+            "to": 7,
+            "valid": true,
+            "text": "function dayIndexSunday(date) {\n  return date.getDay();    // 0=周日, 1=周一, ..., 6=周六"
+          }
+        ]
+      },
+      {
+        "id": "week",
+        "label": "③ 周列",
+        "targets": [
+          {
+            "block": 1,
+            "from": 1,
+            "to": 5,
+            "valid": true,
+            "text": "function weekColSunday(date) {\n  // 周日为每列起点 (getDay()=0)\n  return Math.floor((d3.timeDay.count(\n    d3.timeYear.floor(date), date)) / 7);\n}"
+          }
+        ]
+      },
+      {
+        "id": "cell",
+        "label": "④ 格子位置",
+        "targets": [
+          {
+            "block": 1,
+            "from": 16,
+            "to": 17,
+            "valid": true,
+            "text": "  .attr('x', d => weekColSunday(d.date) * cellSize)\n  .attr('y', d => dayIndexSunday(d.date) * cellSize)"
+          }
+        ]
+      },
+      {
+        "id": "color",
+        "label": "⑤ 温度色值",
+        "targets": [
+          {
+            "block": 1,
+            "from": 19,
+            "to": 19,
+            "valid": true,
+            "text": "  .attr('fill', d => color(d.value));"
+          },
+          {
+            "block": 0,
+            "from": 7,
+            "to": 7,
+            "valid": true,
+            "text": "  value: byKey.get(d3.timeFormat('%Y-%m-%d')(d)) ?? 0"
+          }
+        ]
+      },
+      {
+        "id": "month",
+        "label": "⑥ 月界",
+        "targets": [
+          {
+            "block": 2,
+            "from": 2,
+            "to": 5,
+            "valid": true,
+            "text": "function isMonthDivider(date) {\n  const sevenDaysAgo = d3.timeDay.offset(date, -7);\n  return date.getFullYear() !== sevenDaysAgo.getFullYear()\n      || date.getMonth()    !== sevenDaysAgo.getMonth();"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "5.4",
+    "title": "解剖同一个日期扇环",
+    "steps": [
+      {
+        "id": "radius",
+        "label": "① 半径",
+        "targets": [
+          {
+            "block": 0,
+            "from": 8,
+            "to": 14,
+            "valid": true,
+            "text": "function pos(t) {                    // t: 角度（弧度）\n  const r = 0 + b * t;\n  return {\n    x: r * Math.cos(t),              // 极坐标转笛卡尔\n    y: r * Math.sin(t),\n    r\n  };"
+          }
+        ]
+      },
+      {
+        "id": "projection",
+        "label": "② x/y 投影",
+        "targets": [
+          {
+            "block": 0,
+            "from": 11,
+            "to": 12,
+            "valid": true,
+            "text": "    x: r * Math.cos(t),              // 极坐标转笛卡尔\n    y: r * Math.sin(t),"
+          }
+        ]
+      },
+      {
+        "id": "delta",
+        "label": "③ 角增量",
+        "targets": [
+          {
+            "block": 1,
+            "from": 2,
+            "to": 3,
+            "valid": true,
+            "text": "function angleDelta(currentRadius) {\n  return boxSize / Math.sqrt(b * b + currentRadius * currentRadius);"
+          },
+          {
+            "block": 1,
+            "from": 9,
+            "to": 11,
+            "valid": true,
+            "text": "  const p = pos(t);\n  // ...画第 day 天的扇环\n  t += angleDelta(p.r);   // 动态加角度"
+          }
+        ]
+      },
+      {
+        "id": "vertices",
+        "label": "④ 四个顶点",
+        "targets": [
+          {
+            "block": 2,
+            "from": 3,
+            "to": 10,
+            "valid": true,
+            "text": "  const coords = (t, sign) => {\n    const r = pos(t).r + sign * coilGap / 2;  // sign=+1 外圈 / -1 内圈\n    return [r * Math.cos(t), r * Math.sin(t)];\n  };\n  const [x0o, y0o] = coords(t0, +1);\n  const [x1o, y1o] = coords(t1, +1);\n  const [x1i, y1i] = coords(t1, -1);\n  const [x0i, y0i] = coords(t0, -1);"
+          }
+        ]
+      },
+      {
+        "id": "path",
+        "label": "⑤ 闭合路径",
+        "targets": [
+          {
+            "block": 2,
+            "from": 11,
+            "to": 11,
+            "valid": true,
+            "text": "  return `M ${x0o} ${y0o} L ${x1o} ${y1o} L ${x1i} ${y1i} L ${x0i} ${y0i} Z`;"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "sectionId": "5.5",
+    "title": "角色线与事件，分别表达什么？",
+    "steps": [
+      {
+        "id": "time",
+        "label": "① 时间坐标",
+        "targets": [
+          {
+            "block": 0,
+            "from": 2,
+            "to": 4,
+            "valid": true,
+            "text": "const xScale = d3.scaleLinear()\n  .domain([0, 127])\n  .range([50, width - 50]);"
+          }
+        ]
+      },
+      {
+        "id": "points",
+        "label": "② 角色控制点",
+        "targets": [
+          {
+            "block": 0,
+            "from": 8,
+            "to": 14,
+            "valid": true,
+            "text": "  { name: 'T-REX', color: '#d32f2f', points: [\n    {time: 75, y: 280}, {time: 78, y: 130},   // 攻击现场\n    {time: 88, y: 200}, {time:120, y: 290}\n  ]},\n  { name: 'Grant', color: '#1976d2', points: [\n    {time:  0, y: 100}, {time: 78, y: 130},   // 与 T-REX 聚拢\n    {time:120, y:  50}"
+          }
+        ]
+      },
+      {
+        "id": "datum",
+        "label": "③ 整条序列",
+        "targets": [
+          {
+            "block": 0,
+            "from": 25,
+            "to": 27,
+            "valid": true,
+            "text": "  svg.append('path')\n    .datum(c.points)\n    .attr('d', line)"
+          }
+        ]
+      },
+      {
+        "id": "curve",
+        "label": "④ 曲线与骨架",
+        "targets": [
+          {
+            "block": 0,
+            "from": 19,
+            "to": 22,
+            "valid": true,
+            "text": "const line = d3.line()\n  .curve(d3.curveCatmullRom.alpha(0.5))   // 张力 0.5\n  .x(d => xScale(d.time))\n  .y(d => d.y);"
+          },
+          {
+            "block": 2,
+            "from": 5,
+            "to": 5,
+            "valid": true,
+            "text": "d3.line().curve(d3.curveCatmullRom.alpha(0.5));"
+          }
+        ]
+      },
+      {
+        "id": "events",
+        "label": "⑤ 事件层",
+        "targets": [
+          {
+            "block": 1,
+            "from": 9,
+            "to": 19,
+            "valid": true,
+            "text": "const eventLayer = svg.append('g').attr('class', 'event-layer');\n\neventLayer.selectAll('g.event')\n  .data(events).enter().append('g')\n  .attr('class', 'event')\n  .style('cursor', 'pointer')\n  .on('mouseenter', (e, d) => showTip(`${d.name}\\n${d.desc}`))\n  .each(function (d) {\n    // 半透明背景圈\n    d3.select(this).append('circle')\n      .attr('cx', d.x).attr('cy', d.y).attr('r', 20)"
+          }
+        ]
+      }
+    ]
+  }
+]

@@ -1,0 +1,882 @@
+{
+  "baseline": "bb06feef99ce25cb8cee8c82826beb3f02cd4c80",
+  "timestampContext": "2026-10-21 Asia/Singapore",
+  "method": "Git object bytes versus live working tree; excludes .git/node_modules/__pycache__ and resource reports themselves; static audit, not Browser Network",
+  "before": {
+    "files": 166,
+    "bytes": 4703097,
+    "allJsMjsCss": 659291,
+    "runtimeJsMjsCss": 626298,
+    "byExtensionBytes": {
+      ".css": 174959,
+      ".csv": 181787,
+      ".html": 512787,
+      ".jpg": 602621,
+      ".js": 451339,
+      ".json": 725202,
+      ".md": 404828,
+      ".mjs": 32993,
+      ".pdf": 909976,
+      ".png": 667548,
+      ".py": 39034,
+      "[none]": 23
+    }
+  },
+  "after": {
+    "files": 182,
+    "bytes": 4796939,
+    "allJsMjsCss": 752011,
+    "runtimeJsMjsCss": 701350,
+    "byExtensionBytes": {
+      ".css": 178074,
+      ".csv": 182129,
+      ".html": 513404,
+      ".jpg": 602621,
+      ".js": 523276,
+      ".json": 690307,
+      ".md": 439697,
+      ".mjs": 50661,
+      ".pdf": 909976,
+      ".png": 667548,
+      ".py": 39223,
+      "[none]": 23
+    }
+  },
+  "netJsMjsCssDeltaBytes": 92720,
+  "netRuntimeJsMjsCssDeltaBytes": 75052,
+  "netLfNormalizedJsMjsCssDeltaBytes": 90542,
+  "netLfNormalizedRuntimeJsMjsCssDeltaBytes": 72874,
+  "budgetBytes": 163840,
+  "allCodeBudgetStatus": "PASS",
+  "runtimeCodeBudgetStatus": "PASS",
+  "addedBlockedMediaOrFonts": [],
+  "addedMedia": [],
+  "changedProtectedDataValuesOrText": [],
+  "urlLiteralsInChangedCode": [
+    "http://www.w3.org/2000/svg",
+    "https://cdn.jsdelivr.net/npm/d3@7/+esm"
+  ],
+  "newExternalUrlLiterals": [],
+  "changes": [
+    {
+      "path": "README.md",
+      "status": "modified",
+      "before": {
+        "bytes": 3822,
+        "lfBytes": 3764,
+        "sha256": "ce9892ae68f9b70a3e3bc66832a906a50f581a3558605a3a77df46bdafc43c0f"
+      },
+      "after": {
+        "bytes": 4226,
+        "lfBytes": 4166,
+        "sha256": "7d3363f5f5a75d750ee376454ea85fc034a15d79c271af5dbd97c627e7c3011a"
+      },
+      "deltaBytes": 404
+    },
+    {
+      "path": "docs/chapter05-names-calendar-review.md",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 8325,
+        "lfBytes": 8325,
+        "sha256": "6dd5f57117a8a2e9044df703b02976460a782c11b4d5b3a40d909d4a81e2fe8a"
+      },
+      "deltaBytes": 8325
+    },
+    {
+      "path": "docs/chapter05-refinement-report.md",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 6802,
+        "lfBytes": 6738,
+        "sha256": "a08f97acf9f617b44963a9a5aa7346944a8c933f0fdd6811cae31ed32df6b431"
+      },
+      "deltaBytes": 6802
+    },
+    {
+      "path": "docs/chapter05-spiral-review.md",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 6542,
+        "lfBytes": 6476,
+        "sha256": "9e8be8426c9e3bcd2b170e8755a1ac5a87600977db0aa8d8f02b50ae937ba5c8"
+      },
+      "deltaBytes": 6542
+    },
+    {
+      "path": "docs/chapter05-story-review.md",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 7948,
+        "lfBytes": 7948,
+        "sha256": "3f73330bbe6465e3c2b421e2372de3dea85c218167b6c36050773ac18661a8d4"
+      },
+      "deltaBytes": 7948
+    },
+    {
+      "path": "docs/teaching-network-static.json",
+      "status": "modified",
+      "before": {
+        "bytes": 2781,
+        "lfBytes": 2694,
+        "sha256": "d8b149df0e61dca0c42926d6c78b7bb808b2bdee515d1d1c9098ce64c085aab7"
+      },
+      "after": {
+        "bytes": 3217,
+        "lfBytes": 3121,
+        "sha256": "b5c71fb858f251f398642b8d691221f4d0d6f3a64a5c1ac4e4589676f922f99d"
+      },
+      "deltaBytes": 436
+    },
+    {
+      "path": "docs/teaching-verification-summary.json",
+      "status": "modified",
+      "before": {
+        "bytes": 1066,
+        "lfBytes": 1033,
+        "sha256": "1cc32fe71920555f8d6db2fd42bc865fd5dbcb6d0b6313bbd56ab36cbdfc564a"
+      },
+      "after": {
+        "bytes": 1295,
+        "lfBytes": 1255,
+        "sha256": "b7a3e3aca107ecbba3d338eb06058c877f1d905716571f1c077ddbb191ff5aea"
+      },
+      "deltaBytes": 229
+    },
+    {
+      "path": "docs/teaching-viz-release-report.md",
+      "status": "modified",
+      "before": {
+        "bytes": 8654,
+        "lfBytes": 8654,
+        "sha256": "16d32858f19d28d0ba07e9a364f8b75c5d903eb041010e16e53ca7cd1bc07291"
+      },
+      "after": {
+        "bytes": 8828,
+        "lfBytes": 8828,
+        "sha256": "d6e7f8dd37f917522266d430443d6981ffa1414ca87f1b0c6b660504e7711dcd"
+      },
+      "deltaBytes": 174
+    },
+    {
+      "path": "docs/teaching-viz-resource-diff.json",
+      "status": "missing",
+      "before": {
+        "bytes": 35560,
+        "lfBytes": 34320,
+        "sha256": "2209837fefcbe5917ac2ff8f3dfcb6a8baeb0fe0a510f3d55f191926603c32cf"
+      },
+      "after": null,
+      "deltaBytes": -35560
+    },
+    {
+      "path": "docs/teaching-viz-resource-diff.md",
+      "status": "missing",
+      "before": {
+        "bytes": 3598,
+        "lfBytes": 3547,
+        "sha256": "1dd990e3efe452ef3fbf032ffc83985f431041f6eb70c67d7f788f5c3afae5a7"
+      },
+      "after": null,
+      "deltaBytes": -3598
+    },
+    {
+      "path": "i18n.css",
+      "status": "modified",
+      "before": {
+        "bytes": 2034,
+        "lfBytes": 2034,
+        "sha256": "f5d8b790ee08fc9a65d6f832d01fc95196060b715ade11f8c72b678336c35944"
+      },
+      "after": {
+        "bytes": 2114,
+        "lfBytes": 2034,
+        "sha256": "1aed12f760d844d5f5bf15a5d2ebcd12c5243615f06eb33d73eef15d85901284"
+      },
+      "deltaBytes": 80
+    },
+    {
+      "path": "lesson-01/01-数据.md",
+      "status": "modified",
+      "before": {
+        "bytes": 16574,
+        "lfBytes": 16574,
+        "sha256": "1f05f234952865c093a4e37c07762bd98b002b53c4edb92a2c7810753259bbf6"
+      },
+      "after": {
+        "bytes": 17029,
+        "lfBytes": 16574,
+        "sha256": "3267fa2838a0943802348f6dba50c8c7591b30432eaec49858055c95f8a35aae"
+      },
+      "deltaBytes": 455
+    },
+    {
+      "path": "lesson-01/build_en.py",
+      "status": "modified",
+      "before": {
+        "bytes": 18446,
+        "lfBytes": 18446,
+        "sha256": "ca6b3161884fad81cc5a56ddd511be95cf627311993dbadb5a6d6172fc12f8a5"
+      },
+      "after": {
+        "bytes": 18575,
+        "lfBytes": 18446,
+        "sha256": "79a396310f836a2fc06c78c241469fbd5d52be2177d5fcdf31fb171b6f32c84d"
+      },
+      "deltaBytes": 129
+    },
+    {
+      "path": "lesson-01/data/newstudent.csv",
+      "status": "modified",
+      "before": {
+        "bytes": 5048,
+        "lfBytes": 5048,
+        "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b"
+      },
+      "after": {
+        "bytes": 5128,
+        "lfBytes": 5048,
+        "sha256": "d4ec32eb9e7435b836ed7a68a0c021318dc67f53db6a42b3515df49ee2af5a2f"
+      },
+      "deltaBytes": 80
+    },
+    {
+      "path": "lesson-01/demo/01-data-loader/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 3678,
+        "lfBytes": 3678,
+        "sha256": "43cec4571c956abcf8bb94c44d181a853fece58b1b6bccdf12507b43eccc205b"
+      },
+      "after": {
+        "bytes": 3732,
+        "lfBytes": 3678,
+        "sha256": "ad199638f84fe3fc32676fed508873f6363d31b885fe96cc1835a8d9ab477fe8"
+      },
+      "deltaBytes": 54
+    },
+    {
+      "path": "lesson-01/demo/01-data-loader/main.js",
+      "status": "modified",
+      "before": {
+        "bytes": 3915,
+        "lfBytes": 3915,
+        "sha256": "dc44e59db276a4356093e5d65570b2c2f41e978fe600ef5127fc22f3778edcaa"
+      },
+      "after": {
+        "bytes": 4035,
+        "lfBytes": 3915,
+        "sha256": "c89181b47630fe30eab1b741856a157dbcfee2e25643787b0f686830289a22bd"
+      },
+      "deltaBytes": 120
+    },
+    {
+      "path": "lesson-01/demo/02-dikw-pyramid/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 2526,
+        "lfBytes": 2526,
+        "sha256": "5136218a5fa1dfd5e9414e17b831d9d7dbdff64a485a78f7aefc765e4678bf3c"
+      },
+      "after": {
+        "bytes": 2569,
+        "lfBytes": 2526,
+        "sha256": "ac0f5dd5a1ebc64cc9d2e46494a2019a4c2fe78538a869d4a087de7722ffcbe4"
+      },
+      "deltaBytes": 43
+    },
+    {
+      "path": "lesson-01/demo/02-dikw-pyramid/main.js",
+      "status": "modified",
+      "before": {
+        "bytes": 4011,
+        "lfBytes": 4011,
+        "sha256": "1a75aa8e61d76e4f1ecb9df91b5d7ddd7a2e1a9affe09334eb8c1a7e99971aab"
+      },
+      "after": {
+        "bytes": 4153,
+        "lfBytes": 4011,
+        "sha256": "a798c4919a0f428198aa61caa18853ee60baaa6ffa57df8c2293972bbee71376"
+      },
+      "deltaBytes": 142
+    },
+    {
+      "path": "lesson-01/demo/03-attribute-types/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 5452,
+        "lfBytes": 5452,
+        "sha256": "265f0cb13c573e1d28f4de4d056627caca491b5a66730fed4011768d02af41f9"
+      },
+      "after": {
+        "bytes": 5514,
+        "lfBytes": 5452,
+        "sha256": "4c865373e0443ffe733392f470035cdcf5380970d9090eca83cee01cf54a0b08"
+      },
+      "deltaBytes": 62
+    },
+    {
+      "path": "lesson-01/demo/03-attribute-types/main.js",
+      "status": "modified",
+      "before": {
+        "bytes": 5790,
+        "lfBytes": 5790,
+        "sha256": "05281a49a095a0031e0069b731a422a1d8efb95c3b9220c67ac304b1690c3e93"
+      },
+      "after": {
+        "bytes": 5977,
+        "lfBytes": 5790,
+        "sha256": "8efc6ab1b6b73ac7a591f4c29e0c43bf2b1ede7352948989b37e97ca75d517cf"
+      },
+      "deltaBytes": 187
+    },
+    {
+      "path": "lesson-01/demo/04-d3-array-ops/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 3983,
+        "lfBytes": 3983,
+        "sha256": "463774c5f8dc76f0ee7808054a691d13eaad667937e69c028cd00deb3f137514"
+      },
+      "after": {
+        "bytes": 4049,
+        "lfBytes": 3983,
+        "sha256": "ea583bd298cc08709071a59859155d71e7628618adafd68689739b492c1c6bda"
+      },
+      "deltaBytes": 66
+    },
+    {
+      "path": "lesson-01/demo/04-d3-array-ops/main.js",
+      "status": "modified",
+      "before": {
+        "bytes": 4414,
+        "lfBytes": 4414,
+        "sha256": "73b46af0fc085cdcf3b6d35500c7caad89572aaca51c19eaa2db0b4157f81761"
+      },
+      "after": {
+        "bytes": 4527,
+        "lfBytes": 4414,
+        "sha256": "e983a80011afed134591a298eeb64f7ca44a70ad4b0b4a350822c8f4d7d13287"
+      },
+      "deltaBytes": 113
+    },
+    {
+      "path": "lesson-01/demo/05-selectors/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 5908,
+        "lfBytes": 5908,
+        "sha256": "0e97ad780bb34667c9f2ea554be893cc25401b57dbe60456af7ef711bdfa0d03"
+      },
+      "after": {
+        "bytes": 5981,
+        "lfBytes": 5908,
+        "sha256": "e527725c827c7536cecd8c0c37be188c023029737e76da0cfd769e3eb44b00ad"
+      },
+      "deltaBytes": 73
+    },
+    {
+      "path": "lesson-01/demo/05-selectors/main.js",
+      "status": "modified",
+      "before": {
+        "bytes": 1969,
+        "lfBytes": 1969,
+        "sha256": "1c942ade51ef99b906ea546d3e7ebad44fbb37b6edd507d7fcc61452a6f8a7ec"
+      },
+      "after": {
+        "bytes": 2032,
+        "lfBytes": 1969,
+        "sha256": "4e41c090e11af9fe3d04f9a2ded224b929a31cdc9cd11b3ee152f0a4fd64004b"
+      },
+      "deltaBytes": 63
+    },
+    {
+      "path": "lesson-01/demo/README.md",
+      "status": "modified",
+      "before": {
+        "bytes": 1653,
+        "lfBytes": 1653,
+        "sha256": "2b59ebd52116175149afd5dcdcf0ccf2ecea5481cf1557d500752f6f81a27f9f"
+      },
+      "after": {
+        "bytes": 1702,
+        "lfBytes": 1653,
+        "sha256": "b808915665a38c1ab8fc71345fc52f4681d58fbd01e3fb9d89ba273ed7a510a8"
+      },
+      "deltaBytes": 49
+    },
+    {
+      "path": "lesson-01/demo/data/newstudent.csv",
+      "status": "modified",
+      "before": {
+        "bytes": 5048,
+        "lfBytes": 5048,
+        "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b"
+      },
+      "after": {
+        "bytes": 5128,
+        "lfBytes": 5048,
+        "sha256": "d4ec32eb9e7435b836ed7a68a0c021318dc67f53db6a42b3515df49ee2af5a2f"
+      },
+      "deltaBytes": 80
+    },
+    {
+      "path": "lesson-01/demo/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 6632,
+        "lfBytes": 6632,
+        "sha256": "e2b1bdc7764f96d4d742d9c924b94581fe3a09ca02aebca1f5138f06648e1c7b"
+      },
+      "after": {
+        "bytes": 6703,
+        "lfBytes": 6632,
+        "sha256": "1fbb07bd6b3f1b27e38afaae726c2a7bbfc53f7f670653fee52a996efcc0a22f"
+      },
+      "deltaBytes": 71
+    },
+    {
+      "path": "lesson-01/demo/styles.css",
+      "status": "modified",
+      "before": {
+        "bytes": 3307,
+        "lfBytes": 3307,
+        "sha256": "dcd7d035bb1bf28e2a1321f361f26f03bba1b7281c180d2245c6f66360408e89"
+      },
+      "after": {
+        "bytes": 3486,
+        "lfBytes": 3307,
+        "sha256": "11e8265592379fb0b0e8d3a154b0ef5ef3a888be9c1b1c98725862fd5455258a"
+      },
+      "deltaBytes": 179
+    },
+    {
+      "path": "lesson-02/02-数据可视化流程.md",
+      "status": "modified",
+      "before": {
+        "bytes": 11223,
+        "lfBytes": 11223,
+        "sha256": "590fe7fc7b8eea6497c49eab30173c9b88c8829826b72054db084d0c694330ff"
+      },
+      "after": {
+        "bytes": 11553,
+        "lfBytes": 11223,
+        "sha256": "d5416c102e12aca1620263f4268fa0228ee6b8ba101eea628ea12d6924e3ec53"
+      },
+      "deltaBytes": 330
+    },
+    {
+      "path": "lesson-02/data/newstudent.csv",
+      "status": "modified",
+      "before": {
+        "bytes": 5048,
+        "lfBytes": 5048,
+        "sha256": "369892953fd3ffd2991abd94c58b61622fadf07946ef425537c74becf5b2ca7b"
+      },
+      "after": {
+        "bytes": 5128,
+        "lfBytes": 5048,
+        "sha256": "d4ec32eb9e7435b836ed7a68a0c021318dc67f53db6a42b3515df49ee2af5a2f"
+      },
+      "deltaBytes": 80
+    },
+    {
+      "path": "lesson-03/data/crime.csv",
+      "status": "modified",
+      "before": {
+        "bytes": 3610,
+        "lfBytes": 3610,
+        "sha256": "306bb6eac87f6519ba8319e5826e144e1639249c8f9205cf8a81e290d835c646"
+      },
+      "after": {
+        "bytes": 3661,
+        "lfBytes": 3610,
+        "sha256": "d97061d50f83b0b91471a0722ccb72087877d625aa9356c92929321c24085ed2"
+      },
+      "deltaBytes": 51
+    },
+    {
+      "path": "lesson-03/lecture-en.md",
+      "status": "modified",
+      "before": {
+        "bytes": 8522,
+        "lfBytes": 8522,
+        "sha256": "eeab66818b5a49f18666205d9615f41eabcba1046e1e0e5be1257f9d2229995e"
+      },
+      "after": {
+        "bytes": 8709,
+        "lfBytes": 8522,
+        "sha256": "d2e1856e42cfa69ec2b48fd768c6bd3b35ade77e3a7643ec84ad1b429fbf3e95"
+      },
+      "deltaBytes": 187
+    },
+    {
+      "path": "lesson-04/data/crime.csv",
+      "status": "modified",
+      "before": {
+        "bytes": 3610,
+        "lfBytes": 3610,
+        "sha256": "306bb6eac87f6519ba8319e5826e144e1639249c8f9205cf8a81e290d835c646"
+      },
+      "after": {
+        "bytes": 3661,
+        "lfBytes": 3610,
+        "sha256": "d97061d50f83b0b91471a0722ccb72087877d625aa9356c92929321c24085ed2"
+      },
+      "deltaBytes": 51
+    },
+    {
+      "path": "lesson-04/lecture-en.md",
+      "status": "modified",
+      "before": {
+        "bytes": 5485,
+        "lfBytes": 5485,
+        "sha256": "0df09e06f0a4c55cc0792cee6c80be759a73796b553c1e1f240063bb8d510228"
+      },
+      "after": {
+        "bytes": 5613,
+        "lfBytes": 5485,
+        "sha256": "09974334bdaa45785ade7bb45e2c9fe37be4fd9a656ab38db8f448a80aa69425"
+      },
+      "deltaBytes": 128
+    },
+    {
+      "path": "lesson-05/casebook.md",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 7008,
+        "lfBytes": 7008,
+        "sha256": "6c88a976755fa8ea19548f2888b2c88989d4f37a355cfccd5a6acfaae1e337eb"
+      },
+      "deltaBytes": 7008
+    },
+    {
+      "path": "lesson-05/data/storyline.js",
+      "status": "modified",
+      "before": {
+        "bytes": 2266,
+        "lfBytes": 2266,
+        "sha256": "d0ed638f4b563c27ce533b901dd9ed030b6f6b1eff0748e3112d4019e61f8ecd"
+      },
+      "after": {
+        "bytes": 2347,
+        "lfBytes": 2266,
+        "sha256": "da26890bc2170cd4132e2961d514d0f85d1aed7f1c2743335b7e3ed90310d55b"
+      },
+      "deltaBytes": 81
+    },
+    {
+      "path": "lesson-05/data/time-attributes.js",
+      "status": "modified",
+      "before": {
+        "bytes": 1447,
+        "lfBytes": 1447,
+        "sha256": "0d1b0e46f76c97e30f57ed9831ea03aefd67fa6a847d6e73f125ef6fda965e0b"
+      },
+      "after": {
+        "bytes": 1490,
+        "lfBytes": 1447,
+        "sha256": "8b35e9b888ae7c76b0072c7dd65b9ee3cc0144317e125daf1fb816cbe77ccf17"
+      },
+      "deltaBytes": 43
+    },
+    {
+      "path": "lesson-05/index.html",
+      "status": "modified",
+      "before": {
+        "bytes": 56951,
+        "lfBytes": 56338,
+        "sha256": "1350b494a6c4ee3df031525ad5cb9a61b7f695e856d4ed65f4deec5682a45695"
+      },
+      "after": {
+        "bytes": 57199,
+        "lfBytes": 56583,
+        "sha256": "99ed7878edba913ad8c3fa7cb4122c85037c4709b741d11271c2ee8d145c3d6f"
+      },
+      "deltaBytes": 248
+    },
+    {
+      "path": "lesson-05/lecture-en.md",
+      "status": "modified",
+      "before": {
+        "bytes": 6780,
+        "lfBytes": 6780,
+        "sha256": "0c0cd5024464273602dff83a561dbbb4e0673c922fa3c3ae31ab0d5e2a27ca01"
+      },
+      "after": {
+        "bytes": 6895,
+        "lfBytes": 6780,
+        "sha256": "4c66e5e63c2c136d35e13f6a7e67e82bbf9f0b5a6f64e1631bd3481408d668f5"
+      },
+      "deltaBytes": 115
+    },
+    {
+      "path": "lesson-05/lesson.js",
+      "status": "modified",
+      "before": {
+        "bytes": 27859,
+        "lfBytes": 27189,
+        "sha256": "2a08f00e275381219df1904d2f2690240d8f8bd9d53f24aaac6dfdb445fc67af"
+      },
+      "after": {
+        "bytes": 28084,
+        "lfBytes": 27413,
+        "sha256": "366d44d6f79a1e720575920abf043459bdeb73a0111199f3efbd13092fbec6e3"
+      },
+      "deltaBytes": 225
+    },
+    {
+      "path": "scripts/audit-teaching-assets.py",
+      "status": "modified",
+      "before": {
+        "bytes": 5731,
+        "lfBytes": 5731,
+        "sha256": "92ca90f1f302da55d68bfbb6e0923524ead2d3911094ed8dd26ef9cf01218f99"
+      },
+      "after": {
+        "bytes": 5791,
+        "lfBytes": 5791,
+        "sha256": "7b18ef7ddc8428de3110d24dbff1721b681a6d94765afbbf68916431a717a5c9"
+      },
+      "deltaBytes": 60
+    },
+    {
+      "path": "styles.css",
+      "status": "modified",
+      "before": {
+        "bytes": 5609,
+        "lfBytes": 5609,
+        "sha256": "9eb187cbdbadcb243bbe8c8f7096119f4e1229409c9f40314afeb4349b75aca9"
+      },
+      "after": {
+        "bytes": 5942,
+        "lfBytes": 5609,
+        "sha256": "db21fd41da6333e60233806c760d4311176c63070ac8fd46462aa87f394a8e63"
+      },
+      "deltaBytes": 333
+    },
+    {
+      "path": "supplementary/i18n.css",
+      "status": "modified",
+      "before": {
+        "bytes": 2274,
+        "lfBytes": 2274,
+        "sha256": "ca68cd85b07e14289affc3542d3271ae4032c718b2c97ed85d5ae7fe387a9fe7"
+      },
+      "after": {
+        "bytes": 2375,
+        "lfBytes": 2274,
+        "sha256": "fdfc57d94d8ede510c38864a2f47c9776d580595bbf85d55dc7e2a32bd242c57"
+      },
+      "deltaBytes": 101
+    },
+    {
+      "path": "supplementary/i18n.js",
+      "status": "modified",
+      "before": {
+        "bytes": 24268,
+        "lfBytes": 24268,
+        "sha256": "32fcc6d63a4ddf5646c8a31e6e0bcd605c477953be68a1f93084dab641f04817"
+      },
+      "after": {
+        "bytes": 24751,
+        "lfBytes": 24268,
+        "sha256": "b17ab5ace9ffed9c98210fba3005a44620e3662ae016c49c2d7161c5f43b423a"
+      },
+      "deltaBytes": 483
+    },
+    {
+      "path": "teaching-viz/chapter-05-attributes.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 11923,
+        "lfBytes": 11831,
+        "sha256": "dd7fa7967f7aac1e6386c98047cb8b6128230dd30f5799cfbc8bb420f331b25d"
+      },
+      "deltaBytes": 11923
+    },
+    {
+      "path": "teaching-viz/chapter-05-guides.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 9667,
+        "lfBytes": 9667,
+        "sha256": "c1d78d86880ca8b39b3c9592e35fdbbb098059809eba68e423b078bc4ff6763a"
+      },
+      "deltaBytes": 9667
+    },
+    {
+      "path": "teaching-viz/chapter-05-names-calendar.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 32891,
+        "lfBytes": 32890,
+        "sha256": "c0048b3a9cfeedd41ad738b7495bc50f028d39ddae295aa617aeb72f05e57127"
+      },
+      "deltaBytes": 32891
+    },
+    {
+      "path": "teaching-viz/chapter-05-spiral-model.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 4031,
+        "lfBytes": 4031,
+        "sha256": "3571376999fa4897a4f96806eeda554b0f7bfdf91b3e4c3fcbccd0240cf20134"
+      },
+      "deltaBytes": 4031
+    },
+    {
+      "path": "teaching-viz/chapter-05-spiral.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 18917,
+        "lfBytes": 18763,
+        "sha256": "b78d10e588fabbfda9c9f47f82feee55e433326cf928586b940f44f19923f0fa"
+      },
+      "deltaBytes": 18917
+    },
+    {
+      "path": "teaching-viz/chapter-05-story.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 18629,
+        "lfBytes": 18629,
+        "sha256": "68d0f092aff7efb7d88e2c6826b8848c3416a8a05f26985bac0c649e73e6da1e"
+      },
+      "deltaBytes": 18629
+    },
+    {
+      "path": "teaching-viz/chapter-05.css",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 2422,
+        "lfBytes": 2422,
+        "sha256": "94288375ab13583736b5285b906df51b50dd9c80145078dd76922f9ec23ae8e0"
+      },
+      "deltaBytes": 2422
+    },
+    {
+      "path": "teaching-viz/chapter-05.js",
+      "status": "modified",
+      "before": {
+        "bytes": 32411,
+        "lfBytes": 32411,
+        "sha256": "3c965b7586d553e972db0e7b26318374fea5a22981c25a1577c9fa21a1601eb5"
+      },
+      "after": {
+        "bytes": 497,
+        "lfBytes": 492,
+        "sha256": "b96f25f2eb1782bc7ea1d521c2c5bc6b8a3791e6f12b315645639e5b6702e778"
+      },
+      "deltaBytes": -31914
+    },
+    {
+      "path": "teaching-viz/linked-learning.js",
+      "status": "modified",
+      "before": {
+        "bytes": 12632,
+        "lfBytes": 12632,
+        "sha256": "31a6f76f537b23e3d03943a69db0fd2931adba61d9f34e9b3574bb75a247786d"
+      },
+      "after": {
+        "bytes": 14149,
+        "lfBytes": 14149,
+        "sha256": "2d046c74c9fe3ba7b3b168518625d65a4ba85e6aa3d9d881a40ba7ec6f8beaf8"
+      },
+      "deltaBytes": 1517
+    },
+    {
+      "path": "teaching-viz/models-05-names-calendar.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 2104,
+        "lfBytes": 2104,
+        "sha256": "41ae1d7e2b1692dd02ee4aa34b4737a35e035c850fe3edbdd6fc96bd314bb4eb"
+      },
+      "deltaBytes": 2104
+    },
+    {
+      "path": "teaching-viz/models-05-story.js",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 2691,
+        "lfBytes": 2691,
+        "sha256": "86001a556e4c9119f50ef2853c1370ac89ba90c3893bf2808e0247850797bd99"
+      },
+      "deltaBytes": 2691
+    },
+    {
+      "path": "teaching-viz/utils.js",
+      "status": "modified",
+      "before": {
+        "bytes": 2534,
+        "lfBytes": 2534,
+        "sha256": "a518a1f542c6159244e7afdd990b6f4565f878e094a21d1862feac358604af5e"
+      },
+      "after": {
+        "bytes": 2558,
+        "lfBytes": 2558,
+        "sha256": "39fb01af0e9bb61ddafc476951afec407635baf4e444dc28a30613f5749d1514"
+      },
+      "deltaBytes": 24
+    },
+    {
+      "path": "tests/chapter-05-spiral-refinement.test.mjs",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 5469,
+        "lfBytes": 5469,
+        "sha256": "22efe751e725c2993355af1473e86315420888cfe93e04e959b334c29bbbad93"
+      },
+      "deltaBytes": 5469
+    },
+    {
+      "path": "tests/teaching-05-names-calendar.test.mjs",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 5750,
+        "lfBytes": 5750,
+        "sha256": "5cd56fb8b2632c676f6077565d814f14b804d148865cdd22a9494a27f43735af"
+      },
+      "deltaBytes": 5750
+    },
+    {
+      "path": "tests/teaching-05-refinement.test.mjs",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 1711,
+        "lfBytes": 1711,
+        "sha256": "5ffcc0877a2bf25e8fba26fe97f88f1ac181513f0a5538ffa7007ee818ea26b8"
+      },
+      "deltaBytes": 1711
+    },
+    {
+      "path": "tests/teaching-05-story.test.mjs",
+      "status": "added",
+      "before": null,
+      "after": {
+        "bytes": 4738,
+        "lfBytes": 4738,
+        "sha256": "31fea2e1646c65660e210c37a38778985f7072a45205e0074a910cc2fb33fb47"
+      },
+      "deltaBytes": 4738
+    }
+  ]
+}
