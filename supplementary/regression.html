@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>d3-regression 线性回归最小示例</title>
+    <script src="../vendor/d3.iife.min.js"></script>
+    <script>window.d3||document.write('<script src="https://d3js.org/d3.v7.min.js"><\/script>')</script>
+    <script>window.__d3Core = window.d3;</script>
+    <script src="data-inline.js"></script>
+    <script src="../data-fallback.js"></script>
+    <script src="../vendor/d3-regression.min.js"></script>
+    <script>
+        if (!window.d3.regressionLinear) {
+            document.write('<script src="https://unpkg.com/d3-regression@1.3.10/dist/d3-regression.min.js"><\/script>');
+        }
+    </script>
+    <script>
+        // d3-regression 的 UMD 包装会新建并覆盖全局 d3,
+        // 这里把回归函数并回真正的 d3, 让 d3.scaleLinear 与 d3.regressionLinear 同时可用。
+        (function () {
+            var core = window.__d3Core;
+            if (!core) return;
+            var fresh = window.d3;
+            if (fresh && !fresh.scaleLinear) {
+                Object.keys(fresh).forEach(function (k) { if (!(k in core)) core[k] = fresh[k]; });
+            }
+            if (window.d3Regression) {
+                Object.keys(window.d3Regression).forEach(function (k) { if (!(k in core)) core[k] = window.d3Regression[k]; });
+            }
+            window.d3 = core;
+        })();
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 32px;
+            background: #f7f8f0;
+            color: #123e37;
+            font: 15px/1.8 "Microsoft YaHei", sans-serif;
+        }
+        h1 { font-size: 24px; margin: 0 0 6px; }
+        h2 { font-size: 16px; margin: 28px 0 10px; }
+        p.lead { color: #52645a; margin: 0 0 22px; max-width: 720px; }
+        .panel { background: #fffef9; border: 1px solid #d8ddcc; border-radius: 3px; padding: 18px 20px; }
+        pre {
+            background: #123e37; color: #e1eb91;
+            padding: 16px 18px; border-radius: 3px; overflow-x: auto;
+            font: 13px/1.7 Consolas, "Courier New", monospace;
+        }
+        .caption { color: #52645a; font-size: 13px; margin-top: 10px; }
+        code { background: #eef1dc; padding: 1px 5px; border-radius: 2px; }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <h1>d3-regression 线性回归最小示例</h1>
+        <p class="lead">10 个样本点, 用 <code>d3.regressionLinear()</code> 拟合一条直线。回归线定义域设为 [0, 100], 图中按数据范围裁剪显示。</p>
+
+        <div class="panel">
+            <div id="chart"></div>
+            <p class="caption" id="caption"></p>
+        </div>
+
+        <h2>代码</h2>
+        <pre>data = [{x: 8, y: 3}, {x: 2, y: 10}, {x: 11, y: 3}, {x: 6, y: 6}, {x: 5, y: 8},
+       {x: 4, y: 12}, {x: 12, y: 1}, {x: 9, y: 4}, {x: 6, y: 9}, {x: 1, y: 14}];
+
+const regression = d3.regressionLinear()
+  .x(d => d.x)
+  .y(d => d.y)
+  .domain([0, 100]);</pre>
+    </div>
+
+    <script>
+        data = [{x: 8, y: 3}, {x: 2, y: 10}, {x: 11, y: 3}, {x: 6, y: 6}, {x: 5, y: 8}, {x: 4, y: 12}, {x: 12, y: 1}, {x: 9, y: 4}, {x: 6, y: 9}, {x: 1, y: 14}];
+        const regression = d3.regressionLinear()
+            .x(d => d.x)
+            .y(d => d.y)
+            .domain([0, 100]);
+
+        function draw() {
+            const W = 560, H = 320, M = { t: 18, r: 20, b: 44, l: 46 };
+            const x = d3.scaleLinear().domain([0, 14]).range([M.l, W - M.r]);
+            const y = d3.scaleLinear().domain([0, 15]).range([H - M.b, M.t]);
+
+            const svg = d3.select('#chart').append('svg')
+                .attr('width', W).attr('height', H)
+                .attr('viewBox', '0 0 ' + W + ' ' + H)
+                .attr('role', 'img')
+                .attr('aria-label', '10 个样本点与拟合出的线性回归线');
+
+            svg.append('defs').append('clipPath').attr('id', 'reg-clip')
+                .append('rect').attr('x', M.l).attr('y', 0).attr('width', W - M.l - M.r).attr('height', H);
+
+            svg.append('g')
+                .attr('transform', 'translate(' + M.l + ',0)')
+                .call(d3.axisLeft(y).ticks(5));
+            svg.append('g')
+                .attr('transform', 'translate(0,' + (H - M.b) + ')')
+                .call(d3.axisBottom(x).ticks(7));
+
+            const fitted = regression(data);
+            const path = d3.line().x(d => x(d[0])).y(d => y(d[1]));
+
+            svg.append('g').attr('clip-path', 'url(#reg-clip)')
+                .append('path')
+                .attr('d', path(fitted))
+                .attr('fill', 'none')
+                .attr('stroke', '#123e37')
+                .attr('stroke-width', 2.5);
+
+            svg.append('g')
+                .selectAll('circle')
+                .data(data)
+                .join('circle')
+                .attr('cx', d => x(d.x))
+                .attr('cy', d => y(d.y))
+                .attr('r', 5)
+                .attr('fill', '#e1eb91')
+                .attr('stroke', '#123e37')
+                .attr('stroke-width', 1.6);
+
+            const slope = (fitted[1][1] - fitted[0][1]) / (fitted[1][0] - fitted[0][0]);
+            const intercept = fitted[0][1] - slope * fitted[0][0];
+            document.getElementById('caption').textContent =
+                '拟合结果: y = ' + slope.toFixed(3) + 'x + ' + intercept.toFixed(2) +
+                '  (样本 ' + data.length + ' 个, 圆点为原始数据)';
+        }
+
+        try {
+            draw();
+        } catch (error) {
+            console.error("渲染失败:", error);
+            window.__suppError && window.__suppError(error.message);
+        }
+    </script>
+</body>
+
+</html>

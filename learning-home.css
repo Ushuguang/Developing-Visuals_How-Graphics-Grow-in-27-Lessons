@@ -1,0 +1,51 @@
+.learning-kicker { color: #788567; font: 10px/1.5 Consolas,monospace; letter-spacing: 2px; margin-bottom: 12px; }
+.learning-section-heading { display: flex; justify-content: space-between; align-items: center; gap: 20px; }
+.learning-text-link { color: var(--ink); font-size: 12px; white-space: nowrap; }
+.knowledge-map { padding: 28px; border: 1px solid var(--line); background: #fffef8; }
+.map-stage-label { color: #627650; font-size: 11px; letter-spacing: .6px; margin-bottom: 14px; }
+.map-foundations { display: grid; grid-template-columns: 1fr 48px 1fr; align-items: center; }
+.map-node { position: relative; display: flex; align-items: center; gap: 18px; padding: 22px; min-width: 0; color: var(--ink); text-decoration: none; background: #f2f5e6; border: 1px solid #d6dfc3; transition: background .2s, border-color .2s; }
+.map-node:hover { background: #e5edbd; border-color: #879e60; }
+.map-node[data-last=true] { border-color: #76914f; box-shadow: inset 3px 0 #76914f; }
+.map-visit { display: inline-block; color: #53713e; font-size: 10px; border-bottom: 1px solid #b3c68b; margin-top: 8px; }.map-visit[hidden] { display: none; }
+.map-number { font: 26px/1 Consolas,monospace; color: #8a9e6b; }
+.map-node h3 { font-size: 17px; margin: 0 0 6px; }
+.map-node p { font-size: 12px; line-height: 1.7; color: #637358; margin: 0; }
+.map-node-arrow { margin-left: auto; font-size: 18px; }
+.map-connector { text-align: center; color: #8a9e6b; }
+.map-bridge { display: flex; align-items: center; gap: 13px; color: #91a479; margin: 17px 0; font-size: 18px; }
+.map-bridge span { height: 1px; background: #e0e6d4; flex: 1; }
+.map-applications { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; }
+.map-color { background: #e5ecb8; }
+.map-use-cases { display: grid; gap: 12px; position: relative; }
+.map-use-cases::before { content: ''; position: absolute; top: 25%; bottom: 25%; left: -25px; border: 1px solid #b4c397; border-right: 0; width: 24px; }
+.map-use-cases::after { content: ''; position: absolute; width: 23px; height: 1px; background: #b4c397; top: 50%; left: -48px; }
+.map-swatches { display: flex; margin-top: 15px; gap: 5px; }
+.map-swatches i { width: 23px; height: 8px; background: #264e3e; }.map-swatches i:nth-child(2) { background: #73955a; }.map-swatches i:nth-child(3) { background: #b6cc78; }.map-swatches i:nth-child(4) { background: #d4dabc; }
+.learning-footnote { margin-top: 12px; color: #708063; font-size: 11px; line-height: 1.8; }
+.progress-shell { border: 1px solid var(--line); background: #fffef8; }
+.progress-footer button { font: inherit; font-size: 11px; color: var(--ink); background: transparent; border: 1px solid #becba7; padding: 8px 12px; cursor: pointer; }
+.progress-summary { display: flex; align-items: center; justify-content: space-between; padding: 28px; gap: 24px; }
+#progress-count { color: #6d824f; font: 12px/1.6 Consolas,'Microsoft YaHei',monospace; margin-bottom: 12px; }
+#progress-title { font-size: 20px; color: var(--ink); margin: 0 0 10px; line-height: 1.6; }
+#progress-detail { color: #6b7b5e; font-size: 12px; line-height: 1.8; }
+.progress-resume { padding: 14px 19px; background: var(--ink); color: var(--paper); white-space: nowrap; font-size: 12px; text-decoration: none; }
+.progress-resume:hover { background: #315c45; }
+.progress-chapters { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); border-top: 1px solid var(--line); }
+.progress-chapters a { padding: 20px; border-right: 1px solid var(--line); display: flex; flex-direction: column; gap: 8px; text-decoration: none; color: #69775b; }.progress-chapters a:last-child { border-right: 0; }
+.progress-chapters a:hover { background: #eef2dc; }.progress-chapters a[data-last=true] { background: #e9efcf; box-shadow: inset 0 3px #7d985b; }
+.progress-number { font: 22px/1 Consolas,monospace; color: #97a781; }.progress-chapters strong { font-size: 12px; font-weight: 500; line-height: 1.8; }.progress-chapters small { font-size: 10px; }.progress-chapters a[data-visited=true] small::before { content: '●'; color: #779449; margin-right: 6px; }
+.progress-footer { padding: 15px 28px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; align-items: center; gap: 20px; }.progress-footer p { font-size: 10px; line-height: 1.8; color: #7b886f; margin: 0; }.progress-footer button { flex-shrink: 0; }
+@media (max-width: 1050px) { .map-node { padding: 18px; gap: 12px; }.map-node h3 { font-size: 15px; }.map-node p { font-size: 11px; }.progress-chapters a { padding: 16px 12px; } }
+@media (max-width: 760px) {
+  .learning-section-heading { align-items: flex-start; flex-direction: column; gap: 0; }.learning-text-link { margin: 0 0 15px; font-size: 11px; }
+  .knowledge-map { padding: 18px; }.map-foundations { grid-template-columns: 1fr; gap: 8px; }.map-connector { transform: rotate(90deg); line-height: 1; }
+  .map-node { padding: 17px 14px; }.map-node h3 { font-size: 14px; }.map-number { font-size: 22px; }.map-node-arrow { font-size: 15px; }
+  .map-applications { grid-template-columns: 1fr; gap: 22px; }.map-use-cases { padding-left: 18px; }.map-use-cases::before { left: 0; top: 0; bottom: 50%; width: 17px; }.map-use-cases::after { left: 0; top: 50%; width: 17px; }
+  .map-stage-label { font-size: 10px; }.learning-footnote { font-size: 10px; }
+  .progress-summary { padding: 22px; flex-direction: column; align-items: flex-start; gap: 18px; }#progress-title { font-size: 17px; }.progress-chapters { grid-template-columns: 1fr; }.progress-chapters a { display: grid; grid-template-columns: 28px 1fr 65px; align-items: center; border-right: 0; border-bottom: 1px solid var(--line); padding: 14px 22px; }.progress-chapters a:last-child { border-bottom: 0; }.progress-chapters a[data-last=true] { box-shadow: inset 3px 0 #7d985b; }.progress-number { font-size: 18px; }.progress-footer { padding: 17px 22px; flex-direction: column; align-items: flex-start; gap: 12px; }
+  .book-stage { height: 295px; margin-top: 18px; margin-bottom: 40px; }.book-entrance { width: 185px; }.book-orbit { width: 260px; }.hero-inner { padding-top: 32px; }.hero-tag { margin-bottom: 18px; }
+  .site-masthead .nav { gap: 11px; }.site-masthead .nav a { font-size: 10px; }
+}
+@media (max-width: 380px) { .site-masthead { padding-left: 10px; }.site-masthead .nav { gap: 7px; }.site-masthead .nav a { font-size: 9px; } }
+@media (prefers-reduced-motion: reduce) { .map-node { transition: none; } }

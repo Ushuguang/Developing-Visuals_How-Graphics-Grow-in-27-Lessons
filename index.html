@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="m4pFCMW2muq4lcHIPpZoHJ">
+<head data-page-node-id="NyFMiu87l5Kthad13fIfkv">
+  <meta charset="UTF-8" data-page-node-id="1TqncXBXg3OQaqPHE21uKQ" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="ydqMOJNe6fLnLmPYO0BhDM" />
+  <title data-i18n="portal.title">显影：27 节课里，图形是怎么长出来的——《可视化导论》课程门户</title>
+  <link rel="stylesheet" href="styles.css" data-page-node-id="tKV6RyvSfcYFeP1eMx71WL" />
+  <link rel="stylesheet" href="i18n.css" />
+  <meta name="description" content="《可视化导论》课程：通过数据、可视化流程、色彩、低维与时序数据五章，结合讲解、关键代码和 D3.js 交互演示学习数据可视化。" />
+  <meta name="theme-color" content="#e1eb91" />
+  <link rel="stylesheet" href="home-theme.css" />
+  <link rel="stylesheet" href="chapter-explorer.css" />
+  <link rel="stylesheet" href="learning-home.css" />
+  <script type="module" src="learning-home.js?v=20261021-mapping"></script>
+  <script type="module" src="home-theme.js"></script>
+  <script type="module" src="i18n.js?v=20261021-mapping"></script>
+</head>
+<body data-page-node-id="e0WcMTsv7EcoaJJ4ty82HV">
+  <div class="site-masthead">
+    <div class="masthead-nav-slot"></div>
+    <div class="masthead-language-slot"></div>
+  </div>
+  <header class="hero" data-page-node-id="GhGfw0XgPWkXCpTQ4SBQRY">
+    <canvas class="hero-dots" aria-hidden="true"></canvas>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <span class="registration registration-a" aria-hidden="true"></span>
+    <span class="registration registration-b" aria-hidden="true"></span>
+    <div class="hero-layout">
+    <div class="hero-inner" data-page-node-id="FUUBeC6ETI4BUpc9s2DieS">
+      <p class="hero-tag" data-page-node-id="I97lGc6G0LpicqRkHRNai7">VISUALIZATION · INTRODUCTION</p>
+      <h1 data-page-node-id="6PpFyXQgoD2z2gUvDZoH41" data-i18n-html="portal.hero.h1">显影<span class="hero-h1-sub">27 节课里，图形是怎么长出来的</span></h1>
+      <p class="hero-subtitle" data-page-node-id="ccKX3lGvHGhzvCOzBLWVIL" data-i18n="portal.hero.subtitle">从数据到图表：JavaScript + D3.js 实战课程</p>
+      <p class="hero-meta" data-page-node-id="dDQxBMB7svuxFu05ieFnvz" data-i18n-html="portal.hero.meta">中国石油大学（华东）</p>
+      <p class="hero-facts" data-i18n="portal.hero.facts">5 个课程章节 · D3.js 实战 · 交互式案例</p>
+      <div class="hero-actions">
+        <a class="hero-enter" href="lesson-01/index.html"><span data-i18n="portal.hero.start">开始学习：第 1 章</span><span aria-hidden="true">↗</span></a>
+        <a class="hero-browse" href="#course-map"><span data-i18n="portal.hero.browse">浏览课程地图</span><span aria-hidden="true">↓</span></a>
+      </div>
+      <p class="hero-recommendation" data-i18n="portal.hero.recommendation">建议从数据类型与视觉编码开始，再进入图表实践。</p>
+    </div>
+    <div class="book-stage">
+      <div class="book-orbit" aria-hidden="true"></div>
+      <div class="book-rules" aria-hidden="true"><span>01 / 05</span><span>JS + D3.js</span></div>
+      <div class="book-entrance">
+        <div class="book-object">
+          <div class="book-front">
+            <div class="cover-face">
+              <img class="book-cover" src="assets/book-cover.jpg" width="1360" height="1852" fetchpriority="high" alt="《可视化导论》教材封面" />
+              <div class="book-sheen" aria-hidden="true"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="book-ground" aria-hidden="true"></div>
+      <button class="book-replay" type="button" aria-label="重播封面翻页动画" title="重播封面翻页动画"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 7a8 8 0 1 1-1 9M5 2v5h5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+    </div>
+    </div>
+    <a class="hero-scroll" href="#chapters" aria-label="向下浏览课程章节"><span aria-hidden="true">↓</span><span aria-hidden="true">SCROLL TO EXPLORE</span></a>
+  </header>
+
+  <nav class="nav" data-page-node-id="46pjaYk1anKFk8sx1CpUfx">
+    <a href="#chapters" data-page-node-id="TIDjB8RVxmO2SVmR0lKHSD" data-i18n="portal.nav.chapters">📚 章节</a>
+    <a href="#howto" data-page-node-id="WAU2lzRUXXisfyKqLQxwYt" data-i18n="portal.nav.howto">▶️ 使用方式</a>
+    <a href="#about" data-page-node-id="jGREv0ddub0C7xuTllzbaI" data-i18n="portal.nav.about">ℹ️ 关于</a>
+  </nav>
+
+  <main data-page-node-id="iORobFXkWFC4abFNB9qXz0">
+    <section id="course-map" class="section course-map">
+      <div class="learning-section-heading"><div><p class="learning-kicker">01 / LEARNING PATH</p><h2 data-i18n="learning.map.title">课程知识地图</h2></div><a href="#learning-progress" class="learning-text-link" data-i18n="learning.map.records">查看学习记录 ↓</a></div>
+      <p class="section-lead" data-i18n="learning.map.intro">先理解数据与流程，再把色彩方法应用到低维、时序图表中。可按推荐顺序学习，也可直接进入需要的章节。</p>
+      <div class="knowledge-map">
+        <div class="map-stage"><p class="map-stage-label" data-i18n="learning.map.foundation">共同基础 · 数据如何变成图表</p><div class="map-foundations">
+          <a class="map-node" href="lesson-01/index.html" data-lesson="1"><span class="map-number">01</span><div><h3 data-i18n="card-01.title">数据</h3><p data-i18n="learning.map.data">理解数据类型与视觉通道</p></div><span class="map-node-arrow" aria-hidden="true">↗</span></a>
+          <span class="map-connector" aria-hidden="true">→</span>
+          <a class="map-node" href="lesson-02/index.html" data-lesson="2"><span class="map-number">02</span><div><h3 data-i18n="card-02.title">数据可视化流程</h3><p data-i18n="learning.map.flow">组织数据、映射与交互</p></div><span class="map-node-arrow" aria-hidden="true">↗</span></a>
+        </div></div>
+        <div class="map-bridge" aria-hidden="true"><span></span>↓<span></span></div>
+        <div class="map-stage"><p class="map-stage-label" data-i18n="learning.map.expression">编码与表达 · 色彩方法贯穿不同图表</p><div class="map-applications">
+          <a class="map-node map-color" href="lesson-03/index.html" data-lesson="3"><span class="map-number">03</span><div><h3 data-i18n="card-03.title">色彩专题</h3><p data-i18n="learning.map.color">配色选择与色觉可访问性</p><span class="map-swatches" aria-hidden="true"><i></i><i></i><i></i><i></i></span></div><span class="map-node-arrow" aria-hidden="true">↗</span></a>
+          <div class="map-use-cases"><a class="map-node" href="lesson-04/index.html" data-lesson="4"><span class="map-number">04</span><div><h3 data-i18n="card-04.title">低维数据可视化</h3><p data-i18n="learning.map.low">用坐标、曲线和等值线表达数值</p></div><span class="map-node-arrow" aria-hidden="true">↗</span></a>
+          <a class="map-node" href="lesson-05/index.html" data-lesson="5"><span class="map-number">05</span><div><h3 data-i18n="card-05.title">时序数据可视化</h3><p data-i18n="learning.map.time">观察趋势、周期与事件关系</p></div><span class="map-node-arrow" aria-hidden="true">↗</span></a></div>
+        </div></div>
+      </div>
+      <p class="learning-footnote" data-i18n="learning.map.note">箭头表示学习建议与方法应用，不是强制先修条件。点击节点直接进入章节。</p>
+    </section>
+
+    <section id="chapters" class="section" data-page-node-id="1hKqJFZdR4ihGy8rmleJPj">
+      <h2 data-page-node-id="ATcERZXUJHy0RVHgveZCzD" data-i18n="portal.tagline">📚 课程章节</h2>
+      <p class="section-lead" data-page-node-id="0Cl1OHTkthNXbB9CNGeL1F" data-i18n="portal.intro">点击章节名称进入学习；每章均提供 📖 讲解 / ⌨️ 关键代码 / → 映射 / ▶️ 演示。</p>
+
+      <div class="cards" data-page-node-id="x7u5knwRvuBVwKLjCyOpLz">
+        <!-- 第 1 章：数据 -->
+        <a class="card available" href="lesson-01/index.html" data-page-node-id="DCarYQHFiFOSrCjSSYz9bo">
+          <div class="card-num" data-page-node-id="gEplSSLGCzYaMqP6FCmLIv" data-i18n="card-01.num">第 1 章</div>
+          <h3 data-page-node-id="fX5dFABb54NcIyjcUEklZX" data-i18n="card-01.title">数据</h3>
+          <dl class="chapter-learning">
+            <div><dt data-i18n="portal.learning.goal">学习目标</dt><dd data-i18n="card-01.goal">理解数据类型与视觉通道，掌握数据整理和转换的基本方法。</dd></div>
+            <div><dt data-i18n="portal.learning.outcome">实践成果</dt><dd data-i18n="card-01.outcome">用 D3.js 加载新生 CSV，完成字段映射、分组与数据绑定。</dd></div>
+          </dl>
+          <p class="chapter-topics-label" data-i18n="portal.learning.topics">知识要点</p>
+          <p class="card-desc" data-page-node-id="W9YltLLKTAxMSOrTYh3FVY" data-i18n="card-01.desc">从 DeepSeek 合成新生数据出发，展开数据生成、DIKW、Stevens 测量尺度、Mackinlay 视觉通道、D3 数据变换与 Data-Join 三态。</p>
+          <ul class="card-tags" data-page-node-id="8yQgsskCl0paFupJlVYvny">
+            <li data-page-node-id="XAg9GQV3aJXF9Cq8z1Ryj2">DIKW 金字塔</li>
+            <li data-page-node-id="kmC2QP6fOySDAFvR7Sb7B7">Stevens 4 尺度</li>
+            <li data-page-node-id="2n5t5AK8GpF60vERjmRkfB">8 个 D3 变换函数</li>
+            <li data-page-node-id="G9zCVNEOuqBUluvErBFMwy">Selection 三态</li>
+          </ul>
+          <div class="card-cta" data-page-node-id="JssS7vxI7bgXBRjuHzbBI1" data-i18n="common.enter">进入章节 →</div>
+        </a>
+
+        <!-- 第 2 章：流程 -->
+        <a class="card available" href="lesson-02/index.html">
+          <div class="card-num" data-i18n="card-02.num">第 2 章</div>
+          <h3 data-i18n="card-02.title">数据可视化流程</h3>
+          <dl class="chapter-learning">
+            <div><dt data-i18n="portal.learning.goal">学习目标</dt><dd data-i18n="card-02.goal">理解数据、变换、映射与视图之间的关系，认识交互反馈。</dd></div>
+            <div><dt data-i18n="portal.learning.outcome">实践成果</dt><dd data-i18n="card-02.outcome">将新生数据按专业和班级组织为分类树，生成可交互的树形视图。</dd></div>
+          </dl>
+          <p class="chapter-topics-label" data-i18n="portal.learning.topics">知识要点</p>
+          <p class="card-desc" data-i18n="card-02.desc">Card 数据流模型、新生数据 → 分类树 → 树形列表的完整链路，Reingold-Tilford 布局、DOM 事件机制。</p>
+          <ul class="card-tags">
+            <li>Card 模型</li>
+            <li>d3.rollup</li>
+            <li>Reingold-Tilford</li>
+            <li>事件委托</li>
+          </ul>
+          <div class="card-cta" data-i18n="common.enter">进入章节 →</div>
+        </a>
+
+        <!-- 第 3 章：色彩专题 -->
+        <a href="lesson-03/index.html" class="card available">
+          <div class="card-num" data-i18n="card-03.num">第 3 章</div>
+          <h3 data-i18n="card-03.title">色彩专题</h3>
+          <dl class="chapter-learning">
+            <div><dt data-i18n="portal.learning.goal">学习目标</dt><dd data-i18n="card-03.goal">根据数据含义选择配色，理解颜色空间与色觉可访问性。</dd></div>
+            <div><dt data-i18n="portal.learning.outcome">实践成果</dt><dd data-i18n="card-03.outcome">生成图表配色，并用色觉缺陷模拟检查颜色是否容易区分。</dd></div>
+          </dl>
+          <p class="chapter-topics-label" data-i18n="portal.learning.topics">知识要点</p>
+          <p class="card-desc" data-i18n="card-03.desc">颜色模型 + colormap + Lab 色域 + 5 大色系 + 经典科研配色 + 对错案例 + <strong>鲜艳+低饱和哲学生成器</strong> + CVD 论文图测。8 小节，配色一站式。</p>
+          <ul class="card-tags">
+            <li>4 颜色空间 + CVD</li>
+            <li>Wong / Paul Tol</li>
+            <li>5 大色系规则</li>
+            <li>鲜艳+低饱和</li>
+            <li>CVD 论文图测</li>
+          </ul>
+          <div class="card-cta" data-i18n="portal.cta.enter3">进入专题 →</div>
+        </a>
+
+        <!-- 第 4 章：低维数据可视化 -->
+        <a href="lesson-04/index.html" class="card available">
+          <div class="card-num" data-i18n="card-04.num">第 4 章</div>
+          <h3 data-i18n="card-04.title">低维数据可视化</h3>
+          <dl class="chapter-learning">
+            <div><dt data-i18n="portal.learning.goal">学习目标</dt><dd data-i18n="card-04.goal">理解坐标映射、曲线与等值线如何表达低维数据。</dd></div>
+            <div><dt data-i18n="portal.learning.outcome">实践成果</dt><dd data-i18n="card-04.outcome">用 Crime 数据比较坐标变换与曲线效果，探索等值线生成。</dd></div>
+          </dl>
+          <p class="chapter-topics-label" data-i18n="portal.learning.topics">知识要点</p>
+          <p class="card-desc" data-i18n="card-04.desc">Crime 数据坐标变换、10 种曲线拟合、Cleveland 45° 倾角、Marching Squares 等值线，共 5 小节。</p>
+          <ul class="card-tags">
+            <li>三层坐标变换</li>
+            <li>10 种曲线</li>
+            <li>Cleveland 45°</li>
+            <li>Marching Squares</li>
+          </ul>
+          <div class="card-cta" data-i18n="common.enter">进入章节 →</div>
+        </a>
+
+        <!-- 第 5 章：时序数据可视化 -->
+        <a href="lesson-05/index.html" class="card available">
+          <div class="card-num" data-i18n="card-05.num">第 5 章</div>
+          <h3 data-i18n="card-05.title">时序数据可视化</h3>
+          <dl class="chapter-learning">
+            <div><dt data-i18n="portal.learning.goal">学习目标</dt><dd data-i18n="card-05.goal">识别时间数据的趋势、周期和事件关系，选择合适的表达方式。</dd></div>
+            <div><dt data-i18n="portal.learning.outcome">实践成果</dt><dd data-i18n="card-05.outcome">探索法国人名折线图、日历热图与螺旋日历，比较不同时间视图。</dd></div>
+          </dl>
+          <p class="chapter-topics-label" data-i18n="portal.learning.topics">知识要点</p>
+          <p class="card-desc" data-i18n="card-05.desc">5 个时间属性、法国人名时间序列、van Wijk 日历热图、阿基米德螺旋日历、Storyline 故事线（《侏罗纪公园》案例）。</p>
+          <ul class="card-tags">
+            <li>时间分解</li>
+            <li>日历 colormap</li>
+            <li>极坐标变换</li>
+            <li>Storygraph</li>
+          </ul>
+          <div class="card-cta" data-i18n="common.enter">进入章节 →</div>
+        </a>
+
+      </div>
+    </section>
+
+    <section id="learning-progress" class="section learning-progress">
+      <p class="learning-kicker">02 / YOUR LEARNING</p><h2 data-i18n="learning.progress.title">接着上次，继续探索</h2>
+      <div class="progress-shell"><div class="progress-summary"><div><p id="progress-count"></p><h3 id="progress-title" data-i18n="learning.progress.empty">还没有访问记录，从第一章开始吧。</h3><p id="progress-detail"></p></div><a id="progress-resume" href="lesson-01/index.html" class="progress-resume" data-i18n="learning.progress.start">开始第一章 ↗</a></div><div id="progress-chapters" class="progress-chapters"></div><div class="progress-footer"><p data-i18n="learning.progress.note">仅记录本浏览器的章节访问和上次阅读位置，不代表学习完成；不会上传或跨设备同步。</p><button id="progress-clear" type="button" hidden data-i18n="learning.progress.clear">清除访问记录</button></div></div>
+      <noscript><p>启用 JavaScript 后可在当前浏览器保存访问记录。</p></noscript>
+    </section>
+
+    <section id="howto" class="section" data-page-node-id="64yk0DBNHEq2iMB9yRtzCb">
+      <h2 data-page-node-id="XvkmtxSVxnKJUTjzUe2Dce">▶️ 使用方式</h2>
+      <div class="howto-grid" data-page-node-id="cojdiXSRBNTdp56gS6FmBx">
+        <div class="howto-card" data-page-node-id="Wsgba7MBGb1yReC0zL0lMJ">
+          <h3 data-page-node-id="jjJidP9Jcnu7hXhVmHCypu" data-i18n="portal.usage.classroom.title">🎓 课堂讲解</h3>
+          <p data-page-node-id="Hh7iVNa01hVGoyEQxB5GxB" data-i18n="portal.usage.classroom.desc">打开任一章节后，左侧选小节，顶部切换 <strong data-page-node-id="3Ti4uJxRwln8LqTJsbYNOa">讲解 / 代码 / 映射 / 演示</strong> 四个 tab，<strong data-page-node-id="8UpvqMzKYdXbcGUETc5NXo">一边讲解、一边实时运行</strong>。</p>
+        </div>
+        <div class="howto-card" data-page-node-id="9hvAJxzFlb2HWMiDsxPXDh">
+          <h3 data-page-node-id="rQ8i7Xd9Ue4dvP6pPFOz92" data-i18n="portal.usage.student.title">📖 学生自学</h3>
+          <p data-page-node-id="2ZTxSoLbCXQsLqSDJlMUSL" data-i18n="portal.usage.student.desc">按章节顺序过完所有 <strong data-page-node-id="pvlqcJQyUNHiJ0NFcIdHtm">⭐ 关键点</strong>，每个关键点配有「为什么这么写」+「有什么坑」段落。</p>
+        </div>
+        <div class="howto-card" data-page-node-id="M7z7BGrXl0AVkfCbVeF1Tm">
+          <h3 data-page-node-id="n3YFzoisHYF00VNcjx9zYu" data-i18n="portal.usage.teacher.title">💻 教师备课时</h3>
+          <p data-page-node-id="URAlOL2wTdVluoVIsQZEfe" data-i18n="portal.usage.teacher.desc">每个章节有 1 套独立的 <code data-page-node-id="jSVYKBHOpqcOM2WYjjPHEp">demo/</code> 子目录，可以单独跑、单独改、单独打包给学生。</p>
+        </div>
+        <div class="howto-card" data-page-node-id="9E2QWvyf76CriGP2LtiGOZ">
+          <h3 data-page-node-id="ApJtIdLQFhCHZDE9o8QLYU" data-i18n="portal.usage.lan.title">📶 局域网使用</h3>
+          <p data-page-node-id="84kdcq5HbWdLz7cieSHOQR" data-i18n="portal.usage.lan.desc">在课程目录运行 <code data-page-node-id="qGc4uouWgBwZv7G91JuCXi">python -m http.server 8080 --bind 0.0.0.0</code>，同一 WiFi 下可通过主机 IP 访问；交互演示仍需联网加载 D3.js。</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" data-page-node-id="OqSk18LDnzyO9oPCUHtagx">
+      <h2 data-page-node-id="Ta1C6MopIX5ouEBEIt0eUI">ℹ️ 关于本课程</h2>
+      <div class="about" data-page-node-id="cXUlwuNC3Wmfal8XO6hjqb">
+        <div class="about-item" data-page-node-id="6jky2o1LSDnYdO8G8Ri3fM">
+          <h4 data-page-node-id="eRsR8msIg5jhrZBkAMPMVj" data-i18n="portal.about.theory">📖 理论来源</h4>
+          <p data-page-node-id="jqfFFQ1k5xLMLHeRgkJZhL" data-i18n="portal.about.theory.desc">《可视化导论》、Mackinlay 1986、Stevens 1946、Cleveland 1984、Bostock D3 官方文档、Card 1999 数据流模型。</p>
+        </div>
+        <div class="about-item" data-page-node-id="2SxcnwvbFRblLa2GHSQlka">
+          <h4 data-page-node-id="eEg0KwI2evtu3BKGGmyLzI" data-i18n="portal.about.principle">🎯 设计原则</h4>
+          <p data-page-node-id="985X8BvYBwOBMCHUDiXydj" data-i18n="portal.about.principle.desc"><strong data-page-node-id="8aKJFcxxDkxStG2Zv2uRWS">案例为中心</strong>（不是理论为中心）。每个知识点都嵌入到用户的实践案例里，配 ⭐ 关键点解释 + 可运行演示。</p>
+        </div>
+        <div class="about-item" data-page-node-id="hj0E5OhhPIXgAuhEOj0Uv3">
+          <h4 data-page-node-id="r3LNSIU2EkLcB9MR9BOAQQ" data-i18n="portal.about.stack">🛠️ 技术栈</h4>
+          <p data-page-node-id="jaOruUD2mRDHzNN60WLowc" data-i18n="portal.about.stack.desc">无需构建：纯 HTML + CSS + ES modules；交互演示通过 CDN 加载 D3.js v7。本地一条命令 <code data-page-node-id="8eTwSdhaf6IQ8OUgXgvqAF">python -m http.server</code> 启动，无需 npm。</p>
+        </div>
+        <div class="about-item" data-page-node-id="NAZCDGDl8lB247GxmywQ9z">
+          <h4 data-page-node-id="0EQAwBXZphBziOkUOETKoH" data-i18n="portal.about.data">📦 数据集</h4>
+          <p data-page-node-id="iAaYt3JpFWbEtPHNARazX3" data-i18n="portal.about.data.desc">新生与 Crime 等数据随各章 <code data-page-node-id="rdAZYFXdCBF7wCpaXQesD5">data/</code> 目录提供，通过本地 HTTP 服务读取。交互演示依赖在线 D3.js，当前不支持完整离线使用。</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer data-page-node-id="EH6rxpBnR8fbmXeo8pKFlc">
+    <p data-page-node-id="A0tvzxVbe9cyG59uFVXL8X" data-i18n-html="footer.copyright">© 2026 《可视化导论》课程 · 中国石油大学（华东）</p>
+    <p class="footer-meta" data-page-node-id="blBkjOWrflNEAHUB1cL84l" data-i18n="footer.meta">静态课程网站 · D3.js v7 · 部署于 GitHub Pages</p>
+  </footer>
+</body>
+</html>

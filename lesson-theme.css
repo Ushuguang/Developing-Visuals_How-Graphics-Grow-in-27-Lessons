@@ -1,0 +1,99 @@
+/* Shared course chrome. Demonstration graphics keep their original data colors. */
+:root { --course-ink: #123e37; --course-muted: #5b6a59; --course-paper: #f7f8f0; --course-lime: #e1eb91; --course-line: #d8ddcc; }
+html { scroll-padding-top: 95px; }
+body { color: var(--course-ink); background: var(--course-paper); -webkit-font-smoothing: antialiased; }
+::selection { background: var(--course-lime); color: var(--course-ink); }
+a:focus-visible, button:focus-visible, select:focus-visible, input:focus-visible { outline: 3px solid #66824d; outline-offset: 3px; }
+.course-topbar { min-height: 68px; background: var(--course-paper); border-bottom: 1px solid var(--course-line); box-shadow: none; gap: 16px; padding: 12px 28px; }
+.course-topbar .brand { background: #e9eed8; color: var(--course-ink); border-radius: 2px; font-size: 12px; padding: 8px 12px; }
+.course-topbar .brand:hover { background: var(--course-lime); color: var(--course-ink); }
+.course-topbar ul.tabs { border: 0; gap: 2px; }
+.course-topbar ul.tabs a { border-radius: 2px; font-size: 12px; padding: 8px 11px; color: var(--course-muted); }
+.course-topbar ul.tabs a:hover { background: #e9eed8; color: var(--course-ink); }
+/* The original bilingual first lesson has duplicate link nodes; select by URL. */
+.course-topbar ul.tabs a.current { background: transparent; color: var(--course-muted); font-weight: 400; }
+.course-topbar[data-current="1"] .tabs a[href^="../lesson-01/"],
+.course-topbar[data-current="2"] .tabs a[href^="../lesson-02/"],
+.course-topbar[data-current="3"] .tabs a[href^="../lesson-03/"],
+.course-topbar[data-current="4"] .tabs a[href^="../lesson-04/"],
+.course-topbar[data-current="5"] .tabs a[href^="../lesson-05/"] { background: var(--course-ink); color: var(--course-paper); font-weight: 600; }
+.course-topbar .lang-switch { flex-shrink: 0; border: 1px solid var(--course-line); border-radius: 2px; background: transparent; box-shadow: none; padding: 3px; }
+.course-topbar .lang-switch button { padding: 5px 9px; border-radius: 1px; font-size: 11px; color: var(--course-ink); }
+.course-topbar .lang-switch button.active { background: var(--course-ink); color: var(--course-paper); }
+.course-topbar .lang-switch button:hover:not(.active) { background: #e9eed8; }
+.lesson-header { color: var(--course-ink); background-color: #e7edb3; background-image: radial-gradient(circle, #788d552e 1px, transparent 1.4px); background-size: 13px 13px; border-bottom: 1px solid #cbd69e; padding: 36px max(32px, calc((100vw - 1336px) / 2)); min-height: 150px; }
+.lesson-header h1 { font-size: 29px; font-weight: 600; letter-spacing: -.5px; }
+.lesson-header .subtitle { color: #4d6347; font-size: 12px; margin-top: 9px; }
+.header-tip { color: #53694b; font-size: 11px; }
+.kbd { color: var(--course-ink); background: #d4dda7; border: 1px solid #bccb8e; border-radius: 2px; }
+.lesson-main { grid-template-columns: 225px minmax(0, 1fr); gap: 26px; padding: 30px 32px; }
+.chapter-nav { top: 94px; border: 1px solid var(--course-line); background: #f4f6e9; border-radius: 3px; padding: 20px 15px; }
+.chapter-nav h3 { color: #79866c; font-size: 11px; letter-spacing: 2px; padding-left: 12px; margin-bottom: 17px; }
+.chapter-nav a { color: #54614f; border-radius: 1px; font-size: 12px; padding: 10px 11px; transition: background .2s, color .2s; }
+.chapter-nav a:hover { background: #e8edcf; color: var(--course-ink); }
+.chapter-nav a.active { background: #e5edbd; color: var(--course-ink); border-left-color: #31583c; }
+.nav-tip { border-color: var(--course-line); margin-top: 23px; }
+.nav-tip a { color: #657845; font-size: 11px; overflow-wrap: anywhere; }
+.chapter-content { min-width: 0; border-color: var(--course-line); border-radius: 3px; background: #fffef9; }
+.chapter { padding: 34px 36px 40px; border-bottom: 1px solid var(--course-line); scroll-margin-top: 90px; }
+.chapter:last-child { border-bottom: 0; }
+.chapter h2 { color: var(--course-ink); font-size: 24px; font-weight: 600; letter-spacing: -.5px; }
+.chapter-subtitle { color: #79836d; line-height: 1.8; margin: 9px 0 24px; }
+.chapter .tabs { border-bottom: 1px solid var(--course-line); margin-bottom: 27px; gap: 8px; }
+.tab-btn { color: #7c8671; padding: 12px 18px; border-bottom-width: 2px; border-radius: 2px 2px 0 0; transition: background .2s, color .2s; }
+.tab-btn:hover { background: #f0f3e1; color: var(--course-ink); }
+.tab-btn.active { color: var(--course-ink); background: #f0f3df; border-bottom-color: #6a8449; font-weight: 600; }
+.tab-panel h3 { color: var(--course-ink); font-size: 16px; }
+.tab-panel p, .tab-panel li { color: #475642; line-height: 1.9; }
+.tab-panel a:not(.demo-btn) { color: #526d3f; }
+.tab-panel code { color: #f0f3db; background: #213e32; border-color: #355544; border-radius: 2px; }
+pre, .console { background: #18372f; color: #e3ead5; border-radius: 3px; }
+.tab-panel pre code { background: transparent; border: 0; color: inherit; }
+.code-purpose { border-left-color: #a2b082; color: #607253; }
+.key-point { background: #eef3d7; border-left-color: #819d4d; color: #425538; border-radius: 0 2px 2px 0; }
+.key-point strong { color: #2c5031; }
+.note { background: #f4f1d9; border-left-color: #b4a653; color: #695c32; border-radius: 0 2px 2px 0; }
+.theory-table th, .theory-table td { border-color: var(--course-line); }
+.theory-table th { background: #eaf0d7; color: #455a3b; }
+.theory-table tr:nth-child(even) td { background: #f5f7ed; }
+.demo-hint { color: #6d7b52; background: #f0f3df; border-color: #d6debc; }
+.demo-mount { background: #f7f8ef; border-color: var(--course-line); border-radius: 3px; max-width: 100%; overflow-x: auto; }
+.demo-sub { background: #fffef8; border-color: var(--course-line); border-radius: 3px; }
+.demo-detail, .flow-detail { border-color: var(--course-line); background: #f5f7e9; color: #4f6046; border-radius: 3px; }
+.demo-btn, .controls button { background: #315b40; color: #fffef3; border-radius: 2px; border: 1px solid #315b40; }
+.demo-btn:hover, .controls button:hover { background: #244c33; color: #fffef3; }
+.demo-btn.secondary { background: #e9eed7; color: #3f5835; border-color: #c7d3ac; }
+.demo-btn.secondary:hover { background: #dce6bf; }
+.controls input, .controls select, .demo-control select { border-color: #c6d0b5; background-color: #fffef8; color: #3c5336; border-radius: 2px; }
+input[type=range] { accent-color: #698741; }
+.lesson-footer { background: #e9eddc; border-color: var(--course-line); color: #7c886e; }
+.chapter-pager a, .chapter-pager span { border-radius: 3px; border-color: var(--course-line); background: #fffef8; }
+.chapter-pager a { transition: background .2s, border-color .2s, transform .2s; }
+.chapter-pager a:hover { background: #ecf1d7; border-color: #a3b583; }
+.chapter-pager .pager-portal { color: var(--course-ink); background: #e5ecbc; }
+.chapter-pager .pager-portal:hover { background: var(--course-lime); color: var(--course-ink); }
+.chapter-pager .pager-title, .chapter-pager a:hover .pager-title { color: var(--course-ink); }
+.chapter-pager .pager-dir { color: #718063; }
+@media (max-width: 1100px) {
+  .course-topbar { padding: 12px 18px; gap: 10px; }
+  .course-topbar ul.tabs a { font-size: 11px; padding: 8px; }
+  .lesson-main { grid-template-columns: 200px minmax(0, 1fr); padding: 24px; gap: 20px; }
+  .chapter { padding: 28px; }
+}
+@media (max-width: 760px) {
+  .course-topbar { flex-wrap: wrap; gap: 8px; padding: 10px 16px; }
+  .course-topbar .brand { order: 0; }.course-topbar .lang-switch { order: 1; margin-left: auto; }
+  .course-topbar ul.tabs { order: 2; width: 100%; flex-basis: 100%; }
+  .lesson-header { padding: 26px 22px; min-height: 130px; display: block; }
+  .lesson-header h1 { font-size: 25px; }.header-tip { margin-top: 12px; }
+  .lesson-main { display: block; padding: 20px 16px; }
+  .chapter-nav { position: static; padding: 16px; margin-bottom: 18px; }
+  .chapter-nav ul { display: flex; flex-wrap: wrap; gap: 4px; }
+  .chapter-nav li { margin: 0; }.chapter-nav a { padding: 7px 9px; font-size: 11px; }
+  .chapter-nav h3 { margin-bottom: 10px; }.nav-tip { margin-top: 12px; padding-top: 10px; }
+  .chapter { padding: 24px 20px; scroll-margin-top: 135px; }.chapter h2 { font-size: 21px; }
+  .chapter .tabs { gap: 0; }.tab-btn { padding: 10px 13px; font-size: 12px; }
+  .tab-panel p, .tab-panel li { overflow-wrap: anywhere; }.theory-table { font-size: 11px; }.theory-table th, .theory-table td { padding: 7px 5px; overflow-wrap: anywhere; }
+  .tab-panel pre { max-width: 100%; } html { scroll-padding-top: 130px; }
+}
+@media (prefers-reduced-motion: reduce) { .tab-panel { animation: none; } *, *::before, *::after { transition: none !important; } }
