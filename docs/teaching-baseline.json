@@ -1,17 +1,27 @@
 {
-  "baselineCommit": "477706e3223ef43e66c79fd10f7abcd00d81a546",
-  "capturedAt": "2026-10-21 Asia/Singapore",
+  "baselineCommit": "478c4176331bccf6c9195a9f9ba836c893e95b2c",
+  "capturedAt": "2026-10-23 Asia/Singapore",
   "source": "Git objects, never mutable working tree",
   "files": {
+    ".gitignore": {
+      "bytes": 84,
+      "sha256": "d90e9719e29645f50e9b432643b5ce4ca642509a2f0ea6846fc46f6cb955945b",
+      "gitBlob": "31a2f0702ae557a84b34fabbc68bf8998ba74bf8"
+    },
     ".nojekyll": {
       "bytes": 0,
       "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
       "gitBlob": "e69de29bb2d1d6434b8b29ae775ad8c2e48c5391"
     },
+    "LICENSE": {
+      "bytes": 34523,
+      "sha256": "8486a10c4393cee1c25392769ddd3b2d6c242d6ec7928e1414efff7dfb2f07ef",
+      "gitBlob": "0ad25db4bd1d86c452db3f9602ccdbe172438f52"
+    },
     "README.md": {
-      "bytes": 2575,
-      "sha256": "29c7611193348c5789455d74fd33a3c48ab02d9bd4a56ec77e7a0d3e1e32a642",
-      "gitBlob": "ddb117469ba71a0d910fa24fc34ace4e90bec9d5"
+      "bytes": 6713,
+      "sha256": "fa5f9084c7f8a92e75ab24b92b69f03cea31964708f88286b413313417f05b2c",
+      "gitBlob": "600341778016136a796a94fe5bc8ec40012cc148"
     },
     "assets/book-cover.jpg": {
       "bytes": 602621,
@@ -28,10 +38,130 @@
       "sha256": "2960ab1d961ec246a8e311d7dd10599af59acbcf74e4e607e8d87057c6f4ff85",
       "gitBlob": "6e561b694280e5450761cbe8264ba3adef1bc557"
     },
+    "codex_visualization_course_27_sections_spec.md": {
+      "bytes": 183764,
+      "sha256": "73f4da37e3c51577da7ad73f30354e7acd0b333b8ec68ad5ec9e4526f80a8b5b",
+      "gitBlob": "09ac138f1e05ad6c7b3ace02884cade0ce914e5f"
+    },
+    "data-fallback.js": {
+      "bytes": 3350,
+      "sha256": "618efe090fd22c645f658169bb556a5bf2b37545b92827a99e81ceba0b92e6e5",
+      "gitBlob": "743943a653e096610d8accd9a0d2d98d16430cbb"
+    },
+    "docs/capture-teaching-baseline.py": {
+      "bytes": 9115,
+      "sha256": "2e6b3834c6cffb4a2a69ebe68404d10aeb9da800897fbf40fba81cc1aea4eb0c",
+      "gitBlob": "50d18ad7768e553f42ac57ab380b1959359c03cb"
+    },
+    "docs/chapter05-names-calendar-review.md": {
+      "bytes": 8325,
+      "sha256": "6dd5f57117a8a2e9044df703b02976460a782c11b4d5b3a40d909d4a81e2fe8a",
+      "gitBlob": "05e1b3527299c03a1dae404dab70e0141d8b3d9b"
+    },
+    "docs/chapter05-refinement-report.md": {
+      "bytes": 7071,
+      "sha256": "98cc3dff4202d17a04d9db028096f0f73dcb8c15fea6202978b705ff5f8d502b",
+      "gitBlob": "7fe42ba827a2f396985d913166bc2b288083b108"
+    },
+    "docs/chapter05-resource-diff.json": {
+      "bytes": 25692,
+      "sha256": "a9d9d554f0524ca3d8cfb7ca2414b442df456f8bc9c50af4b23c7dd823aa0098",
+      "gitBlob": "09bfca2161dc08c7c187bd80874745404c9eab26"
+    },
+    "docs/chapter05-spiral-review.md": {
+      "bytes": 6542,
+      "sha256": "9e8be8426c9e3bcd2b170e8755a1ac5a87600977db0aa8d8f02b50ae937ba5c8",
+      "gitBlob": "8d5e5e68ea8926a80db283ca1cfec7f46f17b9b3"
+    },
+    "docs/chapter05-story-review.md": {
+      "bytes": 7948,
+      "sha256": "3f73330bbe6465e3c2b421e2372de3dea85c218167b6c36050773ac18661a8d4",
+      "gitBlob": "495a8c565e31409a519dc125e3e7592f0ddd5e2e"
+    },
+    "docs/knowledge-preservation.md": {
+      "bytes": 31050,
+      "sha256": "ec3b971f407994e65fc0206f6acca994b4f19074a6e06c2459978e5cc19a6aae",
+      "gitBlob": "40eae6d66ae39bac75e1261afddea9593385b71c"
+    },
+    "docs/mapping-tab-release.md": {
+      "bytes": 3039,
+      "sha256": "2872b55961e018c5bb0e708fdfe230a5a6a5a0a479e367fa1176393370168485",
+      "gitBlob": "8d8daf83ec4336c86080891e54ea91562841763b"
+    },
+    "docs/teacher-review.md": {
+      "bytes": 7712,
+      "sha256": "71fdba00f11aab51f10d56b64c98af105c98ac561c86c9abae90cb8a06d77de7",
+      "gitBlob": "325d6f568103976540e308c416c93739d75d7823"
+    },
+    "docs/teaching-baseline.json": {
+      "bytes": 82904,
+      "sha256": "0e1e3fcd0c57e47fd6e7836d135c9ef81f121135afaffe2e443af55fd439c5c6",
+      "gitBlob": "91d5cb3a6b005da5a16edb538a40460340b4c537"
+    },
+    "docs/teaching-code-targets-review.json": {
+      "bytes": 54596,
+      "sha256": "3520a9091e8acceae443496e4444cd3dbb76bb36b0da6bbf92359c3637c71395",
+      "gitBlob": "10976f5d79663e128547395310ba851c46cc848b"
+    },
+    "docs/teaching-concepts-baseline.md": {
+      "bytes": 338,
+      "sha256": "48c4bf876da1d03f12c2d0510fd9753f08cdaf04596ad453735680ca97c03c07",
+      "gitBlob": "766cc7da75f8ca0039cd49da06257e0acb387cc4"
+    },
+    "docs/teaching-network-static.json": {
+      "bytes": 3217,
+      "sha256": "b5c71fb858f251f398642b8d691221f4d0d6f3a64a5c1ac4e4589676f922f99d",
+      "gitBlob": "a7285655e9facefed16b07868b17eefe69a37fe2"
+    },
+    "docs/teaching-resource-audit.json": {
+      "bytes": 26719,
+      "sha256": "7a41733124751b57ebe1d9052c252fe970db148f0481d20631e802adfa347c25",
+      "gitBlob": "4cc66356a14821b565c43a902b455066c6656a0d"
+    },
+    "docs/teaching-verification-summary.json": {
+      "bytes": 1295,
+      "sha256": "b7a3e3aca107ecbba3d338eb06058c877f1d905716571f1c077ddbb191ff5aea",
+      "gitBlob": "42d07be97580cc68a95351c809d409f80ccb6d8f"
+    },
+    "docs/teaching-viz-acceptance.md": {
+      "bytes": 11205,
+      "sha256": "bce2a69aca1a9f07b2cbdc946c4161ea077914f285c00108c5cb396174b67797",
+      "gitBlob": "6bc22915996c824cd077851028c70ced65a04567"
+    },
+    "docs/teaching-viz-baseline.md": {
+      "bytes": 6359,
+      "sha256": "d5b14b8531c0f0fcf93f51ea4e74c2ba7882420bcc9dcc537c357e9ff6f677c9",
+      "gitBlob": "408b91f527594ce06a0caba95a98fdd83cd78029"
+    },
+    "docs/teaching-viz-release-report.md": {
+      "bytes": 8828,
+      "sha256": "d6e7f8dd37f917522266d430443d6981ffa1414ca87f1b0c6b660504e7711dcd",
+      "gitBlob": "5249621f20aaacedc3e375299b927991c6c72c68"
+    },
+    "docs/teaching-viz-resource-diff.json": {
+      "bytes": 41414,
+      "sha256": "6db6a5914939ce1e6f1fc7e879aa736deea17acf4f22309d0a319f93a6c8ab03",
+      "gitBlob": "f050738aed97dfa142ad42b31cc565dc1ff29bf8"
+    },
+    "docs/teaching-viz-resource-diff.md": {
+      "bytes": 4022,
+      "sha256": "67978e79d5e7af30162e120de316fd9aec67fb4dd4a4b8e311c77b63b1d6ea0e",
+      "gitBlob": "906176830df74fccb94d49ee7c515f640d43cc97"
+    },
+    "docs/teaching-viz-review.md": {
+      "bytes": 6104,
+      "sha256": "d55b7789b7f75f7b08b95f287fcb8149d6349d06e8920c9c07504b1d7e2f6866",
+      "gitBlob": "d298bea900b2201e92cad5da8add15d051bdefb8"
+    },
+    "docs/verify-knowledge-preservation.py": {
+      "bytes": 3999,
+      "sha256": "d877b7ba5f72dbbbd239cde12f16d937b953d43f66414448e99ad5f5840f0045",
+      "gitBlob": "da683bd8718440f37cd66245e45e492385d8ff22"
+    },
     "home-theme.css": {
-      "bytes": 14950,
-      "sha256": "97dfa383374f5ed9244c6a808902e7760da4e4a3b29889781e6ddc6f445fae4b",
-      "gitBlob": "d6780e3687c03643ab20ed4d168c6c2395877de9"
+      "bytes": 15310,
+      "sha256": "9951d13ee1993af2cc171d8663b7bf5bbb9638aeba8825d7f1c903054c7a405d",
+      "gitBlob": "5f254125a1983284366ce8a70dedbe68ef48d656"
     },
     "home-theme.js": {
       "bytes": 6400,
@@ -44,14 +174,14 @@
       "gitBlob": "6322d946cb69680b1ee216319010c19ab9b2b5ef"
     },
     "i18n.js": {
-      "bytes": 34111,
-      "sha256": "2f7b8c87c16eab2ce407ea2c8ad210a0f5cf6059a446413ca663bc31aeca5714",
-      "gitBlob": "242d680627cc2907fd6aeb958aedb2fddfd94331"
+      "bytes": 33830,
+      "sha256": "727942e2ea6c4eaac04bd82fcd1c19b92093a04d62c34e059e47f9ca8f6faa32",
+      "gitBlob": "bc5e596223571863ba9bd69983efec79dac7c50c"
     },
     "index.html": {
-      "bytes": 21316,
-      "sha256": "e735576a715b973e056d52f289466bbf98cccf2ad4891ea71a1b2ccbb64662a1",
-      "gitBlob": "eb54f045d7115ad6e254e6c3dc23b0b894306555"
+      "bytes": 21266,
+      "sha256": "dc928f1af58d657b7a232c63211e90c6322995c0ed036c3469b579015e931bcc",
+      "gitBlob": "bce935edfad4999d57ae8a5c2c28a6b5fb1589fc"
     },
     "learning-home.css": {
       "bytes": 6428,
@@ -59,19 +189,19 @@
       "gitBlob": "f8aa6ce9f47db0e1f73c50d4c2071861497ca506"
     },
     "learning-home.js": {
-      "bytes": 4411,
-      "sha256": "486d816fa7779ca9c89912a3eb6b76f461ccd70c6e05b7a74e5eed25573f23c1",
-      "gitBlob": "e0a2f542bce65e037db1432d7931f66177c78bb9"
+      "bytes": 4496,
+      "sha256": "2b66f1e17b7891dce6f746f0ea494ade63f9826308bf5de3c874a71a26706cc8",
+      "gitBlob": "d6c339c3b8ae3df23a2471304ee075daf8b346b2"
     },
     "learning-progress.js": {
-      "bytes": 4622,
-      "sha256": "303e01ed5fb6a6b6a405759e10c413b1cf7ada1ae0b20d1870c83a39878b11e8",
-      "gitBlob": "24c7ddfe3a30464e9f485bfe100b3a74c170c161"
+      "bytes": 4633,
+      "sha256": "a8c3accc95f4567ab3eab4dcae3cd8c2a5b13040e51ec82f28eb7582ab6bb46b",
+      "gitBlob": "ff46e140e35b07ba310484a4d62494583893e804"
     },
     "lesson-01/01-数据.md": {
-      "bytes": 16574,
-      "sha256": "1f05f234952865c093a4e37c07762bd98b002b53c4edb92a2c7810753259bbf6",
-      "gitBlob": "48593cd654e711ac58ffc2311707f90435bae482"
+      "bytes": 16945,
+      "sha256": "0dff9d00f882ae39196e997c56810c162b68b8cc4fb7906951a92a0c1b972101",
+      "gitBlob": "e351b2bcdb16df2d8fd90f30c33f82bc4e75df7c"
     },
     "lesson-01/build_en.py": {
       "bytes": 18446,
@@ -89,59 +219,64 @@
       "gitBlob": "838077a224ebcdca02884b55671f5d47556eb9b9"
     },
     "lesson-01/demo/01-data-loader/index.html": {
-      "bytes": 3678,
-      "sha256": "43cec4571c956abcf8bb94c44d181a853fece58b1b6bccdf12507b43eccc205b",
-      "gitBlob": "67ad7f31144a1f707f5e5bf51c8ad7c5b567e6fd"
+      "bytes": 3984,
+      "sha256": "e24225f67200b2dc27ec1ace214b2950cef89584bf7baa4a530c87f9fd4ac04c",
+      "gitBlob": "04d6ed1d11ffbee50ca6834d24f6392ce1b009b6"
     },
     "lesson-01/demo/01-data-loader/main.js": {
-      "bytes": 3915,
-      "sha256": "dc44e59db276a4356093e5d65570b2c2f41e978fe600ef5127fc22f3778edcaa",
-      "gitBlob": "e61d01ff3463e763377c90b30b5ed15c09d207e6"
+      "bytes": 3972,
+      "sha256": "95c9daf1ece762b6027f867f879d3137d78ec8640b4a0f37dcd12aabf0c4006a",
+      "gitBlob": "5916094ab8043d03d7201600a42279e2b1772a8d"
     },
     "lesson-01/demo/02-dikw-pyramid/index.html": {
-      "bytes": 2526,
-      "sha256": "5136218a5fa1dfd5e9414e17b831d9d7dbdff64a485a78f7aefc765e4678bf3c",
-      "gitBlob": "594c9b33e3207cdaead8e684bf179a334f9c7097"
+      "bytes": 2809,
+      "sha256": "d34c8a45643ad37f7cc8db58d79f35328de6c4b35d4a8e77fc928e7b099492d2",
+      "gitBlob": "566dedca539246a0e4300d48bf10cad043c47d3c"
     },
     "lesson-01/demo/02-dikw-pyramid/main.js": {
-      "bytes": 4011,
-      "sha256": "1a75aa8e61d76e4f1ecb9df91b5d7ddd7a2e1a9affe09334eb8c1a7e99971aab",
-      "gitBlob": "2e5f78bfa56ccd21d82bd966c6cdccb095059a5b"
+      "bytes": 3902,
+      "sha256": "45c7cd40b9388460db4888d8814826d7c906bade6cc62ad833795a5b6e58e8bf",
+      "gitBlob": "f51b27459b20f0a79cf565be88b32886bf1f41a0"
     },
     "lesson-01/demo/03-attribute-types/index.html": {
-      "bytes": 5452,
-      "sha256": "265f0cb13c573e1d28f4de4d056627caca491b5a66730fed4011768d02af41f9",
-      "gitBlob": "c6c5c80080e7ec72eee569f8dcb2efe2ed28260f"
+      "bytes": 5766,
+      "sha256": "54026ea7a7a23d055573b98e509c4d0b18cd8a80044e89ca55c9bec69d7eaf8f",
+      "gitBlob": "2d48c22d844dfbf1baf3575c2285e926407ac57c"
     },
     "lesson-01/demo/03-attribute-types/main.js": {
-      "bytes": 5790,
-      "sha256": "05281a49a095a0031e0069b731a422a1d8efb95c3b9220c67ac304b1690c3e93",
-      "gitBlob": "bd34cecbebfb2fc433de2778a7f4c091aeaf121d"
+      "bytes": 5914,
+      "sha256": "f6e84a173c42e3262e6af2ae05357629cc70a69e6f89b40d5656c3d441cd1aaf",
+      "gitBlob": "64d389a42aeb851e109b6fa1499930cea946086f"
     },
     "lesson-01/demo/04-d3-array-ops/index.html": {
-      "bytes": 3983,
-      "sha256": "463774c5f8dc76f0ee7808054a691d13eaad667937e69c028cd00deb3f137514",
-      "gitBlob": "a7dd295584bc85021ad40a22cddcb29f225834ca"
+      "bytes": 4301,
+      "sha256": "c513c5799dba20be4b0d959f4319349141db86ddf59aa7ac4d19ae87617074b7",
+      "gitBlob": "248523fc84dd2648826973a6f4ce6f70a655266e"
     },
     "lesson-01/demo/04-d3-array-ops/main.js": {
-      "bytes": 4414,
-      "sha256": "73b46af0fc085cdcf3b6d35500c7caad89572aaca51c19eaa2db0b4157f81761",
-      "gitBlob": "9e6d296999c3a4798edc27591879ab726d1ca675"
+      "bytes": 4464,
+      "sha256": "4a78b141a1eba66e2514e373bb73a52c9b31c4d27e367e9583107497030ed3d6",
+      "gitBlob": "c4ff2d4d7e7e2e26e5fba38081306a21e43dd6b4"
     },
     "lesson-01/demo/05-selectors/index.html": {
-      "bytes": 5908,
-      "sha256": "0e97ad780bb34667c9f2ea554be893cc25401b57dbe60456af7ef711bdfa0d03",
-      "gitBlob": "d6bc2d9492f027fe58e268a5f59b470177dc1830"
+      "bytes": 6233,
+      "sha256": "428ff9af0ad687f8278cf314d980ad937c7e04b15d544d5758b4da8006a21396",
+      "gitBlob": "2a3b126e4621f33ad5481cc29df77bbbc423bc32"
     },
     "lesson-01/demo/05-selectors/main.js": {
       "bytes": 1969,
-      "sha256": "1c942ade51ef99b906ea546d3e7ebad44fbb37b6edd507d7fcc61452a6f8a7ec",
-      "gitBlob": "09477896d116d08cea95d4b52968be6ee3842192"
+      "sha256": "226b9ddc8db5cedbbd90938269c36dc3674e8e41f0527bdee12b93b5bd863687",
+      "gitBlob": "30fd5a9ee648f1de4b09c0e2788610aa6a2781f8"
     },
     "lesson-01/demo/README.md": {
       "bytes": 1653,
       "sha256": "2b59ebd52116175149afd5dcdcf0ccf2ecea5481cf1557d500752f6f81a27f9f",
       "gitBlob": "2d26d97ebdd544fbbbe4b2065d7c3fed062bf6b8"
+    },
+    "lesson-01/demo/data-inline.js": {
+      "bytes": 5729,
+      "sha256": "a92a6687db0b7da0994f5dec3960792cd14c3e2972aad933ce4e80199651b321",
+      "gitBlob": "ed1f4a8c45d80fdc40b439cfb8626be6c40d031e"
     },
     "lesson-01/demo/data/newstudent.csv": {
       "bytes": 5048,
@@ -149,9 +284,9 @@
       "gitBlob": "838077a224ebcdca02884b55671f5d47556eb9b9"
     },
     "lesson-01/demo/index.html": {
-      "bytes": 6632,
-      "sha256": "e2b1bdc7764f96d4d742d9c924b94581fe3a09ca02aebca1f5138f06648e1c7b",
-      "gitBlob": "d551289573b76cdc70ceca225d3d6ce4b4f2c219"
+      "bytes": 6691,
+      "sha256": "19bed18d56f26b223c14a07b182caa4ebca6a6bab164ea2c7641182bd73e097b",
+      "gitBlob": "c9fbaa35898608e0ddbabcd5985ad710a6b29d35"
     },
     "lesson-01/demo/styles.css": {
       "bytes": 3307,
@@ -164,9 +299,9 @@
       "gitBlob": "214a57df57078db128174d8e53ea949736bd2e78"
     },
     "lesson-01/index.html": {
-      "bytes": 84586,
-      "sha256": "266d27769350b98a4f67e18dc282d221db7e0b9d3152a81d786e10b5f0c514ca",
-      "gitBlob": "7d0c898ebdcc1a3677322b898eebb453aff86ee7"
+      "bytes": 86263,
+      "sha256": "96476538d585d96db0ca7fa31e370ce0c0a376939934de5675e9d81c42e54942",
+      "gitBlob": "54dfb23ae89e0e71fa71ac1057eb6242d64050f0"
     },
     "lesson-01/lecture-en.md": {
       "bytes": 19240,
@@ -179,9 +314,9 @@
       "gitBlob": "4767ca4a1d16bc878e0c996d0f1b852a976970f4"
     },
     "lesson-01/lesson.js": {
-      "bytes": 17383,
-      "sha256": "52e4ea39dbeb807a734c498e943dadf5eee36ebc1327fe19526ec3ed3b7ea3ef",
-      "gitBlob": "e8ce03b7df6f33ddfb1bfdfa714660cbe92003a8"
+      "bytes": 17609,
+      "sha256": "b55415902f334ca4d36ec3f4387902dd39671af1588ca227e7529016f188b2e9",
+      "gitBlob": "5ae9724257f82e3757254b8f91f65420f4a315e9"
     },
     "lesson-01/styles.css": {
       "bytes": 11150,
@@ -194,9 +329,9 @@
       "gitBlob": "15bccc833cd27f15fd63ed34df626dbefe323c23"
     },
     "lesson-02/02-数据可视化流程.md": {
-      "bytes": 11223,
-      "sha256": "590fe7fc7b8eea6497c49eab30173c9b88c8829826b72054db084d0c694330ff",
-      "gitBlob": "74eeaebd9cb30650da1eb95addd16f70b0d5fb4f"
+      "bytes": 11455,
+      "sha256": "cf52a195a24a292c65f4b356433103ae3b92a7122ce92ccbf784023dd671b93c",
+      "gitBlob": "ed311f717462cb287e516c05b05d69a5d67f3f74"
     },
     "lesson-02/data/newstudent.csv": {
       "bytes": 5048,
@@ -234,24 +369,24 @@
       "gitBlob": "afa5153082106e6100c3ecd4d0e7a3c93d77bd12"
     },
     "lesson-02/index.html": {
-      "bytes": 90394,
-      "sha256": "6576284d0339076c33ae252e112d42da7c5b49ba03c0172071c02480e6a43849",
-      "gitBlob": "2a9ad6115be3e1da6b055930226b30e6005137f3"
+      "bytes": 91617,
+      "sha256": "60360fc97f86dd60025bfd1edf8762e88cbfbd371560f4171cdb4fb8c43b464d",
+      "gitBlob": "2b5b1c931bac5d7aea30eedf0eef7c60e402ed10"
     },
     "lesson-02/lecture-en.md": {
-      "bytes": 18329,
-      "sha256": "d8e41048efd4658eac3bc70b9d3ce46c0bc58f6c6fbabcbb32ffe1afa28566b5",
-      "gitBlob": "ce92a96fbd01becac5b715a4bd23818d3948eb97"
+      "bytes": 18163,
+      "sha256": "e31fda3abd529a7b00518bd71da258e9b2426d25ef736a0c2c922b21d34346b0",
+      "gitBlob": "cc19d2e8c9ccb5f657fa0bb6c5d98d13414e6770"
     },
     "lesson-02/lecture.md": {
-      "bytes": 16953,
-      "sha256": "be23a9620d1c7455db515129f9aa53f010e271f84e1b1d4c42d5a0d3aec51f00",
-      "gitBlob": "7c63b04869f9a4f25f2c41f1c50a8dfcaceb30d9"
+      "bytes": 16835,
+      "sha256": "40f8cd5d72bd68491e4e46ec4b9c0cca4078d00a502808aece357694914ac5ed",
+      "gitBlob": "6d55ea28d0c303c81b46bf738c533a15a1676a1a"
     },
     "lesson-02/lesson.js": {
-      "bytes": 21411,
-      "sha256": "d9f34ea13c64b2539c49537b261ba5d7bdac79fbaced18c0caba7fd517ceb6f8",
-      "gitBlob": "f97d725976ef040bc0ec5e2eda37895de6d1a729"
+      "bytes": 21428,
+      "sha256": "2c8daca6bd62b95aed4f63f559b9b9609e766981455423ab5f4b5a92ccb2b494",
+      "gitBlob": "50510b8672194b4a24c31121a19739e232b335b0"
     },
     "lesson-02/styles.css": {
       "bytes": 15844,
@@ -274,9 +409,9 @@
       "gitBlob": "c5236b367312b1c71fe721af6a570ef60343e435"
     },
     "lesson-03/index.html": {
-      "bytes": 59327,
-      "sha256": "e6f3ff0d119f4f5fe9c825a686010cab38caeeed3bc4523c54a0614ad7428dad",
-      "gitBlob": "3364394c80624233288fef2591b2dbf55227a6de"
+      "bytes": 61697,
+      "sha256": "40c8c08762bafad775c7d3bc96563769ec7d623ce308922c1fe382d13d4cb7fb",
+      "gitBlob": "381358d4e2a914d6a868a4b44d3489514955fda0"
     },
     "lesson-03/lecture-en.md": {
       "bytes": 8522,
@@ -289,9 +424,9 @@
       "gitBlob": "6eda26b644e404c8fa260a3c799982c4677502e6"
     },
     "lesson-03/lesson.js": {
-      "bytes": 36995,
-      "sha256": "10101837fcad3d60e7866e49e8a224faaff437aa36b4794ba48e31924a32e0b5",
-      "gitBlob": "c646c8640b2258d45886844010b8217e7512f6bd"
+      "bytes": 35177,
+      "sha256": "d5fab900ff49fcf1bef5c3557add6335ba6cfe41cc4dc64905bd86d3d312eedd",
+      "gitBlob": "31876ca5c62c7135cbb63a4032c683adf6dfac74"
     },
     "lesson-03/styles.css": {
       "bytes": 24609,
@@ -309,14 +444,14 @@
       "gitBlob": "f5121d0b3777b87853429453beb9d8c13d2de3bd"
     },
     "lesson-04/en_blocks.json": {
-      "bytes": 36927,
-      "sha256": "f0b750b310747e1018e8199b064d61f0dbf9df03976ef42bc8a29f198e317276",
-      "gitBlob": "01565eee0178ef9a641ef96185e7512716227767"
+      "bytes": 36864,
+      "sha256": "bb3274dccb03b7063957ac2394f68ec364f71dce86ca1af3a1e0a9e0986a6cf4",
+      "gitBlob": "cd3b7e43f1a483308e64cc2f4e076cb071a1d01d"
     },
     "lesson-04/index.html": {
-      "bytes": 42549,
-      "sha256": "8c22197404bd9a3adb9f3581ca8519d6a021d1d62fd607010581405963e12057",
-      "gitBlob": "d776678932d5f45f6923fa6c83239ca812a3ceb1"
+      "bytes": 44121,
+      "sha256": "9e73daae89dc1e6b593262ff2dda703e59c84e91101ec7b1bdbfdc57e5485038",
+      "gitBlob": "a391208a747d8c52eb1b364ef22a4fb20813012d"
     },
     "lesson-04/lecture-en.md": {
       "bytes": 5485,
@@ -324,14 +459,14 @@
       "gitBlob": "6f3eef3f723f0a3451280bdaeccbb4e855e2bb75"
     },
     "lesson-04/lecture.md": {
-      "bytes": 4706,
-      "sha256": "24ad3e7a3a39fc0ef31f10c528fbf12e00a9fc17388c528289172c69daa27b1b",
-      "gitBlob": "a541dce6364bace63fa174d9cdef1f5e6d9dffcc"
+      "bytes": 4675,
+      "sha256": "cd379ee453a1acf763d140f062bd6f7a1e7490c33eebb0ac98db0a67572c26c4",
+      "gitBlob": "077736d5f3b34cd261d4a8ece25711d461161af5"
     },
     "lesson-04/lesson.js": {
-      "bytes": 22068,
-      "sha256": "f7a4da21907250e2e38a99b33309a526e911c0b32fac79d96cfbba0a9a89608c",
-      "gitBlob": "6af168e53a3a759c5607be7fd6a083af5ac71ed7"
+      "bytes": 21847,
+      "sha256": "24cbfdab5352b52736f59f63a8f8732938783fc89e70f0f62aec40ccd05ad061",
+      "gitBlob": "fd44e02ea6422b4112487dd55c2a3f0595a270e2"
     },
     "lesson-04/styles.css": {
       "bytes": 24611,
@@ -339,9 +474,14 @@
       "gitBlob": "62c1b70842bd21ef91bd43ab02ca01265d99c312"
     },
     "lesson-04/zh_blocks.json": {
-      "bytes": 34503,
-      "sha256": "8f09ebe22420d0a948694e2f32cca6ffc86ff7ff4d85d23f8c66ade08d29c8f0",
-      "gitBlob": "9f9200b95e02ed6f63ef5a5e635164ae74153d7d"
+      "bytes": 34440,
+      "sha256": "ae2acaaed266de60e10cff59c1dfdda95024cbdf404052d4be5c502b7135badb",
+      "gitBlob": "c93ea813c70693257351b3df2aa25efb79eedbfe"
+    },
+    "lesson-05/casebook.md": {
+      "bytes": 7008,
+      "sha256": "6c88a976755fa8ea19548f2888b2c88989d4f37a355cfccd5a6acfaae1e337eb",
+      "gitBlob": "0758ac055a861fc2b776f38c03b93dd3f952d7a3"
     },
     "lesson-05/data/french_names.json": {
       "bytes": 9524,
@@ -364,29 +504,29 @@
       "gitBlob": "2e8b452a483e7581ea7703fcd33b968b35010e50"
     },
     "lesson-05/en_blocks.json": {
-      "bytes": 48450,
-      "sha256": "918dc560a18116509a259a679e033154e5b2edcd1ceef38c06a4a1c2c912c801",
-      "gitBlob": "8ad875f3be3ffb166782a89e85146ec0347b0cf8"
+      "bytes": 48335,
+      "sha256": "efcf5aaef8c54fd13169b6fe7dc09ecf08929e9f09a3f2713c4b79769058fe50",
+      "gitBlob": "eb2ae72507a213ba5954de9a445fb08eab2125f2"
     },
     "lesson-05/index.html": {
-      "bytes": 55496,
-      "sha256": "4804efdd95228561129ad3449785de4ae709181ecf3aeff110c47e47002067ae",
-      "gitBlob": "caaea20df83440ccfbe9dc1a99d76f4862fba2bc"
+      "bytes": 57258,
+      "sha256": "2a0bf5ba9f46aa2e38efb1ed666ff73ceb80de557effe701a8033c10a8cb2a92",
+      "gitBlob": "5f96b894dcc22eb30a3c2e62e1ae94b32ac43847"
     },
     "lesson-05/lecture-en.md": {
-      "bytes": 6780,
-      "sha256": "0c0cd5024464273602dff83a561dbbb4e0673c922fa3c3ae31ab0d5e2a27ca01",
-      "gitBlob": "f9fe6b10b270a04a4d9dbbdb95f22a4131610d49"
+      "bytes": 6831,
+      "sha256": "ec01ae9387a80c0c44183fcb5e98c5ed818cd2af961ea1f7da86cd10e5d358cb",
+      "gitBlob": "9354960f9547a72ab8c3fa67291f37d6df3f03d8"
     },
     "lesson-05/lecture.md": {
-      "bytes": 5692,
-      "sha256": "6ccdadc2ced088a2e3827baaed8d4cdab8a6a6f440eaee8877560c5897d171ec",
-      "gitBlob": "28d9c127dfe28922f018766981557d151487ca82"
+      "bytes": 5662,
+      "sha256": "db05e3e4db84a6868685f02905c16c4d0d6ccccf34f8e4919baf31ce038207f1",
+      "gitBlob": "9adf6afd83714f6768a5cee80ade91850c9db43b"
     },
     "lesson-05/lesson.js": {
-      "bytes": 29553,
-      "sha256": "793a522e9a0f170277f213224cb1d79a54440beaa8481181c998d1367b8b6194",
-      "gitBlob": "6829ef49b04a5becfd9ce3cda83a961517478e63"
+      "bytes": 28199,
+      "sha256": "7a83adf370c7301127fb2cea34bb7d2b22f0f946c67483322636d768856b1121",
+      "gitBlob": "5953543f7129b085b94c041910a00d75c6f8616a"
     },
     "lesson-05/styles.css": {
       "bytes": 27060,
@@ -394,24 +534,49 @@
       "gitBlob": "9af20674bdff2a4702c3ba681c33bc6d16fc85b6"
     },
     "lesson-05/zh_blocks.json": {
-      "bytes": 47419,
-      "sha256": "a7d5daf16754e008f6d6f2410b26b59e7de68a1254883ddb698254992ebe8a8e",
-      "gitBlob": "a1747d54de7517485f308cceba8e941bccdd5a27"
+      "bytes": 47304,
+      "sha256": "06f5573ba5c8b081e07d38de1eff8b5fb1a86dcca96cf422747adc7a53bb5f5c",
+      "gitBlob": "61e38540705613484e01b14f61e87946a93c00a4"
+    },
+    "lesson-nav-fallback.js": {
+      "bytes": 1378,
+      "sha256": "44e41d7bac688cb57c638cdfda6f848decac24492da638d0a5609ee6fd923395",
+      "gitBlob": "dead8718b7b917bcaf62b75a45df8b3b8123c510"
     },
     "lesson-theme.css": {
-      "bytes": 8616,
-      "sha256": "f623eda1f48740732d6acd6dd4ef9b0dfd50f232dd831cef6dfa48c419358619",
-      "gitBlob": "8d63f6b0fe4ae6c7858185891a94f4025059ddc2"
+      "bytes": 8621,
+      "sha256": "1784c7565c162c95d6546ebd611ec8e839ee644f7a4488226e1c13c5fa03802c",
+      "gitBlob": "84dc9ad0c58ef7811d711acd30879954bfc32fa3"
+    },
+    "scripts/audit-teaching-assets.py": {
+      "bytes": 5791,
+      "sha256": "7b18ef7ddc8428de3110d24dbff1721b681a6d94765afbbf68916431a717a5c9",
+      "gitBlob": "604491f4f155eb92811d8111b56d51a9cdfd29f5"
+    },
+    "scripts/serve-teaching-faults.py": {
+      "bytes": 1743,
+      "sha256": "98c8362ceb4e033da61138395407a6d389d8492944b7aab25d9261b0aa27b3ad",
+      "gitBlob": "396a608305b0feb7d984fc32ef48d94b0cb1e430"
+    },
+    "serve-local.mjs": {
+      "bytes": 2229,
+      "sha256": "ec7e934a48c90d40f563849366fea5bbe074593cf3adfc2a467d50f0495f2940",
+      "gitBlob": "ca321e48d614d1a8347576c00b0f1c60dd403fee"
     },
     "soft-book.js": {
       "bytes": 10999,
       "sha256": "24de07e4a40fdd79599b0e7e22870fa03c0fa38c4b7c603104b4f7b99aa36e8e",
       "gitBlob": "64f4355bbcc78fcfc635c2c1a24e4c02e7036009"
     },
+    "start-local.bat": {
+      "bytes": 851,
+      "sha256": "26b8bd7332c0e4e7b869dd936d6d7008bc69320145c145bf4e9af767e6361d8e",
+      "gitBlob": "927878956f19152623082a25f926033f77a1496a"
+    },
     "styles.css": {
-      "bytes": 5609,
-      "sha256": "9eb187cbdbadcb243bbe8c8f7096119f4e1229409c9f40314afeb4349b75aca9",
-      "gitBlob": "92071628c76d7d5f816267f81ff6e11cdc869ed0"
+      "bytes": 5999,
+      "sha256": "b5b05b2cd467d367effe0f306da7181414cb0788c1549c627c8dc9bd4e8d6266",
+      "gitBlob": "5221f925707f2de7bb9c43a0430149869b276214"
     },
     "supplementary/5. 低维数据可视化.pdf": {
       "bytes": 909976,
@@ -419,39 +584,44 @@
       "gitBlob": "f042ad298b5da3227ff172ddb2fb7afcc5fc5217"
     },
     "supplementary/calendar.html": {
-      "bytes": 19519,
-      "sha256": "df962cbcc323b242d4780d8005883f95d04d8d2128c67204a7ed64e3c31ab78c",
-      "gitBlob": "7a5ec86d2fb04029691bbbd78d63835d6d9e8144"
+      "bytes": 19711,
+      "sha256": "ce0d77510030ed37cfdeec189059c13e7c22e233a66e8366c72bf3836634d761",
+      "gitBlob": "5a75400a700299c606d5c5901fb3b420baf9d32c"
     },
     "supplementary/calendar1.html": {
-      "bytes": 19490,
-      "sha256": "e771343f21e0f0b68e83f6b2d65078313c920441345918e60dfe06da2d81721c",
-      "gitBlob": "2bc69892e94a48bab8b82a69366758c9812615ed"
+      "bytes": 19682,
+      "sha256": "cda709c536e5e5d39f3692e009c5683d0f2d2a17ea35e1752e5ded43b7116965",
+      "gitBlob": "205bc76317c3d24f235a51a149b6a05698f44397"
     },
     "supplementary/calendar3.html": {
-      "bytes": 24145,
-      "sha256": "d7a8daf9b947f4305a6b19f818c4178af2562560db6b3f1827fa43faad4933b6",
-      "gitBlob": "50e15d73160516eb8a045380ad2c36ce448206be"
+      "bytes": 24337,
+      "sha256": "782eabdf0172669661175852514856087785c5e6a51fe03fb5bacf6620abe9b9",
+      "gitBlob": "61ffd35b602ab5efd67c82716e2f73f04c2e7327"
     },
     "supplementary/colormap.html": {
-      "bytes": 3847,
-      "sha256": "28e8022b5c55aa325eca8bc420d42c280b8f4e1385b5e589f461a719c96d3b6a",
-      "gitBlob": "c920202c6ef1191159165014a0084231cfbb602b"
+      "bytes": 4145,
+      "sha256": "203a15d08c7febfc8c1835aba88adb5502e3655bcd42a1773c8db0f062ed2c16",
+      "gitBlob": "20c224edade8b689848b26e73279a08014fd828d"
     },
     "supplementary/contour.html": {
-      "bytes": 13155,
-      "sha256": "d4a87939ca056da1d9f276421f8e89c6001f12f7a29a1b38d2018f666bd667f6",
-      "gitBlob": "321597b3a9ba37b03e1ba9682ae5284677303586"
+      "bytes": 13349,
+      "sha256": "dc94f566d048f665011179f3d7061db7551a0b2521fb2eb3ea43f3b9cbebfc50",
+      "gitBlob": "7be15de1edefd40d3079b096b0170269681fea12"
     },
     "supplementary/contourd3.html": {
-      "bytes": 9698,
-      "sha256": "e756977aa9af8ad1c9de80c97603dbe0ef8255ef32a781c775512ee6998aeae0",
-      "gitBlob": "2dd385f785145bb8bc0c05a1404daf334ff2b1e3"
+      "bytes": 9892,
+      "sha256": "b63de4d7ca737f15e4c6584475114891efa101f05aedb0cc87ec36ec3ae71cf6",
+      "gitBlob": "6d527e0c2d07c046b3f9e179216eeaea85e9ca03"
     },
     "supplementary/crime1985.html": {
-      "bytes": 1550,
-      "sha256": "f38f59ab192e75b796b338179fbbd0d9127191f5d511c58e77c98fc1d481e6fd",
-      "gitBlob": "52f537984f372949db79d590a414ad29ace5df3b"
+      "bytes": 1681,
+      "sha256": "885a722772bd18ee3fdaa810286d6775a2bdd62fee8bd54340a9b0ffee948ca0",
+      "gitBlob": "6a45797890de98566767382b86e2575ee3ee9ae9"
+    },
+    "supplementary/data-inline.js": {
+      "bytes": 64260,
+      "sha256": "7a629dfc6916e1466abef73fd5ebc866794738bd98f8d5c9367a6a5a51f348c0",
+      "gitBlob": "a09c0014e1458c290aab912800ee1ecd92861d26"
     },
     "supplementary/data/1985CrimeGender - Copy.csv": {
       "bytes": 1135,
@@ -484,19 +654,19 @@
       "gitBlob": "14b47eb554654d320da6829a68d78ee60f5eb6bc"
     },
     "supplementary/i18n.js": {
-      "bytes": 24268,
-      "sha256": "32fcc6d63a4ddf5646c8a31e6e0bcd605c477953be68a1f93084dab641f04817",
-      "gitBlob": "1edc9be1f74d8da3aab7942bc9974ff7040748a8"
+      "bytes": 24846,
+      "sha256": "b7dc7acd687e86784c49a2e3aa54c33e22c9146859c50d781a8324b995745409",
+      "gitBlob": "3c64aeda48812e21080bb3e0236c7cdf245d6ab7"
     },
     "supplementary/index.html": {
-      "bytes": 10326,
-      "sha256": "b2e829c237974b8b6008df897420eef03d0431378648ae48210af0fcc34d1c7b",
-      "gitBlob": "bf8009f256be628326f2fc5ddda395b746837354"
+      "bytes": 9741,
+      "sha256": "10b258aedbaedb756626a8125aa6d1b374b880df702c02bc3d56408253d82072",
+      "gitBlob": "04453f3f86c640eba6fda905bd11e27387f8a554"
     },
     "supplementary/mark.html": {
-      "bytes": 4431,
-      "sha256": "f72c6ebae1ea5d49008bb8f52d4e14d49e1a1fee3f321fb44e0869362dcee069",
-      "gitBlob": "5102345b17c5083d10ece04f58987bd9296a10d0"
+      "bytes": 4729,
+      "sha256": "550635009101c33861ced06695347e69b6d631bc340f5bbfd87554cd293a7ab7",
+      "gitBlob": "303916857bff2c00951ca8ad5625e9fbbfef1c8f"
     },
     "supplementary/newstudent - 5人年龄错误.csv": {
       "bytes": 35069,
@@ -514,24 +684,24 @@
       "gitBlob": "db592df3fcc62801253d06f9c91545b453fed368"
     },
     "supplementary/newstudent.html": {
-      "bytes": 5241,
-      "sha256": "0d6cc3a4dafb5a6316d88deaf9c5f6e3c78942680bcca6cd5c45826bc00bfa4c",
-      "gitBlob": "fb2dfd2184aa3a52e1947a77e51a7ca4bb164093"
+      "bytes": 5539,
+      "sha256": "a6b8ae49a7c1ac4d9ea297a33099070563d5f7b240c72d39d977f216ca9793ad",
+      "gitBlob": "53c8b62cb913766c0dd3e5d96afc971ccb349d49"
     },
     "supplementary/nssystem.html": {
-      "bytes": 4327,
-      "sha256": "bc7c141e73b191e81eac8a5679c5ce224558361d8c9443bdf4a27b1c31b34607",
-      "gitBlob": "083519800ce5d7fa8f2d76bf36fc47366611ad27"
+      "bytes": 4458,
+      "sha256": "5f4dbd0c294fdcc4bc48cb1fae7f4ff379d7cee885d9f6ea764860d0227fd7bb",
+      "gitBlob": "ddb82a3338c4d7d39f458a78144fbab599484a7a"
     },
     "supplementary/regression.html": {
-      "bytes": 404,
-      "sha256": "91346da28e863478d9bb1dfaadc1a143b1343eeeb0aec5c7713aa01375405679",
-      "gitBlob": "ce09d8d75a9077b1b9d6db507e192e4f3b4f3aad"
+      "bytes": 5863,
+      "sha256": "114dcd03de396665ffcc07c9ea103d307a0c3f7ec2b2217a06de488ee6b4de54",
+      "gitBlob": "d57ca5f7db7f4ff5bd29e2c1613d70443ac4ba6d"
     },
     "supplementary/sex_compare.html": {
-      "bytes": 4526,
-      "sha256": "6f0148f7dd04e908b9ffa62019393b69eb9ca0d28912bdccb62c33e56fb015b6",
-      "gitBlob": "ed57dca28281cf32092e41bf1d85adc1bcde61d5"
+      "bytes": 4720,
+      "sha256": "4ff1751a11517681a317765cb328cef5502bbd5a9ea1207f132e5b11360c2d1c",
+      "gitBlob": "2fb8bfbafa6c64c039b50ba14b39bcf54ef02376"
     },
     "supplementary/style/calendar.css": {
       "bytes": 5016,
@@ -559,19 +729,19 @@
       "gitBlob": "adc77bc31e60233ecc0826e1406c6f43a3cffaa4"
     },
     "supplementary/tableshow.html": {
-      "bytes": 1134,
-      "sha256": "902edc8de8d4df8aa52ab921aff9172a1087ed95be731f04e52ac236548317fe",
-      "gitBlob": "ca5dfcbb5aa63bb94a6a4ee6189ac83d42e4c761"
+      "bytes": 1265,
+      "sha256": "1af188ff19ca6b42b817715c8dfade943de4ee10281538ad14538b4553d66b57",
+      "gitBlob": "450e87548e0e24e8af46d43a0e46130a4b657234"
     },
     "supplementary/treelist.html": {
-      "bytes": 1306,
-      "sha256": "31e57f478117d97cd6b6c88cf1d0e94838b63092d0c8eb452cdfa8f7dce41562",
-      "gitBlob": "40559e8d41013b4e470e5003b302abf53e1ad7a6"
+      "bytes": 1437,
+      "sha256": "b51646f7abfe8b79dc43606bb6bef08590aa0283d88aad6b26f01d68178c7cd6",
+      "gitBlob": "fe564c7c677fb07eb84ecd9b15722049dd03741d"
     },
     "supplementary/utils/data.js": {
-      "bytes": 3397,
-      "sha256": "f5a646f5ed92ab83a6f1bc9b6f5e4decf2e27ffb8611577faf15707a35938cd1",
-      "gitBlob": "0a63fe96091ed3120a03868215cacbf89adb6ee3"
+      "bytes": 3415,
+      "sha256": "06f5b8f973e5516f165189b6cf109ddecd799c269a11de2e60a4fc02ac5254e5",
+      "gitBlob": "88b5094bc8359b3ad84ddb0b9335418358137ea9"
     },
     "supplementary/utils/scatter.js": {
       "bytes": 4897,
@@ -598,24 +768,232 @@
       "sha256": "7d2a6f24fc4d8377984c078b65584d935d8b7341fcec997971ca67258f89838a",
       "gitBlob": "ae0f48e5eebdfd2fe112dc97257efef4d5bf4642"
     },
+    "teaching-viz/chapter-01.js": {
+      "bytes": 30161,
+      "sha256": "1309053eb8e129bd69f5411e0bfb019c8d782515dae1deb6afe0f2f520a60356",
+      "gitBlob": "3153f46dfc43e8d2e1b17a6b38feb6122d499e4d"
+    },
+    "teaching-viz/chapter-02.js": {
+      "bytes": 33713,
+      "sha256": "21ef81e9edb286203043f1509eec206b7d1d4e003c245e1beaf7c0dc846461fb",
+      "gitBlob": "7043be164c00b1a063a74498e7298eee21800d3d"
+    },
+    "teaching-viz/chapter-03-extra.js": {
+      "bytes": 13303,
+      "sha256": "4928a6ed2c7b568037c4ea1328c943d75ae8d9e2fac81af38a8e3542620780c0",
+      "gitBlob": "d1527f5e6d79b26a242748d17dc9417ee93ea1e7"
+    },
+    "teaching-viz/chapter-03.js": {
+      "bytes": 20295,
+      "sha256": "e27eb81a853584a3ea1444eb30f5434b3ee49e98f9af39c2f78eeaf69d6907b9",
+      "gitBlob": "979dc6e6bf82d7807de73f8df90f7db2fa8f9bd9"
+    },
+    "teaching-viz/chapter-04.js": {
+      "bytes": 26591,
+      "sha256": "16e7937e5d51470da819be85e7a06640b1f9605c2f07690eb4b194c88d00c284",
+      "gitBlob": "90d27b631ba942a35f894917752224a2bc40f404"
+    },
+    "teaching-viz/chapter-05-attributes.js": {
+      "bytes": 11923,
+      "sha256": "dd7fa7967f7aac1e6386c98047cb8b6128230dd30f5799cfbc8bb420f331b25d",
+      "gitBlob": "e1217768d25e99ad5ddb8e54c3e8f92677d9045d"
+    },
+    "teaching-viz/chapter-05-guides.js": {
+      "bytes": 9667,
+      "sha256": "c1d78d86880ca8b39b3c9592e35fdbbb098059809eba68e423b078bc4ff6763a",
+      "gitBlob": "093c681b8eb1fdff53cdaba1ad6f3008f6cd3793"
+    },
+    "teaching-viz/chapter-05-names-calendar.js": {
+      "bytes": 32891,
+      "sha256": "c0048b3a9cfeedd41ad738b7495bc50f028d39ddae295aa617aeb72f05e57127",
+      "gitBlob": "f202c9a10b3de109ed185399d8fe61d57784573d"
+    },
+    "teaching-viz/chapter-05-spiral-model.js": {
+      "bytes": 4031,
+      "sha256": "3571376999fa4897a4f96806eeda554b0f7bfdf91b3e4c3fcbccd0240cf20134",
+      "gitBlob": "90e26e189f6e08b6d0e2b5cd9513cf35d9552f94"
+    },
+    "teaching-viz/chapter-05-spiral.js": {
+      "bytes": 18917,
+      "sha256": "b78d10e588fabbfda9c9f47f82feee55e433326cf928586b940f44f19923f0fa",
+      "gitBlob": "7395eaae9918cf8101f5ca568f8980fad1b89668"
+    },
+    "teaching-viz/chapter-05-story.js": {
+      "bytes": 19002,
+      "sha256": "685d82cf744f9d7a2b8e473ef4fe0e74d1338261c3d93221ee472373b5d4ca45",
+      "gitBlob": "f731a99c2b3fe66db1e08b827bddba924ee3ba6c"
+    },
+    "teaching-viz/chapter-05.css": {
+      "bytes": 2422,
+      "sha256": "94288375ab13583736b5285b906df51b50dd9c80145078dd76922f9ec23ae8e0",
+      "gitBlob": "a992767d7664ceaa4ebf9d64538ad969b8fdd8f5"
+    },
+    "teaching-viz/chapter-05.js": {
+      "bytes": 515,
+      "sha256": "b1777968380605cc3ec5bd7b0fee42df38bc64f6c345f98ba6ce95f9c9e0caf6",
+      "gitBlob": "e3d361afd3ada5ef572d3927a6e6cfc3edc7e00c"
+    },
+    "teaching-viz/fallback.js": {
+      "bytes": 1585,
+      "sha256": "6a75677e36235be8dabe71bae970d110d9ce254e54ea521fa4c307812a3997a8",
+      "gitBlob": "445dba94bb3393b2445606bc3629cc6b4df2dfc4"
+    },
+    "teaching-viz/linked-learning.css": {
+      "bytes": 5156,
+      "sha256": "17da495277aabc7573739bbab741971173ac2536fb6c678b054b0f04b097ffea",
+      "gitBlob": "9a758720fbe0199ca5a533f4a89fbb4ee1e6f725"
+    },
+    "teaching-viz/linked-learning.js": {
+      "bytes": 14149,
+      "sha256": "2d046c74c9fe3ba7b3b168518625d65a4ba85e6aa3d9d881a40ba7ec6f8beaf8",
+      "gitBlob": "d19201d4b351eea21650d25eda4e671a567c8cb0"
+    },
+    "teaching-viz/models-01.js": {
+      "bytes": 3431,
+      "sha256": "a4367d956987b604c0dc13978b6ec9b9aafd88f9e3d376cb744490fac5c25218",
+      "gitBlob": "972aac6338c834706ac7d29068158109175b4792"
+    },
+    "teaching-viz/models-02.js": {
+      "bytes": 1962,
+      "sha256": "bfccb0d4c2607d07602f186eb4d2351acf0c4971305eaaa3634ac2d6d46f8458",
+      "gitBlob": "311b424ed5a98f089fb335ae8e4112b9ffab1012"
+    },
+    "teaching-viz/models-03.js": {
+      "bytes": 2395,
+      "sha256": "8742bbf86dc4864463c152bc933cc7e7e261f3feab04da517a23e2d6107d6be4",
+      "gitBlob": "3f3e1b8c00783b858419b0e0e55f1f68df656bd7"
+    },
+    "teaching-viz/models-04.js": {
+      "bytes": 4912,
+      "sha256": "fe8a7d6a74f3486f9daf0bc0feaef83d70a2974c3ede8ef3e98843da026149b9",
+      "gitBlob": "2616f0032def3a11cab8a4867516a39bab7dee64"
+    },
+    "teaching-viz/models-05-names-calendar.js": {
+      "bytes": 2104,
+      "sha256": "41ae1d7e2b1692dd02ee4aa34b4737a35e035c850fe3edbdd6fc96bd314bb4eb",
+      "gitBlob": "17d9c2397dad020f67f515d331d500b901a95483"
+    },
+    "teaching-viz/models-05-story.js": {
+      "bytes": 2691,
+      "sha256": "86001a556e4c9119f50ef2853c1370ac89ba90c3893bf2808e0247850797bd99",
+      "gitBlob": "f3d553096e1714187714ffa168863d3ce305eb07"
+    },
+    "teaching-viz/models-05.js": {
+      "bytes": 3386,
+      "sha256": "3ffafa85a0e8b835cc4d8d4c2d5eec310a67f34c8f494e3769931e98254fd035",
+      "gitBlob": "439eeeb99cb670bc3191c4bbc726eb380bd7e600"
+    },
+    "teaching-viz/render-demo.js": {
+      "bytes": 1015,
+      "sha256": "11cec7585fd1eb924b34fdb22336de42c6d07c835997cb3e7199f2d3687d1ece",
+      "gitBlob": "90f9fd6ab426365140137798b690587639de3dca"
+    },
+    "teaching-viz/utils.js": {
+      "bytes": 2558,
+      "sha256": "39fb01af0e9bb61ddafc476951afec407635baf4e444dc28a30613f5749d1514",
+      "gitBlob": "2747a62e8fc1a343d7f19e93c796bf40127d9ecc"
+    },
+    "tests/chapter-05-spiral-refinement.test.mjs": {
+      "bytes": 5469,
+      "sha256": "22efe751e725c2993355af1473e86315420888cfe93e04e959b334c29bbbad93",
+      "gitBlob": "033e370b4bf3d6a07e6dc83a2c964bd3897c5893"
+    },
     "tests/learning.test.mjs": {
-      "bytes": 1716,
-      "sha256": "bceef465730eec5d26a3efa9d4bdad429d387f5665912790f327286c80f962f4",
-      "gitBlob": "1a65252b7831e7e6b5ba0f90d3c1892db8eabcb0"
+      "bytes": 1987,
+      "sha256": "b80f7f83b793ed177c19b2b880314706cee7013b93a494dd77b22ba95ff48a46",
+      "gitBlob": "628fffd0d1bab601b0bef8ee4dce161ff87c0e11"
+    },
+    "tests/teaching-01.test.mjs": {
+      "bytes": 4994,
+      "sha256": "a79df8a016b86d158d1cb97010cdcb510a047482278db6481085d94498656035",
+      "gitBlob": "ede0999e1055189a4d7631e13615cf8cdd865a8e"
+    },
+    "tests/teaching-02.test.mjs": {
+      "bytes": 6178,
+      "sha256": "4b22b4d75da3d420f3056dbe1bdf49afa871a78177ceb6f45a6e963e37223d1b",
+      "gitBlob": "5cf65e3c2f54cd3c53495ed54dabb39b6b34d06f"
+    },
+    "tests/teaching-03-extra.test.mjs": {
+      "bytes": 2360,
+      "sha256": "acfd51ea29a9c46efd4fdcd6b03ce89a288925bf26ffa9dbc9e46a92b27023eb",
+      "gitBlob": "6bb59790175fc3204c23d25f147ccd0b53479e8d"
+    },
+    "tests/teaching-03.test.mjs": {
+      "bytes": 1018,
+      "sha256": "223eea92e3d772859756bfb047d9631fc9ce1c043786a2eb087cffb7c50dde49",
+      "gitBlob": "5383bb514dfd36b04496549c05f1cba043f8d7c9"
+    },
+    "tests/teaching-04.test.mjs": {
+      "bytes": 4292,
+      "sha256": "201c781a2690a9965445933beb5097ab58ed4ca49a0c894dcef3e191eb81d5c0",
+      "gitBlob": "cf6135b05f68cf2115c133ea7e9d768cbc4f857f"
+    },
+    "tests/teaching-05-names-calendar.test.mjs": {
+      "bytes": 5750,
+      "sha256": "5cd56fb8b2632c676f6077565d814f14b804d148865cdd22a9494a27f43735af",
+      "gitBlob": "5b1e94f47d353816999663da46a1efe6d99300dc"
+    },
+    "tests/teaching-05-refinement.test.mjs": {
+      "bytes": 1711,
+      "sha256": "5ffcc0877a2bf25e8fba26fe97f88f1ac181513f0a5538ffa7007ee818ea26b8",
+      "gitBlob": "427b519758f9cd9ab3e217df415b38e64bb2f289"
+    },
+    "tests/teaching-05-story.test.mjs": {
+      "bytes": 4738,
+      "sha256": "31fea2e1646c65660e210c37a38778985f7072a45205e0074a910cc2fb33fb47",
+      "gitBlob": "b3abcdcc82fa2118fdfb8b7786f44fc8c7b1ca9d"
+    },
+    "tests/teaching-05.test.mjs": {
+      "bytes": 6769,
+      "sha256": "5a4afc051e0be52bb2fefa2f16295cd7ed6faba82165c7b7a475f64e7009fc01",
+      "gitBlob": "f475ba6ea68a2565584d99a67a0de23b1b0b18b0"
+    },
+    "tests/teaching-controller.test.mjs": {
+      "bytes": 1673,
+      "sha256": "f003861c82fe3e141651b596729a466edcd258f44eb5b5e917abba5c0a82161e",
+      "gitBlob": "d92fe155b46eed5c7a61fc550f65352e8fdcb7d2"
+    },
+    "tests/teaching-render.test.mjs": {
+      "bytes": 1572,
+      "sha256": "23403e8958a1de0d4f59962d9df90ee2bf3199a2487e5d1ea791f6347d7c6f49",
+      "gitBlob": "9837473f5185e3aa2e00f3d9ada3cd8198fc105c"
+    },
+    "tests/teaching-structure.test.mjs": {
+      "bytes": 2150,
+      "sha256": "8ebd2ea6dba0252758044c500e945b1c5f26e92f5bae464189f0ac1787dba989",
+      "gitBlob": "5f6166a1b9e42129b1621a83edd88dcfd6e0f494"
+    },
+    "vendor/d3-regression.min.js": {
+      "bytes": 8066,
+      "sha256": "c1fda5c7b0c2dd3a082ebd40cdc308c53f7c32e0d36563f43b1472ec551b5261",
+      "gitBlob": "1a93fd80df37457d63ded0f4ff72bf5833e5ac29"
+    },
+    "vendor/d3.esm.min.js": {
+      "bytes": 283064,
+      "sha256": "3b1beb9383ea3e0d437c6bffe6eaad7d479e8b9b5b5bd66472296f9a3c567ef2",
+      "gitBlob": "999a10dd0de0a8fe908493e78107e2a0823d7d15"
+    },
+    "vendor/d3.iife.min.js": {
+      "bytes": 284110,
+      "sha256": "a170a064100567b23c4239bf2fbc585dd697e1d7a0d38a4142a83e6d2ef7e654",
+      "gitBlob": "7b371f55c7d0213ffb26fcf47a1396feb4d4ed46"
     }
   },
   "chapters": [
     {
       "chapter": 1,
       "scripts": [
-        "../learning-progress.js",
+        "../lesson-nav-fallback.js",
+        "../learning-progress.js?v=20261021-mapping",
+        "../teaching-viz/fallback.js",
         "./lesson.js?v=202609080945",
-        "../i18n.js"
+        "../i18n.js?v=20261021-mapping"
       ],
       "styles": [
         "./styles.css",
         "../i18n.css",
-        "../lesson-theme.css"
+        "../lesson-theme.css",
+        "../teaching-viz/linked-learning.css"
       ],
       "allDemosQueuedAtStartup": true,
       "asyncMountCatch": false,
@@ -627,32 +1005,36 @@
     {
       "chapter": 2,
       "scripts": [
-        "../learning-progress.js",
+        "../lesson-nav-fallback.js",
+        "../learning-progress.js?v=20261021-mapping",
+        "../teaching-viz/fallback.js",
         "./lesson.js?v=202609080945",
-        "../i18n.js"
+        "../i18n.js?v=20261021-mapping"
       ],
       "styles": [
         "./styles.css",
         "../i18n.css",
-        "../lesson-theme.css"
+        "../lesson-theme.css",
+        "../teaching-viz/linked-learning.css"
       ],
       "allDemosQueuedAtStartup": true,
       "asyncMountCatch": false,
-      "dataFileReferences": [
-        "./data/newstudent.csv"
-      ]
+      "dataFileReferences": []
     },
     {
       "chapter": 3,
       "scripts": [
-        "../learning-progress.js",
+        "../lesson-nav-fallback.js",
+        "../learning-progress.js?v=20261021-mapping",
+        "../teaching-viz/fallback.js",
         "./lesson.js?v=202609080945",
-        "../i18n.js"
+        "../i18n.js?v=20261021-mapping"
       ],
       "styles": [
         "./styles.css",
         "../i18n.css",
-        "../lesson-theme.css"
+        "../lesson-theme.css",
+        "../teaching-viz/linked-learning.css"
       ],
       "allDemosQueuedAtStartup": true,
       "asyncMountCatch": false,
@@ -661,17 +1043,20 @@
     {
       "chapter": 4,
       "scripts": [
-        "../learning-progress.js",
+        "../lesson-nav-fallback.js",
+        "../learning-progress.js?v=20261021-mapping",
+        "../teaching-viz/fallback.js",
         "./lesson.js?v=202609080945",
-        "../i18n.js"
+        "../i18n.js?v=20261021-mapping"
       ],
       "styles": [
         "./styles.css",
         "../i18n.css",
-        "../lesson-theme.css"
+        "../lesson-theme.css",
+        "../teaching-viz/linked-learning.css"
       ],
       "allDemosQueuedAtStartup": true,
-      "asyncMountCatch": true,
+      "asyncMountCatch": false,
       "dataFileReferences": [
         "./data/crime.csv"
       ]
@@ -679,21 +1064,22 @@
     {
       "chapter": 5,
       "scripts": [
-        "../learning-progress.js",
-        "./lesson.js?v=202609080945",
-        "../i18n.js"
+        "../lesson-nav-fallback.js",
+        "../learning-progress.js?v=20261021-mapping",
+        "../teaching-viz/fallback.js",
+        "./lesson.js?v=20261021-ch5-r2",
+        "../i18n.js?v=20261021-mapping"
       ],
       "styles": [
         "./styles.css",
         "../i18n.css",
-        "../lesson-theme.css"
+        "../lesson-theme.css",
+        "../teaching-viz/linked-learning.css",
+        "../teaching-viz/chapter-05.css"
       ],
       "allDemosQueuedAtStartup": true,
       "asyncMountCatch": false,
-      "dataFileReferences": [
-        "./data/french_names.json",
-        "./data/weather_2024.csv"
-      ]
+      "dataFileReferences": []
     }
   ],
   "sections": [
@@ -744,10 +1130,11 @@
       ],
       "panelHashes": {
         "explain": "649cd94f009fa44acd5f43336ba3a57e1a86d84f08ab42e2fb449e8f5f5af77e",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "0223ce00eed309c737c474f09aa5c0ed596d040bfafb6c090d6e409c60199ab8",
         "demo": "2d3ff7c5cda374fd92681356f2ea9a53fd1a46c080e5bda3a37baf83b307bf01"
       },
-      "demoDefinitionSha256": "376ec2e995c2eb04a66eee40ec6f2ce250ccf592ecda38b4a870ce38411cd403"
+      "demoDefinitionSha256": "7190f7ac12a9a1b12cd1d31580008cde12a7bb9d672fa39f7759c9469684f86c"
     },
     {
       "sectionId": "1.2",
@@ -795,6 +1182,7 @@
       ],
       "panelHashes": {
         "explain": "bbe69653aef9db2fcaf7efd9efa63f3c353c4ee678b990f4968837965b05c12d",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "80fbba96e59ffe18f73d2c1c3e3daf85a673e7e99d72442e2ab77ddbfc5f0e9c",
         "demo": "bf0fe41ef216f8128cc03334e63ee64eea211dbce3accf83ba3a958a83c3da01"
       },
@@ -847,6 +1235,7 @@
       ],
       "panelHashes": {
         "explain": "8ed6e79a43cd37bfd5b4ca583681ec8842073f508c353ebd9a98a9eb975f4c5a",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "194011b7df77b8145471ea4df0daebff442c4ccf606039f8f3e4de2625b3c6ed",
         "demo": "5b0536851a2344dac93adb96b22aa505a17d1ce137df5116b1b9dcdaee3e42a5"
       },
@@ -901,6 +1290,7 @@
       ],
       "panelHashes": {
         "explain": "41cf7d2bde9e2666764e661b9f364c84c1c42d7ec7661f4144c9098c3b2d0774",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "e167f7f923070b2d1e5375c80f7c4edbf6ea43af9d03af61b38b79d803f5d5e3",
         "demo": "da42e82de0e29f72a4e85e390bcb5b6ca62525adcbe0d7e2687e27d2849f11b2"
       },
@@ -919,7 +1309,7 @@
         "Data-Join vs 命令式 DOM"
       ],
       "originalCodePoints": [
-        "关键代码 ①.join(enter, update, exit) 三态",
+        "关键代码 ① .join(enter, update, exit) 三态",
         "关键代码 ② key 函数保身份",
         "关键代码 ③ d3.select vs d3.selectAll"
       ],
@@ -961,10 +1351,11 @@
       ],
       "panelHashes": {
         "explain": "3a59ec1d31674b94eea4b0ee4f75ae91c42e7babfb11293cda8f4dfc409342ba",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "499415cd17aa51f69b911e214b5e33917766a608e10704682699d79fca7cdf40",
         "demo": "fdfb1b3d3f765c261029100454b4e05bb7dc129f130304f349ab88c4752323bd"
       },
-      "demoDefinitionSha256": "3cfdd76fae6da07d78cda4e646bf520bcf417e5219ff16f0da96a0688057d9c1"
+      "demoDefinitionSha256": "28796e6b0785137a7e396f29849236fb2f0eda34388fb790d4473a023f6dd571"
     },
     {
       "sectionId": "2.1",
@@ -1006,6 +1397,7 @@
       ],
       "panelHashes": {
         "explain": "943256f5dcbc3f55c7f537c5706a7a2fd600b7914841e725a21c9685b11f49ba",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "058440d6f9350e9bb85d735b193156eee93bc08e3e619779d0efc36355328759",
         "demo": "ea2b6a43ec1b39433fb3aad6147cfe57bebc5b35f018320be96517ce8d0ec419"
       },
@@ -1059,6 +1451,7 @@
       ],
       "panelHashes": {
         "explain": "0e3d595792a23498d8720e382c98333ff0c3e0d22fa1b24ee4acf09424046aa3",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "78da8d842b91a5af80e9b6122644814b65579d07bf59029cb2500a34c956f157",
         "demo": "ba1caebaa5f272039476409bd377eea55ad2d9f43570d1bb08393c901e5c6065"
       },
@@ -1123,6 +1516,7 @@
       ],
       "panelHashes": {
         "explain": "abb043844809524ce2cc330537a972d1977851a3b81fabb6c84018baa3114268",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "a963d0d463c7644629e2ee8052ba4a293f1ce8d4b89e4641070f263b8f5bda3d",
         "demo": "e6e3a9aebff1f0754dc5978b3433bca8b0d9736a3345eb28daac4f6b5737a25b"
       },
@@ -1202,10 +1596,11 @@
       ],
       "panelHashes": {
         "explain": "bd280147e8fd2d0cfd7034195fe845d84405f31b904995bd0638dee6b0931bba",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "784384205b4833da19091445de8c1a0a85c3d9b77e9c7071cb0b1cd2a6270e15",
         "demo": "e3fc4efb984a10cfd668b80df6bf5591e32e1f82a908ae1576f4ef2c49b74a29"
       },
-      "demoDefinitionSha256": "409292a2ab346e9f2c74bc0067a15223ffe61e3eb6df2b0979fd7e5da4b60594"
+      "demoDefinitionSha256": "4b009050d120a8305a6cee899b38065aea77f070c30a395d58c2567dbb205fff"
     },
     {
       "sectionId": "3.1",
@@ -1260,6 +1655,7 @@
       ],
       "panelHashes": {
         "explain": "fb3f6e05d04f0b86a855a34cbd8f761a8ef6b997d60802a01a3ac5993f581cef",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "b2dc812d64cf4f5c5b306d603c8c66c6a7e1999631d1a57db532a6ee01198b55",
         "demo": "2bc254d58945dbdb38530aaa1fe04e8ea933a51aed1a92740070878aa8305dac"
       },
@@ -1307,6 +1703,7 @@
       ],
       "panelHashes": {
         "explain": "fbbffdfba626ea0f5764bc16cf4895978ab6922e6abcbe57cb60884bc5fa3e2f",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "578c3fb5ab985703d5929f3510e9ef718e0f442a8280cf65e2e88777079ffc7f",
         "demo": "698a561bad3205d66ce0d99ab954c4648b4647305d035eeb0a0b2ef0ae3665e9"
       },
@@ -1358,6 +1755,7 @@
       ],
       "panelHashes": {
         "explain": "3e20db6b4b7a1fd7ffd56a81462032f5e145fd66d391709dc61428f8b96fa43e",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "3dba626d736050374551d2c131166fd92b72bf68c3fca5e9a2ee42001f34d437",
         "demo": "d3458c6ed4459d340a7cad33a29571396ee7d6103c5f3059aa76bee5bd35a0f6"
       },
@@ -1399,6 +1797,7 @@
       ],
       "panelHashes": {
         "explain": "624e62df785b557b5dcc0b8fa3c17482975edd0563c3b4afb6b8698dcf26bde0",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "0ea0abdddf40b7e0fe4b5ed494d32bf7928591e39745455034746ad2f5e0fabb",
         "demo": "4d4b8f642602412837a679ecc100243542363a3c172488ab013fd0a99c603074"
       },
@@ -1441,6 +1840,7 @@
       ],
       "panelHashes": {
         "explain": "bdd43942655e80c7c30e5da595abb0daa8a2ffa64ca292a2e7db99302764fb01",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "e67490d7915127871a7cd2096c5264e6d923bf04923fe5200694dcaa75ebd986",
         "demo": "4addf85eb523b87df1a9a64e92b05867c161f80db7790c50c957a3502c92b97a"
       },
@@ -1483,6 +1883,7 @@
       ],
       "panelHashes": {
         "explain": "63576f341de6374c900fd64571fa7a66ac8ca61d37a87647e82eec64a3af603c",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "e213ace99599d7cbee3684b3e8718e9ff1673120d8f66b20aa03017c41c078e4",
         "demo": "38b85a1431ccb4a9ca624ec4aee22ba5eaeff1a491fa29ad4894636a92ab79da"
       },
@@ -1523,6 +1924,7 @@
       ],
       "panelHashes": {
         "explain": "a026b03ae9d810eefceeb7ea0c8e74c75fc58b16357914f9f548cc117c5f9d30",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "f56b13a562f455767f84769206a7f8160658970c96d8636c283adda92d6cdbe0",
         "demo": "3c1facd5ebdd7bc658d8f66de6babb45f2aa30a9eb9e51d7f96bf29855c45446"
       },
@@ -1570,10 +1972,11 @@
       ],
       "panelHashes": {
         "explain": "5fc9ae0c9453e16d7a826b62d9de3bf21f358f748a89a10f3a94e225e4bbf9f1",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "1b8c63d3e2f33a81d8502314aeb523db6cb340847c0dae0ab511cee671279f00",
         "demo": "c7c9e5bf505c6f40ae32c29aeed2219ab7b793037aed6232fab7de361fba1228"
       },
-      "demoDefinitionSha256": "0caa4498706303924963553a70288cb25e99ff44f0065ac5f695ea7707fa9af6"
+      "demoDefinitionSha256": "fb685c1d61b4d82773835e86fd8e3742c5d4c1761745cd6ff821ca334c5ed930"
     },
     {
       "sectionId": "4.1",
@@ -1615,7 +2018,8 @@
         }
       ],
       "panelHashes": {
-        "explain": "27e4531ce4f59466ae67be695e511ea51ecda11a32d18946502e483dc3eba0ab",
+        "explain": "6fbba010fd0efc93256602c94143bd5451a7f81d56db0716ac4ab7de59ad170f",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "7ecf9f05ff7ba3cf996c5f19baded81d0f9b7f86987ae5623a587d5c15483c50",
         "demo": "cb22c2b26f62b742eee2da23c509ae7cfe1c060e7417218bc91dd4bb1e9aa3d5"
       },
@@ -1665,7 +2069,8 @@
         }
       ],
       "panelHashes": {
-        "explain": "b6fc904e81ae11bcc6b2f104fbf619c255c64c9a2a84c2db4942b97f4bcba52f",
+        "explain": "c92c3b2d704ad5612f3750cdc2de12d9b68ee09b2b0a8c2bc91a4c17df956fcb",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "4ededb3e7f91bc6d074dbb7101f97e62f14ae6965841677f2b9d0c5cbed81f0e",
         "demo": "b2ddd668485a760ebcd3529b7c9839a908e9fc2a195d3a3f1ece695d72116d98"
       },
@@ -1717,7 +2122,8 @@
         }
       ],
       "panelHashes": {
-        "explain": "7254c31955d74937db300359aa84504eb10f30204246386b85a028e6b1926f08",
+        "explain": "15672676be54aef8aba32f487da362fbc4251df3783769a41f328770af0c6ae9",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "b68a1d177908becbc79aa27224173174c4bd8cb21b92347b6c4fe31c112948fd",
         "demo": "0d9c64141db122ac0ceab7c08e63826cbe2b882064815149cad64f93c9f17c6f"
       },
@@ -1763,7 +2169,8 @@
         }
       ],
       "panelHashes": {
-        "explain": "50c1af5ae7d0fbeb8dcc6726a7fa40398ccf1339f5785686e26999e3616bbf9e",
+        "explain": "8e493f3ee764682ce3ffb83a999c9e6ea91e322c0cc255df3e6798157f088fcf",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "5b3002c7d7801fdca7b66313f35f88abacd366e0951815d7574f37e3cd129eb7",
         "demo": "6cc5cfdd26e5a3b0cc0cbbb24ddea8e51b167d14032dd1d5ef07c93a29a06d19"
       },
@@ -1804,11 +2211,12 @@
         }
       ],
       "panelHashes": {
-        "explain": "fd2c602737f602dc3864d0ca9ed83502afe41a570801c19de816d48d748d13d7",
+        "explain": "3ef0f97907fc0cf47f5b254ed27e0b9d32da3473b704a34606ff92b7e57eb956",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "af1cf3f5c23b8475bcea58e750d91d9b45431fc49781d7a415a8a074512abc43",
         "demo": "37d4ac9f928ccc2f3c134d30346ae6008b8ccb9b60724cf3710d5c34cb08785c"
       },
-      "demoDefinitionSha256": "6d16b10572771f501df432ae34bb9e197beb17de848fe96c8d8735fb619f8442"
+      "demoDefinitionSha256": "a7c795f09a98526818d9dc78d4527fc384f034474a180608e8b1c718ecef1cc1"
     },
     {
       "sectionId": "5.1",
@@ -1847,7 +2255,8 @@
         }
       ],
       "panelHashes": {
-        "explain": "2f58638b9b245851c86ecd56aa07f583128757f202824c96dc9a289161952837",
+        "explain": "359a73e18013b8ba0ea043a6e98da191e6ba4f2cda8913c2449ef0dafaa011c2",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "2a78ca6f736eb790f938134daa7af91bb6d85459eda863d49f0a93d2cb0a7f81",
         "demo": "60f2fe1373f66a25969ab2a884ddec721a16f69ea7c813149721d6fd75edc855"
       },
@@ -1888,7 +2297,7 @@
       "originalDemoId": "d-5-2",
       "registryScope": "lesson-05",
       "dataSources": [
-        "./data/french_names.json"
+        "inline constants / generated data; inspect demo body"
       ],
       "controlsMarkup": [
         "<input type=\"checkbox\" checked>"
@@ -1909,11 +2318,12 @@
         }
       ],
       "panelHashes": {
-        "explain": "c092b6acf6dd6e2bcd88093ae4ce700e36e075167becc91b3d77e5fb56576c4f",
+        "explain": "690c73fcf94d08dc3f889ea3eff9a8d0f3956ddc661b10bfea1bf1b50a89b66f",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "764d18a31fd5df6dbcc40ce83a92a2439bf241bd7461046c0e5c2bd1afe318b3",
         "demo": "2a679a42dc47f471826da11b729954a5803fe975e9153ea17234fb38fa70d1c0"
       },
-      "demoDefinitionSha256": "f848e6332b5e8a933fbd3827cf71190f99253bca7ad260d1173901cc41e8d6f6"
+      "demoDefinitionSha256": "f7f85f8d13648f3568ae5386c122c41ab000902ed4a18f46f417e4e3e425a699"
     },
     {
       "sectionId": "5.3",
@@ -1951,7 +2361,7 @@
       "originalDemoId": "d-5-3",
       "registryScope": "lesson-05",
       "dataSources": [
-        "./data/weather_2024.csv"
+        "inline constants / generated data; inspect demo body"
       ],
       "controlsMarkup": [
         "<select id=\"cmap\">\r\n        <option value=\"RdYlBu\" selected>RdYlBu（红黄蓝）</option>\r\n        <option value=\"Viridis\">Viridis（顺序型）</option>\r\n        <option value=\"Cividis\">Cividis（顺序型 CVD）</option>\r\n      </select>"
@@ -1972,11 +2382,12 @@
         }
       ],
       "panelHashes": {
-        "explain": "f5adb9cceaff79ac531ef95d62f2e70117a7cf0f2d03d14e0d60346af6039c20",
+        "explain": "2013ee64f10cb39ec83b62076aad7aa0a166e1fcb3d0ebbf93810190b7a0bb88",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "acb27b32d14cd2af905e171f00d133a88fc501e2208c22396a52e8f4cda63fe0",
         "demo": "ce7ad0ce7ef0054b6649704ba3630d7ecb21d34581fd5b2892057be6b083e679"
       },
-      "demoDefinitionSha256": "a52fd8a341ec9398c26a17aea49ca656f08ceba72d7bb02650c6e71fe5978299"
+      "demoDefinitionSha256": "29c34c579280188b7cae6ade84d642dd9d5f470ae4dd3ea1c159c0ea6e8262af"
     },
     {
       "sectionId": "5.4",
@@ -2001,7 +2412,7 @@
       "originalDemoId": "d-5-4",
       "registryScope": "lesson-05",
       "dataSources": [
-        "./data/weather_2024.csv"
+        "inline constants / generated data; inspect demo body"
       ],
       "controlsMarkup": [
         "<select id=\"weekstart\">\r\n        <option value=\"0\" selected>周日</option>\r\n        <option value=\"1\">周一</option>\r\n      </select>"
@@ -2022,11 +2433,12 @@
         }
       ],
       "panelHashes": {
-        "explain": "d681b8c11b6906c0670ef53de7467fa4aa3f3b8f6f2c2362a5b8d884e0fd04ff",
+        "explain": "2e00115989106122f445ba5b33c4580e06ff2e1fb91a1e8d1add8bc0217b0629",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "3cbd11d3bf6369bcb4f9251d6e01ad39c476df9acd8a73e3bca00971938a44bc",
         "demo": "410c8414c663444c46a3cfa0bd38c30e9576386bc0d1f3c3a6f22554022bcb5d"
       },
-      "demoDefinitionSha256": "2185c052405bff91646eb019346497305791230fb0123bc1375dfe5032a421b3"
+      "demoDefinitionSha256": "4898c3fac3263c5d4e35876edb6b569dd1a3fa946689db3cf736b5e644747a1f"
     },
     {
       "sectionId": "5.5",
@@ -2089,11 +2501,12 @@
         }
       ],
       "panelHashes": {
-        "explain": "674bbcae3c3c5a6139c1ca3c02ffc12c76111d1477641c662dd7c1b0e4b50fdf",
+        "explain": "fe4529715300e22c9078f95b8163a6f435341e1c913184ce99c1f5f26e224289",
+        "mapping": "8479d72a1e7478036ea8985f4667bcd228964e38d545e352b5a7eb21377ef93e",
         "code": "74732d9aa5399990f404f34401ec0d771970c960e5caf0ea2e27a1c1dcdf5891",
         "demo": "bc3dbb01440124b9fa32fa97c715cabd4c0c79c6e22d41b5b2cf256cfa524a82"
       },
-      "demoDefinitionSha256": "986ef3df814e27ee8d68b94967ef20cea64f60f91048fad4386fdd921e5a0cd1"
+      "demoDefinitionSha256": "73258396827b7f42ffd53f782629ce6ae364fe6c0fe6e0947928cc2a297d7232"
     }
   ],
   "dataSummary": {
@@ -2238,38 +2651,40 @@
     }
   },
   "resources": {
-    "trackedFiles": 120,
-    "totalBytes": 3984719,
+    "trackedFiles": 195,
+    "totalBytes": 5565721,
     "byExtensionCount": {
-      "[none]": 1,
-      ".md": 14,
+      "[none]": 3,
+      ".md": 29,
       ".jpg": 1,
-      ".css": 18,
-      ".js": 24,
+      ".css": 20,
+      ".js": 54,
+      ".py": 5,
+      ".json": 19,
       ".html": 27,
-      ".py": 1,
       ".png": 6,
       ".csv": 14,
-      ".json": 12,
-      ".pdf": 1,
-      ".mjs": 1
+      ".mjs": 15,
+      ".bat": 1,
+      ".pdf": 1
     },
     "byExtensionBytes": {
-      "[none]": 0,
-      ".md": 141696,
+      "[none]": 34607,
+      ".md": 445458,
       ".jpg": 602621,
-      ".css": 169803,
-      ".js": 264665,
-      ".html": 504946,
-      ".py": 18446,
+      ".css": 178136,
+      ".js": 1173202,
+      ".py": 39094,
+      ".json": 756996,
+      ".html": 522555,
       ".png": 667548,
       ".csv": 181787,
-      ".json": 521515,
-      ".pdf": 909976,
-      ".mjs": 1716
+      ".mjs": 52890,
+      ".bat": 851,
+      ".pdf": 909976
     },
-    "jsCssBytes": 436184,
-    "htmlJsCssBytes": 941130,
+    "jsCssBytes": 1404228,
+    "htmlJsCssBytes": 1926783,
     "over250KiB": [
       {
         "path": "assets/book-cover.jpg",
@@ -2288,14 +2703,31 @@
         "bytes": 909976,
         "sha256": "eb0927571f03e3c901dc5850951a1f3a0956392623305ea3592eaaa26a54ebce",
         "gitBlob": "f042ad298b5da3227ff172ddb2fb7afcc5fc5217"
+      },
+      {
+        "path": "vendor/d3.esm.min.js",
+        "bytes": 283064,
+        "sha256": "3b1beb9383ea3e0d437c6bffe6eaad7d479e8b9b5b5bd66472296f9a3c567ef2",
+        "gitBlob": "999a10dd0de0a8fe908493e78107e2a0823d7d15"
+      },
+      {
+        "path": "vendor/d3.iife.min.js",
+        "bytes": 284110,
+        "sha256": "a170a064100567b23c4239bf2fbc585dd697e1d7a0d38a4142a83e6d2ef7e654",
+        "gitBlob": "7b371f55c7d0213ffb26fcf47a1396feb4d4ed46"
       }
     ]
   },
   "externalUrlLiterals": [
     "http://localhost:8080",
+    "http://localhost:8080/",
+    "http://www.w3.org/1999/xhtml",
+    "http://www.w3.org/1999/xlink",
+    "http://www.w3.org/2000/svg",
+    "http://www.w3.org/2000/xmlns/",
+    "http://www.w3.org/XML/1998/namespace",
     "https://cdn.jsdelivr.net/npm/d3@7",
     "https://cdn.jsdelivr.net/npm/d3@7/+esm",
-    "<personal-homepage-removed>",
     "https://colororacle.org/",
     "https://d3js.org/d3.v7.min.js",
     "https://unpkg.com/d3-regression@1.3.10/dist/d3-regression.min.js",

@@ -164,7 +164,7 @@ def main():
             data_summary[path] = {"type": type(data).__name__, "keys": list(data) if isinstance(data, dict) else [], "length": len(data)}
     external = sorted(set(url.rstrip(";,)") for path in files if Path(path).suffix in {".js", ".css", ".html"} for url in re.findall(r'https?://[^\s\'"<>`]+', read(path))))
     result = {
-        "baselineCommit": commit, "capturedAt": "2026-10-21 Asia/Singapore", "source": "Git objects, never mutable working tree",
+        "baselineCommit": commit, "capturedAt": "2026-10-23 Asia/Singapore", "source": "Git objects, never mutable working tree",
         "files": files, "chapters": chapters, "sections": sections, "dataSummary": data_summary,
         "resources": {"trackedFiles": len(files), "totalBytes": sum(x["bytes"] for x in files.values()), "byExtensionCount": dict(counts), "byExtensionBytes": dict(bytes_ext), "jsCssBytes": sum(v["bytes"] for p, v in files.items() if Path(p).suffix.lower() in {".js", ".mjs", ".css"}), "htmlJsCssBytes": sum(v["bytes"] for p, v in files.items() if Path(p).suffix.lower() in {".js", ".mjs", ".css", ".html"}), "over250KiB": [dict(path=p, **v) for p, v in files.items() if v["bytes"] > 250 * 1024]},
         "externalUrlLiterals": external,
