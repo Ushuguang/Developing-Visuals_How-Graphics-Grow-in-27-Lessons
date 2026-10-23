@@ -28,7 +28,7 @@ node serve-local.mjs
 
 ## 发布
 
-线上地址：
+线上地址：https://ushuguang.github.io/Developing-Visuals_How-Graphics-Grow-in-27-Lessons/
 源码仓库：https://github.com/Ushuguang/Developing-Visuals_How-Graphics-Grow-in-27-Lessons
 
 GitHub Pages 从 `main` 分支的根目录发布。推送到 `main` 后，由 GitHub 自动构建并更新网站；发布状态以仓库的 Pages 构建结果为准。
